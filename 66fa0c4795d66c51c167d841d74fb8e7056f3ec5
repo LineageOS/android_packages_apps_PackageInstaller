@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5ff73747_b744f8b8",
+        "filename": "pre_boot_listener/src/com/android/packageinstaller/PackageInstallerPreBootListener.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 9813
+      },
+      "writtenOn": "2015-07-10T02:11:14Z",
+      "side": 1,
+      "message": "copyright",
+      "revId": "66fa0c4795d66c51c167d841d74fb8e7056f3ec5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
