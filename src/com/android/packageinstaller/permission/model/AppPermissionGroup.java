@@ -26,6 +26,7 @@ import android.content.pm.PermissionGroupInfo;
 import android.content.pm.PermissionInfo;
 import android.os.Build;
 import android.os.Process;
+import android.os.SystemProperties;
 import android.os.UserHandle;
 import android.util.ArrayMap;
 
@@ -576,6 +577,10 @@ public final class AppPermissionGroup implements Comparable<AppPermissionGroup> 
             }
         }
         return false;
+    }
+
+    public static boolean isStrictOpEnable() {
+        return SystemProperties.getBoolean("persist.sys.strict_op_enable", false);
     }
 
     @Override
