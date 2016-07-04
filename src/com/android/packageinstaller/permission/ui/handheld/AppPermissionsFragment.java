@@ -359,7 +359,9 @@ public final class AppPermissionsFragment extends SettingsWithHeader
         }
         if (newValue == Boolean.TRUE) {
             group.grantRuntimePermissions(false);
-            updateEveryPermissionPreference(group);
+            if (AppPermissionGroup.isStrictOpEnable()) {
+                updateEveryPermissionPreference(group);
+            }
         } else {
             final boolean grantedByDefault = group.hasGrantedByDefaultPermission();
             if (grantedByDefault || (!group.hasRuntimePermission() && !mHasConfirmedRevoke)) {
@@ -373,7 +375,9 @@ public final class AppPermissionsFragment extends SettingsWithHeader
                             public void onClick(DialogInterface dialog, int which) {
                                 ((SwitchPreference) preference).setChecked(false);
                                 group.revokeRuntimePermissions(false);
-                                updateEveryPermissionPreference(group);
+                                if (AppPermissionGroup.isStrictOpEnable()) {
+                                    updateEveryPermissionPreference(group);
+                                }
                                 if (!grantedByDefault) {
                                     mHasConfirmedRevoke = true;
                                 }
@@ -383,7 +387,9 @@ public final class AppPermissionsFragment extends SettingsWithHeader
                 return false;
             } else {
                 group.revokeRuntimePermissions(false);
-                updateEveryPermissionPreference(group);
+                if (AppPermissionGroup.isStrictOpEnable()) {
+                    updateEveryPermissionPreference(group);
+                }
             }
         }
         return true;
