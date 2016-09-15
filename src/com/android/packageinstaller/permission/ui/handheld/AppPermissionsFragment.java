@@ -241,7 +241,7 @@ public final class AppPermissionsFragment extends SettingsWithHeader
                 }
                 mExtraScreen.addPreference(preference);
             }
-            if (AppPermissionGroup.isStrictOpEnable()) {
+            if (AppPermissionGroup.isStrictOpEnable() && isPlatform) {
                 try {
                     PackageManager pm = context.getPackageManager();
                     for (Permission permission : group.getPermissions()) {
@@ -357,9 +357,11 @@ public final class AppPermissionsFragment extends SettingsWithHeader
             LocationUtils.showLocationDialog(getContext(), mAppPermissions.getAppLabel());
             return false;
         }
+
+        final boolean isPlatform = group.getDeclaringPackage().equals(Utils.OS_PKG);
         if (newValue == Boolean.TRUE) {
             group.grantRuntimePermissions(false);
-            if (AppPermissionGroup.isStrictOpEnable()) {
+            if (AppPermissionGroup.isStrictOpEnable() && isPlatform) {
                 updateEveryPermissionPreference(group);
             }
         } else {
@@ -375,7 +377,7 @@ public final class AppPermissionsFragment extends SettingsWithHeader
                             public void onClick(DialogInterface dialog, int which) {
                                 ((SwitchPreference) preference).setChecked(false);
                                 group.revokeRuntimePermissions(false);
-                                if (AppPermissionGroup.isStrictOpEnable()) {
+                                if (AppPermissionGroup.isStrictOpEnable() && isPlatform) {
                                     updateEveryPermissionPreference(group);
                                 }
                                 if (!grantedByDefault) {
@@ -387,7 +389,7 @@ public final class AppPermissionsFragment extends SettingsWithHeader
                 return false;
             } else {
                 group.revokeRuntimePermissions(false);
-                if (AppPermissionGroup.isStrictOpEnable()) {
+                if (AppPermissionGroup.isStrictOpEnable() && isPlatform) {
                     updateEveryPermissionPreference(group);
                 }
             }
