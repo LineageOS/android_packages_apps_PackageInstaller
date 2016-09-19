@@ -30,6 +30,7 @@ import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.content.pm.PermissionInfo;
 import android.graphics.drawable.Drawable;
+import android.Manifest;
 import android.net.Uri;
 import android.os.Bundle;
 import android.preference.Preference;
@@ -243,24 +244,25 @@ public final class AppPermissionsFragment extends SettingsWithHeader
             }
             if (AppPermissionGroup.isStrictOpEnable() && isPlatform) {
                 try {
-                    PackageManager pm = context.getPackageManager();
-                    for (Permission permission : group.getPermissions()) {
-                        PermissionInfo perm = pm.getPermissionInfo(permission.getName(), 0);
-                        final String[] filterPermissions = new String[]{permission.getName()};
-
-                        if (perm.protectionLevel == PermissionInfo.PROTECTION_DANGEROUS) {
-                            SwitchPreference preference_permission = new SwitchPreference(context);
-                            preference_permission.setOnPreferenceChangeListener(this);
-                            preference_permission.setKey(permission.getName());
-                            preference_permission.setTitle(perm.loadLabel(pm));
-                            preference_permission.setPersistent(false);
-                            preference_permission.setEnabled(true);
-                            AppPermissionGroup permissionGroup = getPermisssionGroup(perm.group);
-                            preference_permission.setChecked(
-                                    permissionGroup.areRuntimePermissionsGranted(filterPermissions));
-                            screen.addPreference(preference_permission);
-                        } else if (perm.protectionLevel == PermissionInfo.PROTECTION_NORMAL) {
-                            continue;
+                    if (!group.getName().equals(Manifest.permission_group.STORAGE)) {
+                        PackageManager pm = context.getPackageManager();
+                        for (Permission permission : group.getPermissions()) {
+                            PermissionInfo perm = pm.getPermissionInfo(permission.getName(), 0);
+                            final String[] filterPermissions = new String[]{permission.getName()};
+                            if (perm.protectionLevel == PermissionInfo.PROTECTION_DANGEROUS) {
+                                SwitchPreference preference_permission = new SwitchPreference(context);
+                                preference_permission.setOnPreferenceChangeListener(this);
+                                preference_permission.setKey(permission.getName());
+                                preference_permission.setTitle(perm.loadLabel(pm));
+                                preference_permission.setPersistent(false);
+                                preference_permission.setEnabled(true);
+                                AppPermissionGroup permissionGroup = getPermisssionGroup(perm.group);
+                                preference_permission.setChecked(
+                                        permissionGroup.areRuntimePermissionsGranted(filterPermissions));
+                                screen.addPreference(preference_permission);
+                            } else if (perm.protectionLevel == PermissionInfo.PROTECTION_NORMAL) {
+                                continue;
+                            }
                         }
                     }
                 } catch (NameNotFoundException e) {
@@ -302,6 +304,7 @@ public final class AppPermissionsFragment extends SettingsWithHeader
     }
 
     private void updateEveryPermissionPreference(AppPermissionGroup group) {
+        if (group.getName().equals(Manifest.permission_group.STORAGE)) return;
         PackageManager pm = getContext().getPackageManager();
         PreferenceScreen screen = getPreferenceScreen();
         for (Permission permission : group.getPermissions()) {
