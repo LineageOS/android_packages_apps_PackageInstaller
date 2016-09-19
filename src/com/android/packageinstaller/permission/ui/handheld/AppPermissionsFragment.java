@@ -332,18 +332,34 @@ public final class AppPermissionsFragment extends SettingsWithHeader
                     PermissionInfo permInfo = pm.getPermissionInfo(key, 0);
                     final AppPermissionGroup title_group
                             = mAppPermissions.getPermissionGroup(permInfo.group);
-                    if (newValue == Boolean.TRUE) {
-                        title_group.grantRuntimePermissions(false, filterPermissions);
-                    } else {
-                        title_group.revokeRuntimePermissions(false, filterPermissions);
-                    }
-                    //group preferene update
+                    final boolean grantedByDefault = title_group.hasGrantedByDefaultPermission();
                     PreferenceScreen screen = getPreferenceScreen();
                     Preference group_preference = screen.findPreference((CharSequence) permInfo.group);
                     AppPermissionGroup permissionGroup = getPermisssionGroup(permInfo.group);
-                    ((SwitchPreference) group_preference).setChecked(
-                            permissionGroup.areRuntimePermissionsGranted());
-                    ((SwitchPreference)preference).setChecked(permissionGroup.areRuntimePermissionsGranted(filterPermissions));
+                    if (newValue == Boolean.TRUE) {
+                        ((SwitchPreference)preference).setChecked(true);
+                        title_group.grantRuntimePermissions(false, filterPermissions);
+                        ((SwitchPreference) group_preference).setChecked(
+                                permissionGroup.areRuntimePermissionsGranted());
+                    } else {
+                        //When the permission is off, the application maybe will crash, so need to
+                        //add a warning dialog when the user revoke the permission.
+                        new AlertDialog.Builder(getContext())
+                                .setMessage(grantedByDefault ? R.string.system_warning
+                                        : R.string.old_sdk_deny_warning)
+                                .setNegativeButton(R.string.cancel, null)
+                                .setPositiveButton(R.string.grant_dialog_button_deny_anyway,
+                                        new OnClickListener() {
+                                    @Override
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        ((SwitchPreference) preference).setChecked(false);
+                                        title_group.revokeRuntimePermissions(false, filterPermissions);
+                                        ((SwitchPreference) group_preference).setChecked(
+                                                permissionGroup.areRuntimePermissionsGranted());
+                                    }
+                                })
+                                .show();
+                    }
                 } catch (NameNotFoundException e) {
                     Log.e(LOG_TAG, "Problem getting package info for ", e);
                 }
