@@ -161,12 +161,22 @@ public class GrantPermissionsActivity extends OverlayTouchActivity
                     break;
 
                     default: {
-                        if (!group.areRuntimePermissionsGranted()) {
-                            mRequestGrantPermissionGroups.put(group.getName(),
-                                    new GroupState(group));
+                        if (AppPermissionGroup.isStrictOpEnable()) {
+                            if (!group.checkRuntimePermission(null)) {
+                                mRequestGrantPermissionGroups.put(group.getName(),
+                                        new GroupState(group));
+                            } else {
+                                group.grantRuntimePermissions(false);
+                                updateGrantResults(group);
+                            }
                         } else {
-                            group.grantRuntimePermissions(false);
-                            updateGrantResults(group);
+                            if (!group.areRuntimePermissionsGranted()) {
+                                mRequestGrantPermissionGroups.put(group.getName(),
+                                        new GroupState(group));
+                            } else {
+                                group.grantRuntimePermissions(false);
+                                updateGrantResults(group);
+                            }
                         }
                     }
                     break;
@@ -297,7 +307,9 @@ public class GrantPermissionsActivity extends OverlayTouchActivity
                 groupState.mGroup.grantRuntimePermissions(doNotAskAgain);
                 groupState.mState = GroupState.STATE_ALLOWED;
             } else {
-                groupState.mGroup.revokeRuntimePermissions(doNotAskAgain);
+                if(!AppPermissionGroup.isStrictOpEnable()){
+                    groupState.mGroup.revokeRuntimePermissions(doNotAskAgain);
+                }
                 groupState.mState = GroupState.STATE_DENIED;
             }
             updateGrantResults(groupState.mGroup);
