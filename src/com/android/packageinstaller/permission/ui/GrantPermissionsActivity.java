@@ -49,6 +49,7 @@ import com.android.packageinstaller.permission.ui.handheld.GrantPermissionsViewH
 import com.android.packageinstaller.permission.utils.SafetyNetLogger;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.LinkedHashMap;
 import java.util.List;
 
@@ -92,6 +93,7 @@ public class GrantPermissionsActivity extends OverlayTouchActivity
 
         final int requestedPermCount = mRequestedPermissions.length;
         mGrantResults = new int[requestedPermCount];
+        Arrays.fill(mGrantResults, PackageManager.PERMISSION_DENIED);
 
         if (requestedPermCount == 0) {
             setResultAndFinish();
@@ -207,10 +209,12 @@ public class GrantPermissionsActivity extends OverlayTouchActivity
         // window height needed to show all content. We have to
         // re-add the window to force it to be resized if needed.
         View decor = getWindow().getDecorView();
-        getWindowManager().removeViewImmediate(decor);
-        getWindowManager().addView(decor, decor.getLayoutParams());
-        if (mViewHandler instanceof GrantPermissionsViewHandlerImpl) {
-            ((GrantPermissionsViewHandlerImpl) mViewHandler).onConfigurationChanged();
+        if (decor.getParent() != null) {
+            getWindowManager().removeViewImmediate(decor);
+            getWindowManager().addView(decor, decor.getLayoutParams());
+            if (mViewHandler instanceof GrantPermissionsViewHandlerImpl) {
+                ((GrantPermissionsViewHandlerImpl) mViewHandler).onConfigurationChanged();
+            }
         }
     }
 
