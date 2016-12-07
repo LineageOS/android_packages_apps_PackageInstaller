@@ -339,7 +339,7 @@ public final class GrantPermissionsViewHandlerImpl
                 if (mResultListener != null) {
                     view.clearAccessibilityFocus();
                     mResultListener.onPermissionGrantResult(mGroupName, false,
-                            AppPermissionGroup.isStrictOpEnable()? false: mDoNotAskCheckbox.isChecked());
+                            AppPermissionGroup.isStrictOpEnable()? false: mShowDonNotAsk && mDoNotAskCheckbox.isChecked());
                 }
                 break;
             case R.id.do_not_ask_checkbox:
