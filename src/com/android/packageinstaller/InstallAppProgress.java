@@ -34,6 +34,8 @@ import android.content.pm.PackageInfo;
 import android.content.pm.PackageInstaller;
 import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
+import android.content.pm.PackageParser;
+import android.content.pm.PackageParser.PackageLite;
 import android.content.pm.ResolveInfo;
 import android.net.Uri;
 import android.os.Bundle;
@@ -47,6 +49,8 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import com.android.packageinstaller.permission.utils.IoUtils;
+
+import com.android.internal.content.PackageHelper;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -352,6 +356,22 @@ public class InstallAppProgress extends Activity implements View.OnClickListener
             params.originatingUri = getIntent().getParcelableExtra(Intent.EXTRA_ORIGINATING_URI);
             params.originatingUid = getIntent().getIntExtra(Intent.EXTRA_ORIGINATING_UID,
                     UID_UNKNOWN);
+
+            File file = new File(mPackageURI.getPath());
+            try {
+                PackageLite pkg = PackageParser.parsePackageLite(file, 0);
+                params.setAppPackageName(pkg.packageName);
+                params.setInstallLocation(pkg.installLocation);
+                params.setSize(
+                    PackageHelper.calculateInstalledSize(pkg, false, params.abiOverride));
+            } catch (PackageParser.PackageParserException e) {
+                Log.e(TAG, "Cannot parse package " + file + ". Assuming defaults.");
+                Log.e(TAG, "Cannot calculate installed size " + file + ". Try only apk size.");
+                params.setSize(file.length());
+            } catch (IOException e) {
+                Log.e(TAG, "Cannot calculate installed size " + file + ". Try only apk size.");
+                params.setSize(file.length());
+            }
 
             mInstallHandler.post(new Runnable() {
                 @Override

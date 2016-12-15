@@ -34,9 +34,6 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.TextView;
 import com.android.packageinstaller.DeviceUtils;
 import com.android.packageinstaller.R;
 import com.android.packageinstaller.permission.model.AppPermissionGroup;
@@ -81,6 +78,7 @@ public final class PermissionAppsFragment extends PermissionsFrameFragment imple
     private boolean mHasConfirmedRevoke;
 
     private boolean mShowSystem;
+    private boolean mHasSystemApps;
     private MenuItem mShowSystemMenu;
     private MenuItem mHideSystemMenu;
 
@@ -110,13 +108,16 @@ public final class PermissionAppsFragment extends PermissionsFrameFragment imple
 
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-        mShowSystemMenu = menu.add(Menu.NONE, MENU_SHOW_SYSTEM, Menu.NONE,
-                R.string.menu_show_system);
-        mHideSystemMenu = menu.add(Menu.NONE, MENU_HIDE_SYSTEM, Menu.NONE,
-                R.string.menu_hide_system);
+        if (mHasSystemApps) {
+            mShowSystemMenu = menu.add(Menu.NONE, MENU_SHOW_SYSTEM, Menu.NONE,
+                    R.string.menu_show_system);
+            mHideSystemMenu = menu.add(Menu.NONE, MENU_HIDE_SYSTEM, Menu.NONE,
+                    R.string.menu_hide_system);
+            updateMenu();
+        }
+
         HelpUtils.prepareHelpMenuItem(getActivity(), menu, R.string.help_app_permissions,
                 getClass().getName());
-        updateMenu();
     }
 
     @Override
@@ -176,6 +177,8 @@ public final class PermissionAppsFragment extends PermissionsFrameFragment imple
             setPreferenceScreen(screen);
         }
 
+        screen.setOrderingAsAdded(false);
+
         ArraySet<String> preferencesToRemove = new ArraySet<>();
         for (int i = 0, n = screen.getPreferenceCount(); i < n; i++) {
             preferencesToRemove.add(screen.getPreference(i).getKey());
@@ -186,8 +189,15 @@ public final class PermissionAppsFragment extends PermissionsFrameFragment imple
             }
         }
 
+        mHasSystemApps = false;
+        boolean menuOptionsInvalided = false;
+
         for (PermissionApp app : permissionApps.getApps()) {
             if (!Utils.shouldShowPermission(app)) {
+                continue;
+            }
+
+            if (!app.getAppInfo().enabled) {
                 continue;
             }
 
@@ -199,6 +209,13 @@ public final class PermissionAppsFragment extends PermissionsFrameFragment imple
             }
 
             boolean isSystemApp = Utils.isSystem(app, mLauncherPkgs);
+
+            if (isSystemApp && !menuOptionsInvalided) {
+                mHasSystemApps = true;
+                getActivity().invalidateOptionsMenu();
+                menuOptionsInvalided = true;
+            }
+
             if (isSystemApp && !isTelevision && !mShowSystem) {
                 if (existingPref != null) {
                     screen.removePreference(existingPref);

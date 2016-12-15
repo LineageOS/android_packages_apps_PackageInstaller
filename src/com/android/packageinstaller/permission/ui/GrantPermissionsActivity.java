@@ -49,6 +49,7 @@ import com.android.packageinstaller.permission.ui.handheld.GrantPermissionsViewH
 import com.android.packageinstaller.permission.utils.SafetyNetLogger;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.LinkedHashMap;
 import java.util.List;
 
@@ -92,6 +93,7 @@ public class GrantPermissionsActivity extends OverlayTouchActivity
 
         final int requestedPermCount = mRequestedPermissions.length;
         mGrantResults = new int[requestedPermCount];
+        Arrays.fill(mGrantResults, PackageManager.PERMISSION_DENIED);
 
         if (requestedPermCount == 0) {
             setResultAndFinish();
@@ -161,12 +163,22 @@ public class GrantPermissionsActivity extends OverlayTouchActivity
                     break;
 
                     default: {
-                        if (!group.areRuntimePermissionsGranted()) {
-                            mRequestGrantPermissionGroups.put(group.getName(),
-                                    new GroupState(group));
+                        if (AppPermissionGroup.isStrictOpEnable()) {
+                            if (!group.checkRuntimePermission(null)) {
+                                mRequestGrantPermissionGroups.put(group.getName(),
+                                        new GroupState(group));
+                            } else {
+                                group.grantRuntimePermissions(false);
+                                updateGrantResults(group);
+                            }
                         } else {
-                            group.grantRuntimePermissions(false);
-                            updateGrantResults(group);
+                            if (!group.areRuntimePermissionsGranted()) {
+                                mRequestGrantPermissionGroups.put(group.getName(),
+                                        new GroupState(group));
+                            } else {
+                                group.grantRuntimePermissions(false);
+                                updateGrantResults(group);
+                            }
                         }
                     }
                     break;
@@ -197,10 +209,12 @@ public class GrantPermissionsActivity extends OverlayTouchActivity
         // window height needed to show all content. We have to
         // re-add the window to force it to be resized if needed.
         View decor = getWindow().getDecorView();
-        getWindowManager().removeViewImmediate(decor);
-        getWindowManager().addView(decor, decor.getLayoutParams());
-        if (mViewHandler instanceof GrantPermissionsViewHandlerImpl) {
-            ((GrantPermissionsViewHandlerImpl) mViewHandler).onConfigurationChanged();
+        if (decor.getParent() != null) {
+            getWindowManager().removeViewImmediate(decor);
+            getWindowManager().addView(decor, decor.getLayoutParams());
+            if (mViewHandler instanceof GrantPermissionsViewHandlerImpl) {
+                ((GrantPermissionsViewHandlerImpl) mViewHandler).onConfigurationChanged();
+            }
         }
     }
 
@@ -297,7 +311,9 @@ public class GrantPermissionsActivity extends OverlayTouchActivity
                 groupState.mGroup.grantRuntimePermissions(doNotAskAgain);
                 groupState.mState = GroupState.STATE_ALLOWED;
             } else {
-                groupState.mGroup.revokeRuntimePermissions(doNotAskAgain);
+                if(!AppPermissionGroup.isStrictOpEnable()){
+                    groupState.mGroup.revokeRuntimePermissions(doNotAskAgain);
+                }
                 groupState.mState = GroupState.STATE_DENIED;
             }
             updateGrantResults(groupState.mGroup);
