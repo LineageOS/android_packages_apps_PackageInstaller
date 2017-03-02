@@ -16,8 +16,8 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Tab label for version information [CHAR LIMIT=20] -->
     <string name="appVersion">版本信息</string>
-    <string name="currentVersion">目前版本:</string>
-    <string name="newVersion">新版本:</string>
+    <string name="currentVersion">当前版本:</string>
+    <string name="newVersion">安装版本:</string>
     <string name="not_available">无效</string>
     <!-- Body text for new tab when there are no permissions [CHAR LIMIT=NONE] -->
     <string name="no_perms">这个软件不需要权限.</string>
