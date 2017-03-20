@@ -20,6 +20,7 @@
   <string name="install">Instalar</string>
   <string name="done">Fecho</string>
   <!-- TODO REMOVE LATER -->
+  <string name="security_settings_desc">Permitir qu\'esta aplicación:</string>
   <string name="cancel">Encaboxar</string>
   <string name="installing">Instalando\u2026</string>
   <string name="install_done">Aplicación instalada.</string>
@@ -30,7 +31,13 @@
   <string name="install_confirm_question_no_perms">¿Quies instalar esta aplicación?
             Nun rique dengún permisu especial.</string>
   <!-- Message for updating an existing app [CHAR LIMIT=NONE] -->
+  <string name="install_confirm_question_update">¿Quies instalar un anovmaientu
+            d\'esta aplicación? Nun se perderán los tos datos
+            actuales. L\'aplicación anovada accederá a:</string>
   <!-- Message for updating an existing system app [CHAR LIMIT=NONE] -->
+  <string name="install_confirm_question_update_system">¿Quies instalar un anovamientu
+            d\'esta aplicación integrada? Nun se perderán los tos
+            datos actuales. L\'aplicación anovada consiguirá accesu a:</string>
   <!-- Message for updating an existing app, no permissions [CHAR LIMIT=NONE] -->
   <string name="install_confirm_question_update_no_perms">¿Quies instalar un anovamientu
             d\'esta aplicación? Nun se perderán los tos datos.
@@ -39,26 +46,37 @@
   <string name="install_confirm_question_update_system_no_perms">¿Quies instalar un anovamientu
             d\'esta aplicación integrada? Nun se perderán los tos
             datos. Nun rique dengún permisu especial.</string>
+  <string name="install_failed">Nun s\'instaló l\'aplicación.</string>
   <!-- Reason displayed when installation fails because the package was blocked
         from being installed (e.g., device policy, verification, ...) [CHAR LIMIT=100] -->
+  <string name="install_failed_blocked">Bloquióse la instalación del paquete.</string>
   <!-- Reason displayed when installation fails because the package conflicts with
         an existing application (e.g., incompatible certificates) [CHAR LIMIT=100] -->
+  <string name="install_failed_conflict">El paquete tien conflictu con ún esistente del mesmu nome.</string>
   <!-- Reason displayed when installation fails because the package is incompatible with
        the current tablet (e.g., missing native code for the current ABI, newer SDK, ...) [CHAR LIMIT=100] -->
+  <string name="install_failed_incompatible" product="tablet">Esta aplicación nun ye
+        compatible cola to tableta.</string>
   <!-- Reason displayed when installation fails because the package is incompatible with
        the current TV (e.g., missing native code for the current ABI, newer SDK, ...) [CHAR LIMIT=100] -->
+  <string name="install_failed_incompatible" product="tv">Esta aplicación nun ye
+        compatible cola to TV.</string>
   <!-- Reason displayed when installation fails because the package is incompatible with
        the current phone (e.g., missing native code for the current ABI, newer SDK, ...) [CHAR LIMIT=100] -->
+  <string name="install_failed_incompatible" product="default">Esta aplicación nun ye
+        compatible col to teléfonu.</string>
   <!-- Reason displayed when installation fails because the installation package itself is invalid
         in some way (e.g., corrupt) [CHAR LIMIT=100] -->
+  <string name="install_failed_invalid_apk">El paquete paez tar toyíu.</string>
   <!-- Message presented when an application could not be installed on the tablet for some reason. [CHAR LIMIT=100] -->
+  <string name="install_failed_msg" product="tablet"><xliff:g id="app_name">%1$s</xliff:g> nun pudo instalase na to tableta.</string>
   <!-- Message presented when an application could not be installed on the TV for some reason. [CHAR LIMIT=100] -->
   <string name="install_failed_msg" product="tv"><xliff:g id="app_name">%1$s</xliff:g> nun pudo instalase na to TV.</string>
   <!-- Message presented when an application could not be installed on the phone for some reason. [CHAR LIMIT=100] -->
+  <string name="install_failed_msg" product="default"><xliff:g id="app_name">%1$s</xliff:g> nun pudo instalase na to tableta.</string>
   <string name="launch">Abrir</string>
   <!-- Message presented in a dialog box when a package is requested to be installed, but the "Allow unknown applications" checkbox is not enabled. [CHAR LIMIT=100] -->
   <!-- Message presented in a dialog box when a package is requested to be installed, but the "Allow unknown applications" checkbox is not enabled. [CHAR LIMIT=100] -->
-  <string name="unknown_apps_dlg_text" product="tv">Por seguranza, la to TV tien bloquiada la instalación d\'aplicaciones dende fontes desconocíes.</string>
   <!-- Message presented in a dialog box when a package is requested to be installed, but the "Allow unknown applications" checkbox is not enabled. [CHAR LIMIT=100] -->
   <!-- Message presented in a dialog box when the device administrator restricts the installation of apps from unknown sources. [CHAR LIMIT=none] -->
   <string name="unknown_apps_admin_dlg_text">El to alministrador nun permite la instalación d\'aplicaciones consiguíes dende fontes desconocíes.</string>
@@ -72,24 +90,36 @@
   <string name="dlg_ok">Aceutar</string>
   <string name="app_not_found_dlg_title">Nun s\'alcontró l\'aplicación</string>
   <string name="uninstall_application_text">¿Quies desinstalar esta aplicación?</string>
+  <string name="uninstall_application_text_all_users">¿Quies desinstalar esta aplicación pa <b>tolos</b>
+        usuarios?  Desaniciaráse l\'aplicación y los sos datos de <b>tolos</b> usuarios nel preséu.</string>
+  <string name="uninstall_application_text_user">¿Quies desinstalar esta aplicación pal usuariu <xliff:g id="username">%1$s</xliff:g>?</string>
+  <string name="uninstall_update_text">¿Trocar esta aplicación cola versión de fábrica? Desaniciaránse tolos datos.</string>
+  <string name="uninstall_update_text_multiuser">¿Trocar esta aplicación cola versión de fábrica? Desaniciaránse tolos datos. Esto afeuta a tolos usuarios d\'esti preséu, incluyendo aquellos con perfiles de trabayu.</string>
   <string name="uninstalling">Desinstalando…</string>
   <!-- String presented to the user when uninstalling a package failed because the target package
         is a current device administrator [CHAR LIMIT=80] -->
+  <string name="uninstall_failed_device_policy_manager">Nun pue desinstalase porque esti paquete
+        ye un xestor activu de preseos.</string>
   <!-- String presented to the user when uninstalling a package failed because the target package
         is a current device administrator for some user [CHAR LIMIT=100] -->
   <!-- String presented to the admin user when uninstalling a package for all users failed
     because a profile owner has marked the target package as not able to be uninstalled
     [CHAR LIMIT=120] -->
+  <string name="uninstall_all_blocked_profile_owner">Esta aplicación ríquenla dellos usuarios
+        o perfiles y desinstalóse pa otros</string>
   <!-- String presented to the user when uninstalling a package failed because a profile owner
          has marked the target package as not able to be uninstalled [CHAR LIMIT=120] -->
   <!-- String presented to the user when uninstalling a package failed because a device owner
          has marked the the target package as not able to be uninstalled [CHAR LIMIT=80] -->
+  <string name="uninstall_blocked_device_owner">Esta aplicación ríquela\'l
+        to xestor de preseos y nun pue desinstalase.</string>
   <!-- String on a button that leads to the "device administrator" configuration setting where a
         user will be able to disable the device administrator in order to uninstall
         it. [CHAR LIMIT=50] -->
   <!-- String on a button that leads to the "Users" page in Settings where a
         user will be able to remove the secondary user(s) in order to uninstall
         the app. [CHAR LIMIT=50] -->
+  <string name="manage_users">Xestionar usuarios</string>
   <!-- Dialog attributes to indicate parse errors -->
   <string name="Parse_error_dlg_text">Hebo un fallu analizando\'l paquete.</string>
   <!-- Tab label for new permissions being added to an existing app [CHAR LIMIT=20] -->
@@ -103,11 +133,15 @@
   <!-- Title for the dialog button to deny a permission grant. -->
   <string name="grant_dialog_button_deny">Ñegar</string>
   <!-- Title for the dialog button to deny a permission grant despite a warning of implications. -->
+  <string name="grant_dialog_button_deny_anyway">Ñegar de toes toes</string>
   <!-- Template for the current permission from the total number of permissions. -->
   <string name="current_permission_template">
         <xliff:g id="current_permission_index" example="1">%1$s</xliff:g> de
         <xliff:g id="permission_count" example="2">%2$s</xliff:g></string>
   <!-- Template for the warning message when an app requests a permission. -->
+  <string name="permission_warning_template">¿Permitir a
+        &lt;b&gt;<xliff:g id="app_name" example="Gmail">%1$s</xliff:g>&lt;/b&gt;
+        <xliff:g id="action" example="do something">%2$s</xliff:g>?</string>
   <!-- Permissions -->
   <!-- Title for the dialog button to allow a permission grant. -->
   <string name="grant_dialog_button_allow">Permitir</string>
@@ -120,6 +154,7 @@
   <!-- Title for page of managing application permissions -->
   <!-- Checkbox that allows user to not be questioned about this permission
          request again -->
+  <string name="never_ask_again">Nun entrugar más</string>
   <!-- Label when app requests no permissions -->
   <string name="no_permissions">Ensin permisos</string>
   <!-- Label for button that leads to more permissions [CHAR LIMIT=40] -->
@@ -143,6 +178,7 @@
   <!-- [CHAR LIMIT=NONE] Label when no apps requesting this permission -->
   <string name="no_apps">Ensin aplicaciones</string>
   <!-- [CHAR LIMIT=30] Title of button that leads to location settings -->
+  <string name="location_settings">Axustes d\'allugamientu</string>
   <!-- [CHAR LIMIT=NONE] Warning about how this app cannot have location permission disabled -->
   <!-- [CHAR LIMIT=NONE] Warning message when turning off permission for system apps -->
   <string name="system_warning">Si ñegues esti permisu, quiciabes nun furrulen como s\'esperaben les carauterístiques básiques.</string>
@@ -165,15 +201,28 @@
   <!-- Title of dialog telling users that Install/Uninstall action is not supported on Android Wear. -->
   <string name="wear_not_allowed_dlg_title">Android Wear</string>
   <!-- Title of dialog telling users that Install/Uninstall action is not supported on Android Wear. -->
+  <string name="wear_not_allowed_dlg_text">Nun se sofiten les aiciones de des/instalación en Wear.</string>
   <!-- Review of runtime permissions for legacy apps -->
   <!-- Template for the warning title when an updated app's requested permissions are reviewed. -->
+  <string name="permission_review_warning_title_template_update">
+        <xliff:g id="app_name" example="Gmail">%1$s</xliff:g> anovóse.
+        Permitir a <xliff:g id="app_name" example="Gmail">%1$s</xliff:g>
+        acceder a lo de darréu?</string>
   <!-- Template for the screen title when app permissions are reviewed on install. -->
+  <string name="permission_review_title_template_install">Escueyi a lo que
+        <xliff:g id="app_name" example="Gmail">%1$s</xliff:g> pue acceder</string>
   <!-- Template for the screen title when app permissions are reviewed on update. -->
+  <string name="permission_review_title_template_update">
+        <xliff:g id="app_name" example="Gmail">%1$s</xliff:g> anovóse.
+        Escueyi a lo qu\'esta aplicación tien accesu.</string>
   <!-- Title for the dialog button to cancel the detailed permission review. -->
   <string name="review_button_cancel">Encaboxar</string>
   <!-- Title for the dialog button to continue accepting the detailed permission review. -->
+  <string name="review_button_continue">Siguir</string>
   <!-- Title for the category listing the new permissions used by an app. -->
+  <string name="new_permissions_category">Permisos nuevos</string>
   <!-- Title for the category listing the current permissions used by an app. -->
+  <string name="current_permissions_category">Permisos actuales</string>
   <!-- Message that the app to be installed is being staged -->
   <!-- Placeholder for an app name when it is unknown -->
   <!-- Help URL, application permissions [DO NOT TRANSLATE] -->
