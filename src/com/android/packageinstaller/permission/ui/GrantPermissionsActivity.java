@@ -151,37 +151,24 @@ public class GrantPermissionsActivity extends OverlayTouchActivity
                             group.grantRuntimePermissions(false);
                         }
                         group.setPolicyFixed();
-                    }
-                    break;
+                    } break;
 
                     case DevicePolicyManager.PERMISSION_POLICY_AUTO_DENY: {
                         if (group.areRuntimePermissionsGranted()) {
                             group.revokeRuntimePermissions(false);
                         }
                         group.setPolicyFixed();
-                    }
-                    break;
+                    } break;
 
                     default: {
-                        if (AppPermissionGroup.isStrictOpEnable()) {
-                            if (!group.checkRuntimePermission(null)) {
-                                mRequestGrantPermissionGroups.put(group.getName(),
-                                        new GroupState(group));
-                            } else {
-                                group.grantRuntimePermissions(false);
-                                updateGrantResults(group);
-                            }
+                        if (!group.areRuntimePermissionsGranted()) {
+                            mRequestGrantPermissionGroups.put(group.getName(),
+                                    new GroupState(group));
                         } else {
-                            if (!group.areRuntimePermissionsGranted()) {
-                                mRequestGrantPermissionGroups.put(group.getName(),
-                                        new GroupState(group));
-                            } else {
-                                group.grantRuntimePermissions(false);
-                                updateGrantResults(group);
-                            }
+                            group.grantRuntimePermissions(false);
+                            updateGrantResults(group);
                         }
-                    }
-                    break;
+                    } break;
                 }
             } else {
                 // if the permission is fixed, ensure that we return the right request result
@@ -195,10 +182,10 @@ public class GrantPermissionsActivity extends OverlayTouchActivity
         WindowManager.LayoutParams layoutParams = window.getAttributes();
         mViewHandler.updateWindowAttributes(layoutParams);
         window.setAttributes(layoutParams);
+
         if (!showNextPermissionGroupGrantRequest()) {
             setResultAndFinish();
         }
-
     }
 
     @Override
@@ -247,31 +234,8 @@ public class GrantPermissionsActivity extends OverlayTouchActivity
         for (GroupState groupState : mRequestGrantPermissionGroups.values()) {
             if (groupState.mState == GroupState.STATE_UNKNOWN) {
                 CharSequence appLabel = mAppPermissions.getAppLabel();
-                CharSequence desc = null;
-                if (AppPermissionGroup.isStrictOpEnable()) {
-                    String info = "";
-                    AppPermissionGroup group = mAppPermissions.getPermissionGroup(groupState
-                            .mGroup.getName());
-                    for (Permission permission : group.getPermissions()) {
-                        try {
-                            PermissionInfo permissionInfo = this.getPackageManager()
-                                    .getPermissionInfo(permission.getName(), 0);
-                            if (info.length() != 0) {
-                                info += ", ";
-                            }
-                            info += permissionInfo.loadLabel(getPackageManager());
-                        } catch (PackageManager.NameNotFoundException e) {
-                            e.printStackTrace();
-                        }
-                    }
-                    if (info.length() != 0) {
-                        desc = groupState.mGroup.getDescription() + "(" + info + ")";
-                    }
-                } else {
-                    desc = groupState.mGroup.getDescription();
-                }
                 Spanned message = Html.fromHtml(getString(R.string.permission_warning_template,
-                        appLabel, desc), 0);
+                        appLabel, groupState.mGroup.getDescription()), 0);
                 // Set the permission message as the title so it can be announced.
                 setTitle(message);
 
@@ -286,20 +250,16 @@ public class GrantPermissionsActivity extends OverlayTouchActivity
                     resources = Resources.getSystem();
                 }
                 int icon = groupState.mGroup.getIconResId();
-                if (AppPermissionGroup.isStrictOpEnable()) {
-                    mViewHandler.updateUi(groupState.mGroup.getName(), groupCount, currentIndex,
-                            Icon.createWithResource(resources, icon), message,
-                            true);
-                } else {
-                    mViewHandler.updateUi(groupState.mGroup.getName(), groupCount, currentIndex,
-                            Icon.createWithResource(resources, icon), message,
-                            groupState.mGroup.isUserSet());
-                }
+
+                mViewHandler.updateUi(groupState.mGroup.getName(), groupCount, currentIndex,
+                        Icon.createWithResource(resources, icon), message,
+                        groupState.mGroup.isUserSet());
                 return true;
             }
 
             currentIndex++;
         }
+
         return false;
     }
 
@@ -311,9 +271,7 @@ public class GrantPermissionsActivity extends OverlayTouchActivity
                 groupState.mGroup.grantRuntimePermissions(doNotAskAgain);
                 groupState.mState = GroupState.STATE_ALLOWED;
             } else {
-                if(!AppPermissionGroup.isStrictOpEnable()){
-                    groupState.mGroup.revokeRuntimePermissions(doNotAskAgain);
-                }
+                groupState.mGroup.revokeRuntimePermissions(doNotAskAgain);
                 groupState.mState = GroupState.STATE_DENIED;
             }
             updateGrantResults(groupState.mGroup);

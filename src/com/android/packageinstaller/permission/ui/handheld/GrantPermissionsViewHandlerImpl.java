@@ -35,7 +35,6 @@ import com.android.packageinstaller.R;
 import com.android.packageinstaller.permission.ui.ButtonBarLayout;
 import com.android.packageinstaller.permission.ui.GrantPermissionsViewHandler;
 import com.android.packageinstaller.permission.ui.ManualLayoutFrame;
-import com.android.packageinstaller.permission.model.AppPermissionGroup;
 
 public final class GrantPermissionsViewHandlerImpl
         implements GrantPermissionsViewHandler, OnClickListener {
@@ -314,7 +313,7 @@ public final class GrantPermissionsViewHandlerImpl
     }
 
     private void updateDoNotAskCheckBox() {
-        if (!mShowDonNotAsk) {
+        if (mShowDonNotAsk) {
             mDoNotAskCheckbox.setVisibility(View.VISIBLE);
             mDoNotAskCheckbox.setOnClickListener(this);
             mDoNotAskCheckbox.setChecked(mDoNotAskChecked);
@@ -330,8 +329,7 @@ public final class GrantPermissionsViewHandlerImpl
             case R.id.permission_allow_button:
                 if (mResultListener != null) {
                     view.clearAccessibilityFocus();
-                    mResultListener.onPermissionGrantResult(
-                            mGroupName, true, AppPermissionGroup.isStrictOpEnable()? false: mDoNotAskCheckbox.isChecked());
+                    mResultListener.onPermissionGrantResult(mGroupName, true, false);
                 }
                 break;
             case R.id.permission_deny_button:
@@ -339,11 +337,11 @@ public final class GrantPermissionsViewHandlerImpl
                 if (mResultListener != null) {
                     view.clearAccessibilityFocus();
                     mResultListener.onPermissionGrantResult(mGroupName, false,
-                            AppPermissionGroup.isStrictOpEnable()? false: mShowDonNotAsk && mDoNotAskCheckbox.isChecked());
+                            mShowDonNotAsk && mDoNotAskCheckbox.isChecked());
                 }
                 break;
             case R.id.do_not_ask_checkbox:
-                //mAllowButton.setEnabled(!mDoNotAskCheckbox.isChecked());
+                mAllowButton.setEnabled(!mDoNotAskCheckbox.isChecked());
                 break;
         }
     }

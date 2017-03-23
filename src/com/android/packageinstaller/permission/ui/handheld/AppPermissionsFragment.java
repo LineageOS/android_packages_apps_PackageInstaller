@@ -27,10 +27,7 @@ import android.content.Intent;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
-import android.content.pm.PackageManager.NameNotFoundException;
-import android.content.pm.PermissionInfo;
 import android.graphics.drawable.Drawable;
-import android.Manifest;
 import android.net.Uri;
 import android.os.Bundle;
 import android.preference.Preference;
@@ -51,7 +48,6 @@ import android.widget.Toast;
 import com.android.packageinstaller.R;
 import com.android.packageinstaller.permission.model.AppPermissionGroup;
 import com.android.packageinstaller.permission.model.AppPermissions;
-import com.android.packageinstaller.permission.model.Permission;
 import com.android.packageinstaller.permission.utils.LocationUtils;
 import com.android.packageinstaller.permission.utils.SafetyNetLogger;
 import com.android.packageinstaller.permission.utils.Utils;
@@ -77,7 +73,6 @@ public final class AppPermissionsFragment extends SettingsWithHeader
     private PreferenceScreen mExtraScreen;
 
     private boolean mHasConfirmedRevoke;
-    String mPackageName;
 
     public static AppPermissionsFragment newInstance(String packageName) {
         return setPackageName(new AppPermissionsFragment(), packageName);
@@ -100,9 +95,9 @@ public final class AppPermissionsFragment extends SettingsWithHeader
             ab.setDisplayHomeAsUpEnabled(true);
         }
 
-        mPackageName = getArguments().getString(Intent.EXTRA_PACKAGE_NAME);
+        String packageName = getArguments().getString(Intent.EXTRA_PACKAGE_NAME);
         Activity activity = getActivity();
-        PackageInfo packageInfo = getPackageInfo(activity, mPackageName);
+        PackageInfo packageInfo = getPackageInfo(activity, packageName);
         if (packageInfo == null) {
             Toast.makeText(activity, R.string.app_not_found_dlg_title, Toast.LENGTH_LONG).show();
             activity.finish();
@@ -242,33 +237,6 @@ public final class AppPermissionsFragment extends SettingsWithHeader
                 }
                 mExtraScreen.addPreference(preference);
             }
-            if (AppPermissionGroup.isStrictOpEnable() && isPlatform) {
-                try {
-                    if (!group.getName().equals(Manifest.permission_group.STORAGE)) {
-                        PackageManager pm = context.getPackageManager();
-                        for (Permission permission : group.getPermissions()) {
-                            PermissionInfo perm = pm.getPermissionInfo(permission.getName(), 0);
-                            final String[] filterPermissions = new String[]{permission.getName()};
-                            if (perm.protectionLevel == PermissionInfo.PROTECTION_DANGEROUS) {
-                                SwitchPreference preference_permission = new SwitchPreference(context);
-                                preference_permission.setOnPreferenceChangeListener(this);
-                                preference_permission.setKey(permission.getName());
-                                preference_permission.setTitle(perm.loadLabel(pm));
-                                preference_permission.setPersistent(false);
-                                preference_permission.setEnabled(true);
-                                AppPermissionGroup permissionGroup = getPermisssionGroup(perm.group);
-                                preference_permission.setChecked(
-                                        permissionGroup.areRuntimePermissionsGranted(filterPermissions));
-                                screen.addPreference(preference_permission);
-                            } else if (perm.protectionLevel == PermissionInfo.PROTECTION_NORMAL) {
-                                continue;
-                            }
-                        }
-                    }
-                } catch (NameNotFoundException e) {
-                    Log.e(LOG_TAG, "Problem getting package info for " + mPackageName, e);
-                }
-            }
         }
 
         if (mExtraScreen != null) {
@@ -294,79 +262,12 @@ public final class AppPermissionsFragment extends SettingsWithHeader
         setLoading(false /* loading */, true /* animate */);
     }
 
-    private AppPermissionGroup getPermisssionGroup(String group) {
-        for (AppPermissionGroup mGroup : mAppPermissions.getPermissionGroups()) {
-            if (group.equals(mGroup.getName())) {
-                return mGroup;
-            }
-        }
-        return null;
-    }
-
-    private void updateEveryPermissionPreference(AppPermissionGroup group) {
-        if (group.getName().equals(Manifest.permission_group.STORAGE)) return;
-        PackageManager pm = getContext().getPackageManager();
-        PreferenceScreen screen = getPreferenceScreen();
-        for (Permission permission : group.getPermissions()) {
-            Preference permission_preference
-                    = screen.findPreference((CharSequence) permission.getName());
-            try {
-                PermissionInfo permInfo = pm.getPermissionInfo(permission.getName(), 0);
-                AppPermissionGroup permissionGroup = getPermisssionGroup(permInfo.group);
-                final String[] filterPermissions = new String[]{permission.getName()};
-                ((SwitchPreference) permission_preference).setChecked(
-                        permissionGroup.areRuntimePermissionsGranted(filterPermissions));
-            } catch (NameNotFoundException e) {
-                Log.e(LOG_TAG, "Failed to update permission_preference", e);
-            }
-        }
-    }
-
     @Override
     public boolean onPreferenceChange(final Preference preference, Object newValue) {
-        String key = preference.getKey();
-        final String[] filterPermissions = new String[]{key};
-        final AppPermissionGroup group = mAppPermissions.getPermissionGroup(key);
-        PackageManager pm = getContext().getPackageManager();
+        String groupName = preference.getKey();
+        final AppPermissionGroup group = mAppPermissions.getPermissionGroup(groupName);
 
         if (group == null) {
-            if (AppPermissionGroup.isStrictOpEnable()) {
-                try {
-                    PermissionInfo permInfo = pm.getPermissionInfo(key, 0);
-                    final AppPermissionGroup title_group
-                            = mAppPermissions.getPermissionGroup(permInfo.group);
-                    final boolean grantedByDefault = title_group.hasGrantedByDefaultPermission();
-                    PreferenceScreen screen = getPreferenceScreen();
-                    Preference group_preference = screen.findPreference((CharSequence) permInfo.group);
-                    AppPermissionGroup permissionGroup = getPermisssionGroup(permInfo.group);
-                    if (newValue == Boolean.TRUE) {
-                        ((SwitchPreference)preference).setChecked(true);
-                        title_group.grantRuntimePermissions(false, filterPermissions);
-                        ((SwitchPreference) group_preference).setChecked(
-                                permissionGroup.areRuntimePermissionsGranted());
-                    } else {
-                        //When the permission is off, the application maybe will crash, so need to
-                        //add a warning dialog when the user revoke the permission.
-                        new AlertDialog.Builder(getContext())
-                                .setMessage(grantedByDefault ? R.string.system_warning
-                                        : R.string.old_sdk_deny_warning)
-                                .setNegativeButton(R.string.cancel, null)
-                                .setPositiveButton(R.string.grant_dialog_button_deny_anyway,
-                                        new OnClickListener() {
-                                    @Override
-                                    public void onClick(DialogInterface dialog, int which) {
-                                        ((SwitchPreference) preference).setChecked(false);
-                                        title_group.revokeRuntimePermissions(false, filterPermissions);
-                                        ((SwitchPreference) group_preference).setChecked(
-                                                permissionGroup.areRuntimePermissionsGranted());
-                                    }
-                                })
-                                .show();
-                    }
-                } catch (NameNotFoundException e) {
-                    Log.e(LOG_TAG, "Problem getting package info for ", e);
-                }
-            }
             return false;
         }
 
@@ -376,13 +277,8 @@ public final class AppPermissionsFragment extends SettingsWithHeader
             LocationUtils.showLocationDialog(getContext(), mAppPermissions.getAppLabel());
             return false;
         }
-
-        final boolean isPlatform = group.getDeclaringPackage().equals(Utils.OS_PKG);
         if (newValue == Boolean.TRUE) {
             group.grantRuntimePermissions(false);
-            if (AppPermissionGroup.isStrictOpEnable() && isPlatform) {
-                updateEveryPermissionPreference(group);
-            }
         } else {
             final boolean grantedByDefault = group.hasGrantedByDefaultPermission();
             if (grantedByDefault || (!group.hasRuntimePermission() && !mHasConfirmedRevoke)) {
@@ -396,9 +292,6 @@ public final class AppPermissionsFragment extends SettingsWithHeader
                             public void onClick(DialogInterface dialog, int which) {
                                 ((SwitchPreference) preference).setChecked(false);
                                 group.revokeRuntimePermissions(false);
-                                if (AppPermissionGroup.isStrictOpEnable() && isPlatform) {
-                                    updateEveryPermissionPreference(group);
-                                }
                                 if (!grantedByDefault) {
                                     mHasConfirmedRevoke = true;
                                 }
@@ -408,11 +301,9 @@ public final class AppPermissionsFragment extends SettingsWithHeader
                 return false;
             } else {
                 group.revokeRuntimePermissions(false);
-                if (AppPermissionGroup.isStrictOpEnable() && isPlatform) {
-                    updateEveryPermissionPreference(group);
-                }
             }
         }
+
         return true;
     }
 
