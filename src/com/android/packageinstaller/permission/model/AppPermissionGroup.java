@@ -26,7 +26,6 @@ import android.content.pm.PermissionGroupInfo;
 import android.content.pm.PermissionInfo;
 import android.os.Build;
 import android.os.Process;
-import android.os.SystemProperties;
 import android.os.UserHandle;
 import android.util.ArrayMap;
 
@@ -286,28 +285,6 @@ public final class AppPermissionGroup implements Comparable<AppPermissionGroup> 
         return mPermissions.get(permission) != null;
     }
 
-    public boolean checkRuntimePermission(String[] filterPermissions) {
-        if (LocationUtils.isLocationGroupAndProvider(mName, mPackageInfo.packageName)) {
-            return LocationUtils.isLocationEnabled(mContext);
-        }
-        final int permissionCount = mPermissions.size();
-        for (int i = 0; i < permissionCount; i++) {
-            Permission permission = mPermissions.valueAt(i);
-            if (filterPermissions != null
-                    && !ArrayUtils.contains(filterPermissions, permission.getName())) {
-                continue;
-            }
-            if (mAppSupportsRuntimePermissions) {
-                    if (!permission.isGranted()) {
-                        return false;
-                    }
-            } else if (permission.isGranted() && (permission.getAppOp() == null
-                    || permission.isAppOpAllowed())) {
-                return true;
-            }
-        }
-        return false;
-    }
     public boolean areRuntimePermissionsGranted() {
         return areRuntimePermissionsGranted(null);
     }
@@ -599,10 +576,6 @@ public final class AppPermissionGroup implements Comparable<AppPermissionGroup> 
             }
         }
         return false;
-    }
-
-    public static boolean isStrictOpEnable() {
-        return SystemProperties.getBoolean("persist.sys.strict_op_enable", false);
     }
 
     @Override
