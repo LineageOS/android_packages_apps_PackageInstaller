@@ -84,7 +84,9 @@
   <string name="settings">Axustes</string>
   <string name="manage_applications">Xestionar aplicaciones</string>
   <string name="dlg_app_replacement_title">¿Trocar aplicación?</string>
+  <string name="dlg_app_replacement_statement">L\'aplicación que tas instalando trocará otra.\n\nGuardaránse tolos datos previos d\'usuariu.</string>
   <!-- Dialog attributes when replacing system app -->
+  <string name="dlg_sys_app_replacement_statement">Esta aplicación ye del sistema.\n\nGuardaránse tolos datos previos d\'usuariu.</string>
   <string name="out_of_space_dlg_title">Ensin espaciu</string>
   <!-- strings related to uninstall activity -->
   <string name="dlg_ok">Aceutar</string>
