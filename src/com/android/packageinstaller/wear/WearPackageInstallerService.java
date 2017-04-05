@@ -298,16 +298,6 @@ public class WearPackageInstallerService extends Service {
                 }
             }
 
-            // Check permissions on both the new wearable package and also on the already installed
-            // wearable package.
-            // If the app is targeting API level 23, we will also start a service in ClockworkHome
-            // which will ultimately prompt the user to accept/reject permissions.
-            if (checkPerms && !checkPermissions(pkg, companionSdkVersion, companionDeviceVersion,
-                    permUri, wearablePerms, tempFile)) {
-                Log.w(TAG, "Wearable does not have enough permissions.");
-                return;
-            }
-
             // Check that the wearable has all the features.
             boolean hasAllFeatures = true;
             if (pkg.reqFeatures != null) {
@@ -322,6 +312,16 @@ public class WearPackageInstallerService extends Service {
             }
 
             if (!hasAllFeatures) {
+                return;
+            }
+
+            // Check permissions on both the new wearable package and also on the already installed
+            // wearable package.
+            // If the app is targeting API level 23, we will also start a service in ClockworkHome
+            // which will ultimately prompt the user to accept/reject permissions.
+            if (checkPerms && !checkPermissions(pkg, companionSdkVersion, companionDeviceVersion,
+                    permUri, wearablePerms, tempFile)) {
+                Log.w(TAG, "Wearable does not have enough permissions.");
                 return;
             }
 
@@ -355,11 +355,27 @@ public class WearPackageInstallerService extends Service {
         final String packageName = WearPackageArgs.getPackageName(argsBundle);
 
         final PackageManager pm = getPackageManager();
-        PowerManager.WakeLock lock = getLock(this.getApplicationContext());
-        pm.deletePackage(packageName, new PackageDeleteObserver(lock, startId),
-                PackageManager.DELETE_ALL_USERS);
-        startPermsServiceForUninstall(packageName);
-        Log.i(TAG, "Sent delete request for " + packageName);
+        try {
+            // Result ignored.
+            pm.getPackageInfo(packageName, 0);
+
+            // Found package, send uninstall request.
+            PowerManager.WakeLock lock = getLock(this.getApplicationContext());
+
+            try {
+                pm.deletePackage(packageName, new PackageDeleteObserver(lock, startId),
+                        PackageManager.DELETE_ALL_USERS);
+            } catch (IllegalArgumentException e) {
+                // Couldn't find the package, no need to call uninstall.
+                Log.w(TAG, "Could not find package, not deleting " + packageName, e);
+            }
+
+            startPermsServiceForUninstall(packageName);
+            Log.i(TAG, "Sent delete request for " + packageName);
+        } catch (PackageManager.NameNotFoundException e) {
+            // Couldn't find the package, no need to call uninstall.
+            Log.w(TAG, "Could not find package, not deleting " + packageName, e);
+        }
     }
 
     private boolean checkPermissions(PackageParser.Package pkg, int companionSdkVersion,
