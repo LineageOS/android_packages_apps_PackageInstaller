@@ -183,7 +183,7 @@
   <string name="location_settings">Axustes d\'allugamientu</string>
   <!-- [CHAR LIMIT=NONE] Warning about how this app cannot have location permission disabled -->
   <!-- [CHAR LIMIT=NONE] Warning message when turning off permission for system apps -->
-  <string name="system_warning">Si ñegues esti permisu, quiciabes nun furrulen como s\'esperaben les carauterístiques básiques.</string>
+  <string name="system_warning">Si ñegues esti permisu, quiciabes nun funcionen como s\'esperaben les carauterístiques básiques.</string>
   <!-- [CHAR LIMIT=NONE] Summary of a permission switch when it's enforced by policy -->
   <!-- Text displayed until loading is done -->
   <string name="loading">Cargando\u2026</string>
