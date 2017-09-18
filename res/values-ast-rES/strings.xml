@@ -15,13 +15,8 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="app_name">Instalador de paquetes</string>
-  <string name="next">Siguiente</string>
-  <string name="install">Instalar</string>
-  <string name="done">Fecho</string>
   <!-- TODO REMOVE LATER -->
-  <string name="security_settings_desc">Permitir qu\'esta aplicación:</string>
-  <string name="cancel">Encaboxar</string>
+  <string name="unknown">Desconozse</string>
   <string name="installing">Instalando\u2026</string>
   <string name="install_done">Aplicación instalada.</string>
   <!-- Message for installing a new app that requires some permissions [CHAR LIMIT=NONE] -->
@@ -74,30 +69,24 @@
   <string name="install_failed_msg" product="tv"><xliff:g id="app_name">%1$s</xliff:g> nun pudo instalase na to TV.</string>
   <!-- Message presented when an application could not be installed on the phone for some reason. [CHAR LIMIT=100] -->
   <string name="install_failed_msg" product="default"><xliff:g id="app_name">%1$s</xliff:g> nun pudo instalase na to tableta.</string>
-  <string name="launch">Abrir</string>
   <!-- Message presented in a dialog box when a package is requested to be installed, but the "Allow unknown applications" checkbox is not enabled. [CHAR LIMIT=100] -->
   <!-- Message presented in a dialog box when a package is requested to be installed, but the "Allow unknown applications" checkbox is not enabled. [CHAR LIMIT=100] -->
+  <string name="unknown_apps_dlg_text" product="tv">Por seguranza, la to TV tien bloquiada la instalación d\'aplicaciones dende fontes desconocíes.</string>
   <!-- Message presented in a dialog box when a package is requested to be installed, but the "Allow unknown applications" checkbox is not enabled. [CHAR LIMIT=100] -->
   <!-- Message presented in a dialog box when the device administrator restricts the installation of apps from unknown sources. [CHAR LIMIT=none] -->
   <string name="unknown_apps_admin_dlg_text">El to alministrador nun permite la instalación d\'aplicaciones consiguíes dende fontes desconocíes.</string>
-  <string name="ok">Aceutar</string>
-  <string name="settings">Axustes</string>
   <string name="manage_applications">Xestionar aplicaciones</string>
   <string name="dlg_app_replacement_title">¿Trocar aplicación?</string>
   <string name="dlg_app_replacement_statement">L\'aplicación que tas instalando trocará otra.\n\nGuardaránse tolos datos previos d\'usuariu.</string>
   <!-- Dialog attributes when replacing system app -->
   <string name="dlg_sys_app_replacement_statement">Esta aplicación ye del sistema.\n\nGuardaránse tolos datos previos d\'usuariu.</string>
-  <string name="out_of_space_dlg_title">Ensin espaciu</string>
   <!-- strings related to uninstall activity -->
-  <string name="dlg_ok">Aceutar</string>
   <string name="app_not_found_dlg_title">Nun s\'alcontró l\'aplicación</string>
-  <string name="uninstall_application_text">¿Quies desinstalar esta aplicación?</string>
   <string name="uninstall_application_text_all_users">¿Quies desinstalar esta aplicación pa <b>tolos</b>
         usuarios?  Desaniciaráse l\'aplicación y los sos datos de <b>tolos</b> usuarios nel preséu.</string>
   <string name="uninstall_application_text_user">¿Quies desinstalar esta aplicación pal usuariu <xliff:g id="username">%1$s</xliff:g>?</string>
   <string name="uninstall_update_text">¿Trocar esta aplicación cola versión de fábrica? Desaniciaránse tolos datos.</string>
   <string name="uninstall_update_text_multiuser">¿Trocar esta aplicación cola versión de fábrica? Desaniciaránse tolos datos. Esto afeuta a tolos usuarios d\'esti preséu, incluyendo aquellos con perfiles de trabayu.</string>
-  <string name="uninstalling">Desinstalando…</string>
   <!-- String presented to the user when uninstalling a package failed because the target package
         is a current device administrator [CHAR LIMIT=80] -->
   <string name="uninstall_failed_device_policy_manager">Nun pue desinstalase porque esti paquete
@@ -111,6 +100,8 @@
         o perfiles y desinstalóse pa otros</string>
   <!-- String presented to the user when uninstalling a package failed because a profile owner
          has marked the target package as not able to be uninstalled [CHAR LIMIT=120] -->
+  <string name="uninstall_blocked_profile_owner">Esta aplicación precísase
+        pal to perfil y nun pue desinstalase.</string>
   <!-- String presented to the user when uninstalling a package failed because a device owner
          has marked the the target package as not able to be uninstalled [CHAR LIMIT=80] -->
   <string name="uninstall_blocked_device_owner">Esta aplicación ríquela\'l
@@ -126,9 +117,7 @@
   <string name="Parse_error_dlg_text">Hebo un fallu analizando\'l paquete.</string>
   <!-- Tab label for new permissions being added to an existing app [CHAR LIMIT=20] -->
   <!-- Tab label for all permissions of an app being installed [CHAR LIMIT=20] -->
-  <string name="allPerms">Toos</string>
   <!-- Tab label for permissions related to user privacy [CHAR LIMIT=20] -->
-  <string name="privacyPerms">Privacidá</string>
   <!-- Tab label for permissions related to device behavior [CHAR LIMIT=20] -->
   <!-- Body text for new tab when there are no new permissions [CHAR LIMIT=NONE] -->
   <string name="no_new_perms">Esti anovamientu nun rique permisos nuevos.</string>
@@ -137,61 +126,40 @@
   <!-- Title for the dialog button to deny a permission grant despite a warning of implications. -->
   <string name="grant_dialog_button_deny_anyway">Ñegar de toes toes</string>
   <!-- Template for the current permission from the total number of permissions. -->
-  <string name="current_permission_template">
-        <xliff:g id="current_permission_index" example="1">%1$s</xliff:g> de
-        <xliff:g id="permission_count" example="2">%2$s</xliff:g></string>
   <!-- Template for the warning message when an app requests a permission. -->
   <string name="permission_warning_template">¿Permitir a
         &lt;b&gt;<xliff:g id="app_name" example="Gmail">%1$s</xliff:g>&lt;/b&gt;
         <xliff:g id="action" example="do something">%2$s</xliff:g>?</string>
   <!-- Permissions -->
   <!-- Title for the dialog button to allow a permission grant. -->
-  <string name="grant_dialog_button_allow">Permitir</string>
   <!-- Title of an application permission, listed so the user can choose whether they want
          to allow the application to do this. -->
   <!-- Description of an application permission, listed so the user can choose whether
          they want to allow the application to do this. -->
   <!-- Breadcrumb for page of managing application permissions [CHAR LIMIT=50] -->
-  <string name="app_permissions_breadcrumb">Aplicaciones</string>
   <!-- Title for page of managing application permissions -->
   <!-- Checkbox that allows user to not be questioned about this permission
          request again -->
   <string name="never_ask_again">Nun entrugar más</string>
   <!-- Label when app requests no permissions -->
-  <string name="no_permissions">Ensin permisos</string>
   <!-- Label for button that leads to more permissions [CHAR LIMIT=40] -->
-  <string name="additional_permissions">Permisos adicionales</string>
   <!-- Description of how many more permissions to view on next page [CHAR LIMIT=30] -->
-  <plurals name="additional_permissions_more">
-    <item quantity="one"><xliff:g id="count" example="1">%1$d</xliff:g> más</item>
-    <item quantity="other"><xliff:g id="count" example="1">%1$d</xliff:g> más</item>
-  </plurals>
   <!-- Warning for turning off permissions on older apps -->
+  <string name="old_sdk_deny_warning">Esta aplicación diseñóse pa una versión vieya d\'Android. Ñegar el permisu quiciabes faiga que nun funcione como s\'esperaba.</string>
   <!-- The default description of a permission, i.e. what it does.  [CHAR LIMIT=40] -->
-  <string name="default_permission_description">facer una aición desconocida</string>
   <!-- Summary of number of apps currently granted a single permission [CHAR LIMIT=45] -->
-  <string name="app_permissions_group_summary"><xliff:g id="count" example="10">%1$d</xliff:g> de <xliff:g id="count" example="10">%2$d</xliff:g> aplicaciones permtíes</string>
   <!-- [CHAR LIMIT=NONE] Menu for manage permissions to control whether system apps are shown -->
-  <string name="menu_show_system">Amosar sistema</string>
   <!-- [CHAR LIMIT=NONE] Menu for manage permissions to control whether system apps are hidden -->
-  <string name="menu_hide_system">Anubrir sistema</string>
   <!-- [CHAR LIMIT=30] Title for page managing what apps have a permission granted -->
-  <string name="permission_title">Permisos de <xliff:g id="permission" example="Camera">%1$s</xliff:g></string>
   <!-- [CHAR LIMIT=NONE] Label when no apps requesting this permission -->
-  <string name="no_apps">Ensin aplicaciones</string>
   <!-- [CHAR LIMIT=30] Title of button that leads to location settings -->
-  <string name="location_settings">Axustes d\'allugamientu</string>
   <!-- [CHAR LIMIT=NONE] Warning about how this app cannot have location permission disabled -->
   <!-- [CHAR LIMIT=NONE] Warning message when turning off permission for system apps -->
-  <string name="system_warning">Si ñegues esti permisu, quiciabes nun funcionen como s\'esperaben les carauterístiques básiques.</string>
   <!-- [CHAR LIMIT=NONE] Summary of a permission switch when it's enforced by policy -->
   <!-- Text displayed until loading is done -->
-  <string name="loading">Cargando\u2026</string>
   <!-- [CHAR LIMIT=45] Title of all permissions settings -->
-  <string name="all_permissions">Tolos permisos</string>
   <!-- [CHAR LIMIT=45] Group of permissions granted to app automatically when installed. -->
   <!-- Title of the permission dialog for accessibility purposes- spoken to the user. [CHAR LIMIT=none] -->
-  <string name="permission_request_title">Solicitú de permisu</string>
   <!-- Title for the dialog that warns the user they need to turn off screen overlays
          before permissions can be changed. [CHAR LIMIT=NONE] -->
   <!-- Message for the dialog that warns the user they need to turn off screen overlays
@@ -199,9 +167,7 @@
         go to Settings and click on apps, this may need updates in RTL languages. [CHAR LIMIT=NONE] -->
   <!-- Button for the dialog that warns the user they need to turn off screen overlays
          before permissions can be changed. [CHAR LIMIT=NONE] -->
-  <string name="screen_overlay_button">Abrir axustes</string>
   <!-- Title of dialog telling users that Install/Uninstall action is not supported on Android Wear. -->
-  <string name="wear_not_allowed_dlg_title">Android Wear</string>
   <!-- Title of dialog telling users that Install/Uninstall action is not supported on Android Wear. -->
   <string name="wear_not_allowed_dlg_text">Nun se sofiten les aiciones de des/instalación en Wear.</string>
   <!-- Review of runtime permissions for legacy apps -->
@@ -218,7 +184,6 @@
         <xliff:g id="app_name" example="Gmail">%1$s</xliff:g> anovóse.
         Escueyi a lo qu\'esta aplicación tien accesu.</string>
   <!-- Title for the dialog button to cancel the detailed permission review. -->
-  <string name="review_button_cancel">Encaboxar</string>
   <!-- Title for the dialog button to continue accepting the detailed permission review. -->
   <string name="review_button_continue">Siguir</string>
   <!-- Title for the category listing the new permissions used by an app. -->
@@ -227,5 +192,6 @@
   <string name="current_permissions_category">Permisos actuales</string>
   <!-- Message that the app to be installed is being staged -->
   <!-- Placeholder for an app name when it is unknown -->
+  <string name="app_name_unknown">Desconozse</string>
   <!-- Help URL, application permissions [DO NOT TRANSLATE] -->
 </resources>
