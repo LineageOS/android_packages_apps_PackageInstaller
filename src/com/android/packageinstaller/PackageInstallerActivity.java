@@ -215,6 +215,7 @@ public class PackageInstallerActivity extends OverlayTouchActivity implements On
                 public void run() {
                     mOk.setText(R.string.install);
                     mOkCanInstall = true;
+                    mOk.setEnabled(true);
                 }
             });
         }
