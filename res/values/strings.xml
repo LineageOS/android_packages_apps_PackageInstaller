@@ -277,6 +277,6 @@
     <!-- Title of dialog telling users that Install/Uninstall action is not supported on Android Wear. -->
     <string name="wear_not_allowed_dlg_title">Android Wear</string>
     <!-- Title of dialog telling users that Install/Uninstall action is not supported on Android Wear. -->
-    <string name="wear_not_allowed_dlg_text">Instal/Uninstall actions not supported on Wear.</string>
+    <string name="wear_not_allowed_dlg_text">Install/Uninstall actions not supported on Wear.</string>
 
 </resources>
