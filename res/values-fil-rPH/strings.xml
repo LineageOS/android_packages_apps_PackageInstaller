@@ -15,29 +15,17 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="app_name">Gosodwr Pecyn</string>
-  <string name="next">Nesaf</string>
-  <string name="install">Gosod</string>
-  <string name="done">Iawn</string>
   <!-- TODO REMOVE LATER -->
-  <string name="security_settings_desc">Caniatáu\'r ap hwn i:</string>
-  <string name="cancel">Diddymu</string>
-  <string name="unknown">Anhysybys</string>
-  <string name="installing">Yn gosod\u2026</string>
-  <string name="install_done">Gosodwyd yr ap.</string>
   <!-- Message for installing a new app that requires some permissions [CHAR LIMIT=NONE] -->
   <!-- Message for installing a new app that does not require permissions [CHAR LIMIT=NONE] -->
   <!-- Message for updating an existing app [CHAR LIMIT=NONE] -->
   <!-- Message for updating an existing system app [CHAR LIMIT=NONE] -->
   <!-- Message for updating an existing app, no permissions [CHAR LIMIT=NONE] -->
   <!-- Message for updating an existing system app, no permissions [CHAR LIMIT=NONE] -->
-  <string name="install_failed">Ni osodwyd yr ap.</string>
   <!-- Reason displayed when installation fails because the package was blocked
         from being installed (e.g., device policy, verification, ...) [CHAR LIMIT=100] -->
-  <string name="install_failed_blocked">Cafodd y pecyn ei rwystro rhag cael ei osod.</string>
   <!-- Reason displayed when installation fails because the package conflicts with
         an existing application (e.g., incompatible certificates) [CHAR LIMIT=100] -->
-  <string name="install_failed_conflict">Mae\'r pecyn yn gwrthdaro a phecyn arall sy\'n bodoli gyda\'r un enw.</string>
   <!-- Reason displayed when installation fails because the package is incompatible with
        the current tablet (e.g., missing native code for the current ABI, newer SDK, ...) [CHAR LIMIT=100] -->
   <!-- Reason displayed when installation fails because the package is incompatible with
@@ -49,21 +37,12 @@
   <!-- Message presented when an application could not be installed on the tablet for some reason. [CHAR LIMIT=100] -->
   <!-- Message presented when an application could not be installed on the TV for some reason. [CHAR LIMIT=100] -->
   <!-- Message presented when an application could not be installed on the phone for some reason. [CHAR LIMIT=100] -->
-  <string name="launch">Agor</string>
   <!-- Message presented in a dialog box when a package is requested to be installed, but the "Allow unknown applications" checkbox is not enabled. [CHAR LIMIT=100] -->
   <!-- Message presented in a dialog box when a package is requested to be installed, but the "Allow unknown applications" checkbox is not enabled. [CHAR LIMIT=100] -->
   <!-- Message presented in a dialog box when a package is requested to be installed, but the "Allow unknown applications" checkbox is not enabled. [CHAR LIMIT=100] -->
   <!-- Message presented in a dialog box when the device administrator restricts the installation of apps from unknown sources. [CHAR LIMIT=none] -->
-  <string name="ok">Iawn</string>
-  <string name="settings">Gosodiadau</string>
-  <string name="manage_applications">Rheoli apiau</string>
   <!-- Dialog attributes when replacing system app -->
   <!-- strings related to uninstall activity -->
-  <string name="dlg_ok">Iawn</string>
-  <string name="uninstall_application_title">Dadosod yr ap</string>
-  <string name="uninstall_update_title">Dadosod y diweddariad</string>
-  <string name="uninstall_update_text">Disodli\'r ap hwn gyda\'r fersiwn o\'r ffatri? Caiff yr holl ddata ei golli.</string>
-  <string name="uninstall_update_text_multiuser">Disodli\'r ap hwn gyda\'r fersiwn o\'r ffatri? Caiff yr holl ddata ei golli. Mae hyn yn effeithio ar holl ddefnyddwyr y ddyfais hon, gan gynnwys y rhai gyda phroffiliau gwaith.</string>
   <!-- String presented to the user when uninstalling a package failed because the target package
         is a current device administrator [CHAR LIMIT=80] -->
   <!-- String presented to the user when uninstalling a package failed because the target package
@@ -71,10 +50,8 @@
   <!-- String presented to the admin user when uninstalling a package for all users failed
     because a profile owner has marked the target package as not able to be uninstalled
     [CHAR LIMIT=120] -->
-  <string name="uninstall_all_blocked_profile_owner">Mae angen yr ap hwn ar rai defnyddwyr neu broffiliau ac mi gafodd ei ddadosod i eraill.</string>
   <!-- String presented to the user when uninstalling a package failed because a profile owner
          has marked the target package as not able to be uninstalled [CHAR LIMIT=120] -->
-  <string name="uninstall_blocked_profile_owner">Mae ar dy broffil angen yr ap hwn ac nid yw\'n bosib ei dynnu.</string>
   <!-- String presented to the user when uninstalling a package failed because a device owner
          has marked the the target package as not able to be uninstalled [CHAR LIMIT=80] -->
   <!-- String on a button that leads to the "device administrator" configuration setting where a
@@ -83,37 +60,26 @@
   <!-- String on a button that leads to the "Users" page in Settings where a
         user will be able to remove the secondary user(s) in order to uninstall
         the app. [CHAR LIMIT=50] -->
-  <string name="manage_users">Rheoli defnyddwyr</string>
   <!-- Dialog attributes to indicate parse errors -->
   <!-- Tab label for new permissions being added to an existing app [CHAR LIMIT=20] -->
-  <string name="newPerms">Newydd</string>
   <!-- Tab label for all permissions of an app being installed [CHAR LIMIT=20] -->
-  <string name="allPerms">Y Cwbl</string>
   <!-- Tab label for permissions related to user privacy [CHAR LIMIT=20] -->
-  <string name="privacyPerms">Preifatrwydd</string>
   <!-- Tab label for permissions related to device behavior [CHAR LIMIT=20] -->
   <!-- Body text for new tab when there are no new permissions [CHAR LIMIT=NONE] -->
   <!-- Title for the dialog button to deny a permission grant. -->
   <!-- Title for the dialog button to deny a permission grant despite a warning of implications. -->
-  <string name="grant_dialog_button_deny_anyway">Gwrthod beth bynnag</string>
   <!-- Template for the current permission from the total number of permissions. -->
   <!-- Template for the warning message when an app requests a permission. -->
-  <string name="permission_warning_template">Caniatáu
-&lt;b&gt;<xliff:g id="app_name" example="Gmail">%1$s</xliff:g>&lt;/b&gt; i
-<xliff:g id="action" example="do something">%2$s</xliff:g>?</string>
   <!-- Permissions -->
   <!-- Title for the dialog button to allow a permission grant. -->
-  <string name="grant_dialog_button_allow">Caniatáu</string>
   <!-- Title of an application permission, listed so the user can choose whether they want
          to allow the application to do this. -->
   <!-- Description of an application permission, listed so the user can choose whether
          they want to allow the application to do this. -->
   <!-- Breadcrumb for page of managing application permissions [CHAR LIMIT=50] -->
-  <string name="app_permissions_breadcrumb">Apiau</string>
   <!-- Title for page of managing application permissions -->
   <!-- Checkbox that allows user to not be questioned about this permission
          request again -->
-  <string name="never_ask_again">Peidio â gofyn eto</string>
   <!-- Label when app requests no permissions -->
   <!-- Label for button that leads to more permissions [CHAR LIMIT=40] -->
   <!-- Description of how many more permissions to view on next page [CHAR LIMIT=30] -->
@@ -121,18 +87,14 @@
   <!-- The default description of a permission, i.e. what it does.  [CHAR LIMIT=40] -->
   <!-- Summary of number of apps currently granted a single permission [CHAR LIMIT=45] -->
   <!-- [CHAR LIMIT=NONE] Menu for manage permissions to control whether system apps are shown -->
-  <string name="menu_show_system">Dangos apiau system</string>
   <!-- [CHAR LIMIT=NONE] Menu for manage permissions to control whether system apps are hidden -->
-  <string name="menu_hide_system">Cuddio apiau system</string>
   <!-- [CHAR LIMIT=30] Title for page managing what apps have a permission granted -->
   <!-- [CHAR LIMIT=NONE] Label when no apps requesting this permission -->
   <!-- [CHAR LIMIT=30] Title of button that leads to location settings -->
-  <string name="location_settings">Gosodiadau Lleoliad</string>
   <!-- [CHAR LIMIT=NONE] Warning about how this app cannot have location permission disabled -->
   <!-- [CHAR LIMIT=NONE] Warning message when turning off permission for system apps -->
   <!-- [CHAR LIMIT=NONE] Summary of a permission switch when it's enforced by policy -->
   <!-- Text displayed until loading is done -->
-  <string name="loading">Yn llwytho\u2026</string>
   <!-- [CHAR LIMIT=45] Title of all permissions settings -->
   <!-- [CHAR LIMIT=45] Group of permissions granted to app automatically when installed. -->
   <!-- Title of the permission dialog for accessibility purposes- spoken to the user. [CHAR LIMIT=none] -->
@@ -143,33 +105,17 @@
         go to Settings and click on apps, this may need updates in RTL languages. [CHAR LIMIT=NONE] -->
   <!-- Button for the dialog that warns the user they need to turn off screen overlays
          before permissions can be changed. [CHAR LIMIT=NONE] -->
-  <string name="screen_overlay_button">Agor gosodiadau</string>
   <!-- Title of dialog telling users that Install/Uninstall action is not supported on Android Wear. -->
-  <string name="wear_not_allowed_dlg_title">Android Wear</string>
   <!-- Title of dialog telling users that Install/Uninstall action is not supported on Android Wear. -->
-  <string name="wear_not_allowed_dlg_text">Gosod/dadosod gweithredoedd na sy\'n gydnaws â Wear.</string>
   <!-- Review of runtime permissions for legacy apps -->
   <!-- Template for the warning title when an updated app's requested permissions are reviewed. -->
-  <string name="permission_review_warning_title_template_update">
-Cafodd <xliff:g id="app_name" example="Gmail">%1$s</xliff:g> ei ddiweddaru.
-Caniatáu <xliff:g id="app_name" example="Gmail">%1$s</xliff:g> i gael mynediad i\'r canlynol?</string>
   <!-- Template for the screen title when app permissions are reviewed on install. -->
-  <string name="permission_review_title_template_install">Dewisa pa bethau i ganiatáu <xliff:g id="app_name" example="Gmail">%1$s</xliff:g> cael mynediad atynt.</string>
   <!-- Template for the screen title when app permissions are reviewed on update. -->
-  <string name="permission_review_title_template_update">
-Cafodd <xliff:g id="app_name" example="Gmail">%1$s</xliff:g> ei ddiweddaru.
-Dewisa pa bethau i roi mynediad iddynt gan yr ap hwn.</string>
   <!-- Title for the dialog button to cancel the detailed permission review. -->
-  <string name="review_button_cancel">Diddymu</string>
   <!-- Title for the dialog button to continue accepting the detailed permission review. -->
-  <string name="review_button_continue">Parhau</string>
   <!-- Title for the category listing the new permissions used by an app. -->
-  <string name="new_permissions_category">Caniatâd newydd</string>
   <!-- Title for the category listing the current permissions used by an app. -->
-  <string name="current_permissions_category">Caniatâd cyfredol</string>
   <!-- Message that the app to be installed is being staged -->
-  <string name="message_staging">Yn llwyfannu\'r ap&#8230;</string>
   <!-- Placeholder for an app name when it is unknown -->
-  <string name="app_name_unknown">Anhysybys</string>
   <!-- Help URL, application permissions [DO NOT TRANSLATE] -->
 </resources>
