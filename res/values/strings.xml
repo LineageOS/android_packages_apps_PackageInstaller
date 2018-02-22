@@ -61,7 +61,7 @@
         compatible with your tablet.</string>
     <!-- Reason displayed when installation fails because the package is incompatible with
        the current TV (e.g., missing native code for the current ABI, newer SDK, ...) [CHAR LIMIT=100] -->
-    <string name="install_failed_incompatible" product="tv">This app isn\'t
+    <string name="install_failed_incompatible" product="tv">App not installed as app isn\'t
         compatible with your TV.</string>
     <!-- Reason displayed when installation fails because the package is incompatible with
        the current phone (e.g., missing native code for the current ABI, newer SDK, ...) [CHAR LIMIT=100] -->
