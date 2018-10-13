@@ -144,9 +144,8 @@ Nid oes arno angen mynediad arbennig at unrhyw beth.</string>
         <xliff:g id="current_permission_index" example="1">%1$s</xliff:g> o
         <xliff:g id="permission_count" example="2">%2$s</xliff:g></string>
   <!-- Template for the warning message when an app requests a permission. -->
-  <string name="permission_warning_template">Caniatáu
-&lt;b&gt;<xliff:g id="app_name" example="Gmail">%1$s</xliff:g>&lt;/b&gt; i
-<xliff:g id="action" example="do something">%2$s</xliff:g>?</string>
+  <string name="permission_warning_template">Caniatáu i 
+&lt;b&gt;<xliff:g id="app_name" example="Gmail">%1$s</xliff:g>&lt;/b&gt; <xliff:g id="action" example="do something">%2$s</xliff:g>?</string>
   <!-- Template for the message how many permissions are disabled. -->
   <!-- Message that all permissions are disabled. -->
   <!-- Message that no permissions are disabled. -->
@@ -225,7 +224,7 @@ Nid oes arno angen mynediad arbennig at unrhyw beth.</string>
   <!-- Template for the warning title when an updated app's requested permissions are reviewed. -->
   <string name="permission_review_warning_title_template_update">
 Cafodd <xliff:g id="app_name" example="Gmail">%1$s</xliff:g> ei ddiweddaru.
-Caniatáu <xliff:g id="app_name" example="Gmail">%1$s</xliff:g> i gael mynediad i\'r canlynol?</string>
+Caniatáu i <xliff:g id="app_name" example="Gmail">%1$s</xliff:g> gael mynediad i\'r canlynol?</string>
   <!-- Template for the screen title when app permissions are reviewed on install. -->
   <!-- Template for the screen title when app permissions are reviewed on update. -->
   <!-- Title for the dialog button to cancel the detailed permission review. -->
