@@ -92,6 +92,7 @@
   <!-- strings related to uninstall activity -->
   <string name="dlg_ok">Aceutar</string>
   <string name="app_not_found_dlg_title">Nun s\'alcontró l\'aplicación</string>
+  <string name="app_not_found_dlg_text"> L\'aplicación nun s\'alcontró na llista d\'aplicaciones instalaes.</string>
   <string name="uninstall_application_text_all_users">¿Quies desinstalar esta aplicación pa <b>tolos</b>
         usuarios?  Desaniciaráse l\'aplicación y los sos datos de <b>tolos</b> usuarios nel preséu.</string>
   <string name="uninstall_application_text_user">¿Quies desinstalar esta aplicación pal usuariu <xliff:g id="username">%1$s</xliff:g>?</string>
@@ -136,17 +137,22 @@
   <!-- Title for the dialog button to deny a permission grant despite a warning of implications. -->
   <string name="grant_dialog_button_deny_anyway">Ñegar de toes toes</string>
   <!-- Template for the current permission from the total number of permissions. -->
+  <string name="current_permission_template">
+        <xliff:g id="current_permission_index" example="1">%1$s</xliff:g> de
+        <xliff:g id="permission_count" example="2">%2$s</xliff:g></string>
   <!-- Template for the warning message when an app requests a permission. -->
   <string name="permission_warning_template">¿Permitir a
         &lt;b&gt;<xliff:g id="app_name" example="Gmail">%1$s</xliff:g>&lt;/b&gt;
         <xliff:g id="action" example="do something">%2$s</xliff:g>?</string>
   <!-- Permissions -->
   <!-- Title for the dialog button to allow a permission grant. -->
+  <string name="grant_dialog_button_allow">Permitir</string>
   <!-- Title of an application permission, listed so the user can choose whether they want
          to allow the application to do this. -->
   <!-- Description of an application permission, listed so the user can choose whether
          they want to allow the application to do this. -->
   <!-- Breadcrumb for page of managing application permissions [CHAR LIMIT=50] -->
+  <string name="app_permissions_breadcrumb">Aplicaciones</string>
   <!-- Title for page of managing application permissions -->
   <!-- Checkbox that allows user to not be questioned about this permission
          request again -->
@@ -168,6 +174,7 @@
   <!-- [CHAR LIMIT=NONE] Summary of a permission switch when it's enforced by policy -->
   <!-- Text displayed until loading is done -->
   <!-- [CHAR LIMIT=45] Title of all permissions settings -->
+  <string name="all_permissions">Tolos permisos</string>
   <!-- [CHAR LIMIT=45] Group of permissions granted to app automatically when installed. -->
   <!-- Title of the permission dialog for accessibility purposes- spoken to the user. [CHAR LIMIT=none] -->
   <!-- Title for the dialog that warns the user they need to turn off screen overlays
@@ -178,6 +185,7 @@
   <!-- Button for the dialog that warns the user they need to turn off screen overlays
          before permissions can be changed. [CHAR LIMIT=NONE] -->
   <!-- Title of dialog telling users that Install/Uninstall action is not supported on Android Wear. -->
+  <string name="wear_not_allowed_dlg_title">Android Wear</string>
   <!-- Title of dialog telling users that Install/Uninstall action is not supported on Android Wear. -->
   <string name="wear_not_allowed_dlg_text">Nun se sofiten les aiciones de des/instalación en Wear.</string>
   <!-- Review of runtime permissions for legacy apps -->
