@@ -140,7 +140,7 @@ Nid oes arno angen mynediad arbennig at unrhyw beth.</string>
     <!-- Title for the dialog button to deny a permission grant despite a warning of implications. -->
     <string name="grant_dialog_button_deny_anyway">Gwrthod beth bynnag</string>
     <!-- Template for the current permission from the total number of permissions. -->
-    <string name="current_permission_template"><xliff:g id="current_permission_index" example="1">%1$s</xliff:g> o
+    <string name="current_permission_template">        <xliff:g id="current_permission_index" example="1">%1$s</xliff:g> o
         <xliff:g id="permission_count" example="2">%2$s</xliff:g></string>
     <!-- Template for the warning message when an app requests a permission. -->
     <string name="permission_warning_template">Caniatáu i 
