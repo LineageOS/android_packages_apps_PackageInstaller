@@ -81,7 +81,7 @@
     <!-- strings related to uninstall activity -->
     <string name="dlg_ok">Aceutar</string>
     <string name="app_not_found_dlg_title">Nun s\'alcontró l\'aplicación</string>
-    <string name="app_not_found_dlg_text">L\'aplicación nun s\'alcontró na llista d\'aplicaciones instalaes.</string>
+    <string name="app_not_found_dlg_text"> L\'aplicación nun s\'alcontró na llista d\'aplicaciones instalaes.</string>
     <string name="uninstall_application_text_all_users">¿Quies desinstalar esta aplicación pa <b>tolos</b>
         usuarios?  Desaniciaráse l\'aplicación y los sos datos de <b>tolos</b> usuarios nel preséu.</string>
     <string name="uninstall_application_text_user">¿Quies desinstalar esta aplicación pal usuariu <xliff:g id="username">%1$s</xliff:g>?</string>
@@ -127,7 +127,7 @@
     <!-- Title for the dialog button to deny a permission grant despite a warning of implications. -->
     <string name="grant_dialog_button_deny_anyway">Ñegar de toes toes</string>
     <!-- Template for the current permission from the total number of permissions. -->
-    <string name="current_permission_template"><xliff:g id="current_permission_index" example="1">%1$s</xliff:g> de
+    <string name="current_permission_template">        <xliff:g id="current_permission_index" example="1">%1$s</xliff:g> de
         <xliff:g id="permission_count" example="2">%2$s</xliff:g></string>
     <!-- Template for the warning message when an app requests a permission. -->
     <string name="permission_warning_template">¿Permitir a
@@ -182,7 +182,7 @@
     <string name="wear_not_allowed_dlg_text">Nun se sofiten les aiciones de des/instalación en Wear.</string>
     <!-- Review of runtime permissions for legacy apps -->
     <!-- Template for the warning title when an updated app's requested permissions are reviewed. -->
-    <string name="permission_review_warning_title_template_update"><xliff:g id="app_name" example="Gmail">%1$s</xliff:g> anovóse.
+    <string name="permission_review_warning_title_template_update">        <xliff:g id="app_name" example="Gmail">%1$s</xliff:g> anovóse.
         Permitir a <xliff:g id="app_name" example="Gmail">%1$s</xliff:g>
         acceder a lo de darréu?</string>
     <!-- Template for the screen title when app permissions are reviewed on install. -->

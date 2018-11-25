@@ -74,7 +74,7 @@
     <!-- strings related to uninstall activity -->
     <string name="dlg_ok">OK</string>
     <string name="app_not_found_dlg_title">App net fonnt</string>
-    <string name="app_not_found_dlg_text">D\'App gouf net an der Lëscht vun installéierten Appe fonnt.</string>
+    <string name="app_not_found_dlg_text"> D\'App gouf net an der Lëscht vun installéierten Appe fonnt.</string>
     <string name="uninstall_application_title">App desinstalléieren</string>
     <string name="uninstall_update_title">Aktualiséierung desinstalléieren</string>
     <string name="uninstall_activity_text"><xliff:g id="activity_name">%1$s</xliff:g> ass Deel vun dëser App:</string>

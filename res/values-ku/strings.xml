@@ -80,7 +80,7 @@
     <!-- strings related to uninstall activity -->
     <string name="dlg_ok">باشه‌</string>
     <string name="app_not_found_dlg_title">بەرنامەکەی نەدۆزیەوە</string>
-    <string name="app_not_found_dlg_text">بەرنامەکە نەدۆزرایەوە لە لیستی بەرنامە دامەزراوەکان.</string>
+    <string name="app_not_found_dlg_text"> بەرنامەکە نەدۆزرایەوە لە لیستی بەرنامە دامەزراوەکان.</string>
     <string name="uninstall_application_title">سڕینه‌وه‌ بەرنامەکە</string>
     <string name="uninstall_update_title">سڕینه‌وه‌ تازەکردنەوە</string>
     <string name="uninstall_activity_text"><xliff:g id="activity_name">%1$s</xliff:g> بەشێکە لە بەرنامەی ناوبراو:</string>

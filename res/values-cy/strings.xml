@@ -241,8 +241,11 @@ Caniatáu i <xliff:g id="app_name" example="Gmail">%1$s</xliff:g> gael mynediad 
     <!-- Text to show in warning dialog on the tv when the app source is not trusted [CHAR LIMIT=NONE] -->
     <!-- Text to show in warning dialog on the phone when the app source is not trusted [CHAR LIMIT=NONE] -->
     <!-- Text to show in warning dialog on the phone when the app source cannot be identified [CHAR LIMIT=NONE] -->
+    <string name="anonymous_source_warning" product="default">Mae dy ffôn a dy ddata personol yn llai diogel rhag ymosodiad gan apiau anhysbys. Wrth osod yr ap hwn, rwyt yn cytuno dy fod yn gyfrifol am unrhyw niwed i dy ddyfais neu golled data y gall ddigwydd o ganlyniad i\'w defnyddio.    </string>
     <!-- Text to show in warning dialog on the tablet when the app source cannot be identified [CHAR LIMIT=NONE] -->
+    <string name="anonymous_source_warning" product="tablet">Mae dy lechen a dy ddata personol yn llai diogel rhag ymosodiad gan apiau anhysbys. Wrth osod yr ap hwn, rwyt yn cytuno dy fod yn gyfrifol am unrhyw niwed i dy ddyfais neu golled data y gall ddigwydd o ganlyniad i\'w defnyddio.    </string>
     <!-- Text to show in warning dialog on the tv when the app source cannot be identified [CHAR LIMIT=NONE] -->
+    <string name="anonymous_source_warning" product="tv">Mae dy deledu a dy ddata personol yn llai diogel rhag ymosodiad gan apiau anhysbys. Wrth osod yr ap hwn, rwyt yn cytuno dy fod yn gyfrifol am unrhyw niwed i dy ddyfais neu golled data y gall ddigwydd o ganlyniad i\'w defnyddio.    </string>
     <!-- Label for button to continue install of an app whose source cannot be identified [CHAR LIMIT=40] -->
     <string name="anonymous_source_continue">Parhau</string>
     <!-- Label for button to open manage external sources settings [CHAR LIMIT=45] -->
