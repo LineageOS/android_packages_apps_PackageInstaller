@@ -24,6 +24,7 @@
     <string name="cancel">Diddymu</string>
     <string name="unknown">Anhysybys</string>
     <string name="installing">Yn gosod\u2026</string>
+    <string name="installing_app">Yn gosod <xliff:g id="package_label">%1$s</xliff:g>\u2026</string>
     <string name="install_done">Gosodwyd yr ap.</string>
     <!-- Message for installing a new app that requires some permissions [CHAR LIMIT=NONE] -->
     <string name="install_confirm_question">Wyt ti eisiau gosod yr ap hwn?
@@ -53,14 +54,19 @@ Nid oes arno angen mynediad arbennig at unrhyw beth.</string>
     <string name="install_failed_blocked">Cafodd y pecyn ei rwystro rhag cael ei osod.</string>
     <!-- Reason displayed when installation fails because the package conflicts with
         an existing application (e.g., incompatible certificates) [CHAR LIMIT=100] -->
+    <string name="install_failed_conflict">Dyw\'r ap heb ei osod am fod y pecyn yn gwrthdaro gyda phecyn sy\'n bodoli eisoes.</string>
     <!-- Reason displayed when installation fails because the package is incompatible with
        the current tablet (e.g., missing native code for the current ABI, newer SDK, ...) [CHAR LIMIT=100] -->
+    <string name="install_failed_incompatible" product="tablet">Dyw\'r ap heb ei osod am nad yw yn gydnaws â dy lechen.</string>
     <!-- Reason displayed when installation fails because the package is incompatible with
        the current TV (e.g., missing native code for the current ABI, newer SDK, ...) [CHAR LIMIT=100] -->
+    <string name="install_failed_incompatible" product="tv">Dyw\'r ap heb ei osod am nad yw yn gydnaws â dy deledu.</string>
     <!-- Reason displayed when installation fails because the package is incompatible with
        the current phone (e.g., missing native code for the current ABI, newer SDK, ...) [CHAR LIMIT=100] -->
+    <string name="install_failed_incompatible" product="default">Dyw\'r ap heb ei osod am nad yw yn gydnaws â dy ffôn.</string>
     <!-- Reason displayed when installation fails because the installation package itself is invalid
         in some way (e.g., corrupt) [CHAR LIMIT=100] -->
+    <string name="install_failed_invalid_apk">Dyw\'r ap heb ei osod am fod y pecyn yn ymddangos i fod yn annilys.</string>
     <!-- Message presented when an application could not be installed on the tablet for some reason. [CHAR LIMIT=100] -->
     <string name="install_failed_msg" product="tablet">Methwyd â gosod <xliff:g id="app_name">%1$s</xliff:g> ar dy lechen.</string>
     <!-- Message presented when an application could not be installed on the TV for some reason. [CHAR LIMIT=100] -->
@@ -69,8 +75,11 @@ Nid oes arno angen mynediad arbennig at unrhyw beth.</string>
     <string name="install_failed_msg" product="default">Methwyd â gosod <xliff:g id="app_name">%1$s</xliff:g> ar dy ffôn.</string>
     <string name="launch">Agor</string>
     <!-- Message presented in a dialog box when the device administrator restricts the installation of apps from unknown sources. [CHAR LIMIT=none] -->
+    <string name="unknown_apps_admin_dlg_text">Nid yw dy weinyddwr yn caniatáu gosod apiau o ffynonellau anhysbys</string>
     <!-- Message presented in a dialog box when the user restriction set by the system restricts the installation of apps from unknown sources. [CHAR LIMIT=none] -->
+    <string name="unknown_apps_user_restriction_dlg_text">Ni all y defnyddiwr hwn osod apiau anhysbys</string>
     <!-- Message presented in a dialog box when the user restriction set by the system restricts the installation of apps. [CHAR LIMIT=none] -->
+    <string name="install_apps_user_restriction_dlg_text">Nid yw\'r defnyddiwr hwn yn cael gosod apiau</string>
     <string name="ok">Iawn</string>
     <string name="settings">Gosodiadau</string>
     <string name="manage_applications">Rheoli apiau</string>
@@ -85,6 +94,9 @@ Nid oes arno angen mynediad arbennig at unrhyw beth.</string>
     <string name="app_not_found_dlg_title">Ni chanfuwyd yr ap</string>
     <string name="app_not_found_dlg_text">Ni chanfuwyd yr ap yn y rhestr o apiau wedi\'u gosod.</string>
     <string name="user_is_not_allowed_dlg_title">Ni chaniateir</string>
+    <string name="user_is_not_allowed_dlg_text">Dyw\'r defnyddiwr cyfredol ddim yn cael cyflawni\'r dadosod hwn.</string>
+    <string name="generic_error_dlg_title">Gwall</string>
+    <string name="generic_error_dlg_text">Nid oedd yn bosib dadosod yr ap.</string>
     <string name="uninstall_application_title">Dadosod yr ap</string>
     <string name="uninstall_update_title">Dadosod y diweddariad</string>
     <string name="uninstall_activity_text">Mae <xliff:g id="activity_name">%1$s</xliff:g> yn rhan o\'r ap hwn:</string>
@@ -94,14 +106,21 @@ Nid oes arno angen mynediad arbennig at unrhyw beth.</string>
     <string name="uninstall_update_text">Disodli\'r ap hwn gyda\'r fersiwn o\'r ffatri? Caiff yr holl ddata ei golli.</string>
     <string name="uninstall_update_text_multiuser">Disodli\'r ap hwn gyda\'r fersiwn o\'r ffatri? Caiff yr holl ddata ei golli. Mae hyn yn effeithio ar holl ddefnyddwyr y ddyfais hon, gan gynnwys y rhai gyda phroffiliau gwaith.</string>
     <!-- Label for the notification channel containing notifications for current uninstall operations [CHAR LIMIT=40] -->
+    <string name="uninstalling_notification_channel">Yn dadosod</string>
     <!-- Label for the notification channel containing notifications for failed uninstall operations [CHAR LIMIT=40] -->
+    <string name="uninstall_failure_notification_channel">Methwyd dadosod</string>
     <string name="uninstalling">Yn dadosod\u2026</string>
+    <string name="uninstalling_app">Yn dadosod <xliff:g id="package_label">%1$s</xliff:g>\u2026</string>
     <string name="uninstall_done">Wedi cwblhau dadosod.</string>
+    <string name="uninstall_done_app">Wedi dadosod <xliff:g id="package_label">%1$s</xliff:g></string>
     <string name="uninstall_failed">Dadosod aflwyddiannus.</string>
+    <string name="uninstall_failed_app">Wedi dadosod <xliff:g id="package_label">%1$s</xliff:g> yn llwyddiannus.</string>
     <!-- String presented to the user when uninstalling a package failed because the target package
         is a current device administrator [CHAR LIMIT=80] -->
+    <string name="uninstall_failed_device_policy_manager">Methu â dadosod ap gweithredol gweinyddu\'r ddyfais</string>
     <!-- String presented to the user when uninstalling a package failed because the target package
         is a current device administrator for some user [CHAR LIMIT=100] -->
+    <string name="uninstall_failed_device_policy_manager_of_user">Methu â dadosod ap gweithredol gweinyddu\'r ddyfais ar gyfer <xliff:g id="username">%1$s</xliff:g></string>
     <!-- String presented to the admin user when uninstalling a package for all users failed
     because a profile owner has marked the target package as not able to be uninstalled
     [CHAR LIMIT=120] -->
@@ -115,6 +134,7 @@ Nid oes arno angen mynediad arbennig at unrhyw beth.</string>
     <!-- String on a button that leads to the "device admin apps" configuration setting where a
         user will be able to disable the device admin app in order to uninstall
         it. [CHAR LIMIT=50] -->
+    <string name="manage_device_administrators">Rheoli apiau gweinyddu\'r ddyfais</string>
     <!-- String on a button that leads to the "Users" page in Settings where a
         user will be able to remove the secondary user(s) in order to uninstall
         the app. [CHAR LIMIT=50] -->
@@ -137,17 +157,20 @@ Nid oes arno angen mynediad arbennig at unrhyw beth.</string>
     <!-- Title for the dialog button to deny a permission grant. -->
     <string name="grant_dialog_button_deny">Gwrthod</string>
     <!-- Title for the dialog button to get more info about a permission. -->
+    <string name="grant_dialog_button_more_info">Rhagor o wybodaeth</string>
     <!-- Title for the dialog button to deny a permission grant despite a warning of implications. -->
     <string name="grant_dialog_button_deny_anyway">Gwrthod beth bynnag</string>
     <!-- Template for the current permission from the total number of permissions. -->
     <string name="current_permission_template">        <xliff:g id="current_permission_index" example="1">%1$s</xliff:g> o
         <xliff:g id="permission_count" example="2">%2$s</xliff:g></string>
     <!-- Template for the warning message when an app requests a permission. -->
-    <string name="permission_warning_template">Caniatáu i 
-&lt;b&gt;<xliff:g id="app_name" example="Gmail">%1$s</xliff:g>&lt;/b&gt; <xliff:g id="action" example="do something">%2$s</xliff:g>?</string>
+    <string name="permission_warning_template">Caniatáu mynediad &lt;b&gt;<xliff:g id="app_name" example="Gmail">%1$s</xliff:g>&lt;/b&gt; i <xliff:g id="action" example="do something">%2$s</xliff:g>?</string>
     <!-- Template for the message how many permissions are disabled. -->
+    <string name="permission_revoked_count"><xliff:g id="count" example="2">%1$d</xliff:g> wedi\'u hanalluogi</string>
     <!-- Message that all permissions are disabled. -->
+    <string name="permission_revoked_all">y cwbl wedi\'u hanalluogi</string>
     <!-- Message that no permissions are disabled. -->
+    <string name="permission_revoked_none">dim wedi\'u analluogi</string>
     <!-- Permissions -->
     <!-- Title for the dialog button to allow a permission grant. -->
     <string name="grant_dialog_button_allow">Caniatáu</string>
@@ -169,7 +192,7 @@ Nid oes arno angen mynediad arbennig at unrhyw beth.</string>
     <!-- Description of how many more permissions to view on next page [CHAR LIMIT=30] -->
     <plurals name="additional_permissions_more">
         <item quantity="zero"><xliff:g id="count" example="2">%1$d</xliff:g> mwy</item>
-        <item quantity="one"><xliff:g id="count" example="2">%1$d</xliff:g> yn rhagor</item>
+        <item quantity="one"><xliff:g id="count" example="2">%1$d</xliff:g> arall</item>
         <item quantity="two"><xliff:g id="count" example="2">%1$d</xliff:g> yn rhagor</item>
         <item quantity="few"><xliff:g id="count" example="2">%1$d</xliff:g> yn rhagor</item>
         <item quantity="many"><xliff:g id="count" example="2">%1$d</xliff:g> yn rhagor</item>
@@ -224,7 +247,10 @@ Nid oes arno angen mynediad arbennig at unrhyw beth.</string>
     <string name="permission_review_warning_title_template_update">Cafodd <xliff:g id="app_name" example="Gmail">%1$s</xliff:g> ei ddiweddaru.
 Caniatáu i <xliff:g id="app_name" example="Gmail">%1$s</xliff:g> gael mynediad i\'r canlynol?</string>
     <!-- Template for the screen title when app permissions are reviewed on install. -->
+    <string name="permission_review_title_template_install">Dewisa pa bethau mae &lt;b&gt;<xliff:g id="app_name" example="Gmail">%1$s</xliff:g>&lt;/b&gt; yn cael mynediad iddynt</string>
     <!-- Template for the screen title when app permissions are reviewed on update. -->
+    <string name="permission_review_title_template_update">Cafodd &lt;b&gt;<xliff:g id="app_name" example="Gmail">%1$s</xliff:g>&lt;/b&gt; ei ddiweddaru.
+Dewisa pa bethau i roi mynediad iddynt gan yr ap hwn.</string>
     <!-- Title for the dialog button to cancel the detailed permission review. -->
     <string name="review_button_cancel">Diddymu</string>
     <!-- Title for the dialog button to continue accepting the detailed permission review. -->
@@ -234,21 +260,26 @@ Caniatáu i <xliff:g id="app_name" example="Gmail">%1$s</xliff:g> gael mynediad 
     <!-- Title for the category listing the current permissions used by an app. -->
     <string name="current_permissions_category">Caniatâd cyfredol</string>
     <!-- Message that the app to be installed is being staged -->
+    <string name="message_staging">Ap camau cadw&#8230;</string>
     <!-- Placeholder for an app name when it is unknown -->
     <string name="app_name_unknown">Anhysybys</string>
     <!-- Help URL, application permissions [DO NOT TRANSLATE] -->
     <!-- Text to show in warning dialog on the tablet when the app source is not trusted [CHAR LIMIT=NONE] -->
+    <string name="untrusted_external_source_warning" product="tablet">I ddiogelu dy ddata, dyw\'r llechen hon heb ei chaniatáu i osod apiau o ffynonellau anhysbys.</string>
     <!-- Text to show in warning dialog on the tv when the app source is not trusted [CHAR LIMIT=NONE] -->
+    <string name="untrusted_external_source_warning" product="tv">I ddiogelu dy ddata, dyw\'r teledu hwn heb ei chaniatáu i osod apiau o ffynonellau anhysbys.</string>
     <!-- Text to show in warning dialog on the phone when the app source is not trusted [CHAR LIMIT=NONE] -->
+    <string name="untrusted_external_source_warning" product="default">I ddiogelu dy ddata, dyw\'r ffôn hwn heb ei chaniatáu i osod apiau o ffynonellau anhysbys.</string>
     <!-- Text to show in warning dialog on the phone when the app source cannot be identified [CHAR LIMIT=NONE] -->
-    <string name="anonymous_source_warning" product="default">Mae dy ffôn a dy ddata personol yn llai diogel rhag ymosodiad gan apiau anhysbys. Wrth osod yr ap hwn, rwyt yn cytuno dy fod yn gyfrifol am unrhyw niwed i dy ddyfais neu golled data y gall ddigwydd o ganlyniad i\'w defnyddio.    </string>
+    <string name="anonymous_source_warning" product="default">Mae dy ffôn a dy ddata personol yn llai diogel rhag ymosodiad gan apiau anhysbys. Wrth osod yr ap hwn, rwyt yn cytuno dy fod yn gyfrifol am unrhyw niwed i dy ddyfais neu golled data gall ddigwydd o ganlyniad i\'w defnyddio.    </string>
     <!-- Text to show in warning dialog on the tablet when the app source cannot be identified [CHAR LIMIT=NONE] -->
-    <string name="anonymous_source_warning" product="tablet">Mae dy lechen a dy ddata personol yn llai diogel rhag ymosodiad gan apiau anhysbys. Wrth osod yr ap hwn, rwyt yn cytuno dy fod yn gyfrifol am unrhyw niwed i dy ddyfais neu golled data y gall ddigwydd o ganlyniad i\'w defnyddio.    </string>
+    <string name="anonymous_source_warning" product="tablet">Mae dy lechen a dy ddata personol yn llai diogel rhag ymosodiad gan apiau anhysbys. Wrth osod yr ap hwn, rwyt yn cytuno dy fod yn gyfrifol am unrhyw niwed i dy ddyfais neu golled data gall ddigwydd o ganlyniad i\'w defnyddio.    </string>
     <!-- Text to show in warning dialog on the tv when the app source cannot be identified [CHAR LIMIT=NONE] -->
-    <string name="anonymous_source_warning" product="tv">Mae dy deledu a dy ddata personol yn llai diogel rhag ymosodiad gan apiau anhysbys. Wrth osod yr ap hwn, rwyt yn cytuno dy fod yn gyfrifol am unrhyw niwed i dy ddyfais neu golled data y gall ddigwydd o ganlyniad i\'w defnyddio.    </string>
+    <string name="anonymous_source_warning" product="tv">Mae dy deledu a dy ddata personol yn llai diogel rhag ymosodiad gan apiau anhysbys. Wrth osod yr ap hwn, rwyt yn cytuno dy fod yn gyfrifol am unrhyw niwed i dy ddyfais neu golled data gall ddigwydd o ganlyniad i\'w defnyddio.    </string>
     <!-- Label for button to continue install of an app whose source cannot be identified [CHAR LIMIT=40] -->
     <string name="anonymous_source_continue">Parhau</string>
     <!-- Label for button to open manage external sources settings [CHAR LIMIT=45] -->
     <string name="external_sources_settings">Gosodiadau</string>
     <!-- Label for the notification channel containing notifications for embedded app operations [CHAR LIMIT=40] -->
+    <string name="wear_app_channel">Gosod/dadosod apiau Wear</string>
 </resources>
