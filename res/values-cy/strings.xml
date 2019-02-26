@@ -112,7 +112,7 @@ Nid oes arno angen mynediad arbennig at unrhyw beth.</string>
     <string name="uninstalling">Yn dadosod\u2026</string>
     <string name="uninstalling_app">Yn dadosod <xliff:g id="package_label">%1$s</xliff:g>\u2026</string>
     <string name="uninstall_done">Wedi cwblhau dadosod.</string>
-    <string name="uninstall_done_app">Wedi dadosod <xliff:g id="package_label">%1$s</xliff:g></string>
+    <string name="uninstall_done_app">Dadosodwyd <xliff:g id="package_label">%1$s</xliff:g></string>
     <string name="uninstall_failed">Dadosod aflwyddiannus.</string>
     <string name="uninstall_failed_app">Wedi dadosod <xliff:g id="package_label">%1$s</xliff:g> yn llwyddiannus.</string>
     <!-- String presented to the user when uninstalling a package failed because the target package
@@ -181,7 +181,7 @@ Nid oes arno angen mynediad arbennig at unrhyw beth.</string>
     <!-- Breadcrumb for page of managing application permissions [CHAR LIMIT=50] -->
     <string name="app_permissions_breadcrumb">Apiau</string>
     <!-- Title for page of managing application permissions -->
-    <string name="app_permissions">Caniatâd yr ap</string>
+    <string name="app_permissions">Caniatâd apiau</string>
     <!-- Checkbox that allows user to not be questioned about this permission
          request again -->
     <string name="never_ask_again">Peidio â gofyn eto</string>
@@ -190,6 +190,7 @@ Nid oes arno angen mynediad arbennig at unrhyw beth.</string>
     <!-- Label for button that leads to more permissions [CHAR LIMIT=40] -->
     <string name="additional_permissions">Caniatâd ychwanegol</string>
     <!-- Accessibility label for button opening the app-info when clicked [CHAR LIMIT=none] -->
+    <string name="app_permissions_info_button_label">Agor gwybodaeth am yr ap</string>
     <!-- Description of how many more permissions to view on next page [CHAR LIMIT=30] -->
     <plurals name="additional_permissions_more">
         <item quantity="zero"><xliff:g id="count" example="2">%1$d</xliff:g> mwy</item>
@@ -204,7 +205,7 @@ Nid oes arno angen mynediad arbennig at unrhyw beth.</string>
     <!-- The default description of a permission, i.e. what it does.  [CHAR LIMIT=40] -->
     <string name="default_permission_description">perfformio gweithred anhysbys</string>
     <!-- Summary of number of apps currently granted a single permission [CHAR LIMIT=45] -->
-    <string name="app_permissions_group_summary">Caniateir <xliff:g id="count" example="10">%1$d</xliff:g> o <xliff:g id="count" example="10">%2$d</xliff:g></string>
+    <string name="app_permissions_group_summary">Caniateir <xliff:g id="count" example="10">%1$d</xliff:g> o <xliff:g id="count" example="10">%2$d</xliff:g> ap</string>
     <!-- [CHAR LIMIT=NONE] Menu for manage permissions to control whether system apps are shown -->
     <string name="menu_show_system">Dangos apiau system</string>
     <!-- [CHAR LIMIT=NONE] Menu for manage permissions to control whether system apps are hidden -->
