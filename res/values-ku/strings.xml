@@ -19,65 +19,38 @@
     <string name="next">دواتر</string>
     <string name="install">دامەزراندن</string>
     <string name="done">کرا</string>
-    <!-- TODO REMOVE LATER -->
     <string name="security_settings_desc">ڕێگه‌دان به‌ به‌رنامه‌ بۆ:</string>
     <string name="cancel">هەڵوەشاندنەوە</string>
     <string name="unknown">نەزانراو</string>
     <string name="installing">دادەمەزرێت\u2026</string>
     <string name="install_done">بەرنامەکە دامەزرێنرا.</string>
-    <!-- Message for installing a new app that requires some permissions [CHAR LIMIT=NONE] -->
     <string name="install_confirm_question">ئەتەوێت ئەم بەرنامەیە دامەزرێنیت?</string>
-    <!-- Message for installing a new app that does not require permissions [CHAR LIMIT=NONE] -->
     <string name="install_confirm_question_no_perms">دەتەوێت ئەم بەرنامەیە دامەزرێنیت؟
             ئەو هیچێک لە داواکردنی چوونەناو تایبەت ناکات.</string>
-    <!-- Message for updating an existing app [CHAR LIMIT=NONE] -->
     <string name="install_confirm_question_update">ئه‌ته‌وێ نوێکردنه‌وه‌ی 
             دابه‌زێنی بۆ هه‌مان به‌رنامه‌؟ زانیارییه‌کانی به‌رنامه‌که‌ت
             ناسڕدرێنه‌وه‌. ته‌نیا به‌رنامه‌که‌ نوێده‌بێته‌وه بۆ ده‌سته‌ڵاتی:</string>
-    <!-- Message for updating an existing system app [CHAR LIMIT=NONE] -->
     <string name="install_confirm_question_update_system">ئه‌ته‌وێ نوێکردنه‌وه‌ی 
             دابه‌زێنی بۆ هه‌مان به‌رنامه‌؟ زانیارییه‌کانی به‌رنامه‌که‌ت
             ناسڕدرێنه‌وه‌. ته‌نیا به‌رنامه‌که‌ نوێده‌بێته‌وه بۆ ده‌سته‌ڵاتی:</string>
-    <!-- Message for updating an existing app, no permissions [CHAR LIMIT=NONE] -->
     <string name="install_confirm_question_update_no_perms">ئه‌ته‌وێ نوێکردنه‌وه‌ی 
             دابه‌زێنی بۆ هه‌مان به‌رنامه‌؟ زانیارییه‌کانی به‌رنامه‌که‌ت
             ناسڕدرێنه‌وه‌. پێویستی به‌ ده‌سته‌ڵات پێدان نییه‌.</string>
-    <!-- Message for updating an existing system app, no permissions [CHAR LIMIT=NONE] -->
     <string name="install_confirm_question_update_system_no_perms">ئه‌ته‌وێ نوێکردنه‌وه‌ی 
             دابه‌زێنی بۆ هه‌مان به‌رنامه‌؟ زانیارییه‌کانی به‌رنامه‌که‌ت
             ناسڕدرێنه‌وه‌. پێویستی به‌ ده‌سته‌ڵات پێدان نییه‌.</string>
     <string name="install_failed">بەرنامەکە داى نەمەزراند.</string>
-    <!-- Reason displayed when installation fails because the package was blocked
-        from being installed (e.g., device policy, verification, ...) [CHAR LIMIT=100] -->
-    <!-- Reason displayed when installation fails because the package conflicts with
-        an existing application (e.g., incompatible certificates) [CHAR LIMIT=100] -->
-    <!-- Reason displayed when installation fails because the package is incompatible with
-       the current tablet (e.g., missing native code for the current ABI, newer SDK, ...) [CHAR LIMIT=100] -->
-    <!-- Reason displayed when installation fails because the package is incompatible with
-       the current TV (e.g., missing native code for the current ABI, newer SDK, ...) [CHAR LIMIT=100] -->
-    <!-- Reason displayed when installation fails because the package is incompatible with
-       the current phone (e.g., missing native code for the current ABI, newer SDK, ...) [CHAR LIMIT=100] -->
-    <!-- Reason displayed when installation fails because the installation package itself is invalid
-        in some way (e.g., corrupt) [CHAR LIMIT=100] -->
-    <!-- Message presented when an application could not be installed on the tablet for some reason. [CHAR LIMIT=100] -->
     <string name="install_failed_msg" product="tablet"><xliff:g id="app_name">%1$s</xliff:g> ناتوانێت لە تابلێتەکەتدا دابمەزرێت.</string>
-    <!-- Message presented when an application could not be installed on the TV for some reason. [CHAR LIMIT=100] -->
-    <!-- Message presented when an application could not be installed on the phone for some reason. [CHAR LIMIT=100] -->
     <string name="install_failed_msg" product="default"><xliff:g id="app_name">%1$s</xliff:g> ناتوانێت لە تەلەفۆنەکەتدا دابمەزرێت.</string>
     <string name="launch">کردنه‌وه‌</string>
-    <!-- Message presented in a dialog box when the device administrator restricts the installation of apps from unknown sources. [CHAR LIMIT=none] -->
-    <!-- Message presented in a dialog box when the user restriction set by the system restricts the installation of apps from unknown sources. [CHAR LIMIT=none] -->
-    <!-- Message presented in a dialog box when the user restriction set by the system restricts the installation of apps. [CHAR LIMIT=none] -->
     <string name="ok">باشه</string>
     <string name="settings">ڕێکخستنه‌کان</string>
     <string name="manage_applications">بەڕێوەبردنی بەرنامەکان</string>
     <string name="dlg_app_replacement_title">لەبریدانانی بەرنامەکە؟</string>
     <string name="dlg_app_replacement_statement">ئەم بەرنامە کە ئێستا دایدەمەزرێنی جێگری بەرنامەیەکی دیکە ئەبێت.\n\nهەموو دراوە بەکار هاتووەکانی پێشووترت پاشەکەوت دەکرێت.</string>
-    <!-- Dialog attributes when replacing system app -->
     <string name="dlg_sys_app_replacement_statement">ئەمە بەرنامەیەکی سیستەمییە.\n\nهەموو دراوە بەکار هاتووەکانی پێشووترت پاشەکەوت دەکرێت.</string>
     <string name="out_of_space_dlg_title">دەرچوون لە بۆشایی</string>
     <string name="out_of_space_dlg_text"><xliff:g id="app_name">%1$s</xliff:g> ناتوانێت دامەزرێنرێت. هەندێک بۆشایی بەتاڵ بکە و دووبارە هەوڵبدەوە.</string>
-    <!-- strings related to uninstall activity -->
     <string name="dlg_ok">باشه‌</string>
     <string name="app_not_found_dlg_title">بەرنامەکەی نەدۆزیەوە</string>
     <string name="app_not_found_dlg_text"> بەرنامەکە نەدۆزرایەوە لە لیستی بەرنامە دامەزراوەکان.</string>
@@ -87,109 +60,19 @@
     <string name="uninstall_application_text">دەتەوێت ئەم بەرنامەیە بسڕیته‌وه‌ ؟</string>
     <string name="uninstall_application_text_all_users">ئەتەوێ نەرمەواڵاکە هەڵوەشێنییەوە بۆ <b>all</b>
         هەژمار؟  نەرمەواڵاکە و دراوەکانی ئەسڕدرێتەوە لە سەر <b>all</b> هەژمار لە ناو ئامێرەکەت.</string>
-    <!-- Label for the notification channel containing notifications for current uninstall operations [CHAR LIMIT=40] -->
-    <!-- Label for the notification channel containing notifications for failed uninstall operations [CHAR LIMIT=40] -->
     <string name="uninstalling">سڕینه‌وه‌\u2026</string>
     <string name="uninstall_done">سڕینه‌وه‌ تەواوبوو.</string>
     <string name="uninstall_failed">سڕینه‌وه‌ سەرنەکەوتووبوو.</string>
-    <!-- String presented to the user when uninstalling a package failed because the target package
-        is a current device administrator [CHAR LIMIT=80] -->
-    <!-- String presented to the user when uninstalling a package failed because the target package
-        is a current device administrator for some user [CHAR LIMIT=100] -->
-    <!-- String presented to the admin user when uninstalling a package for all users failed
-    because a profile owner has marked the target package as not able to be uninstalled
-    [CHAR LIMIT=120] -->
-    <!-- String presented to the user when uninstalling a package failed because a profile owner
-         has marked the target package as not able to be uninstalled [CHAR LIMIT=120] -->
-    <!-- String presented to the user when uninstalling a package failed because a device owner
-         has marked the the target package as not able to be uninstalled [CHAR LIMIT=80] -->
-    <!-- String on a button that leads to the "device admin apps" configuration setting where a
-        user will be able to disable the device admin app in order to uninstall
-        it. [CHAR LIMIT=50] -->
-    <!-- String on a button that leads to the "Users" page in Settings where a
-        user will be able to remove the secondary user(s) in order to uninstall
-        the app. [CHAR LIMIT=50] -->
     <string name="uninstall_failed_msg"><xliff:g id="app_name">%1$s</xliff:g> نەتوانرا هەلوەشێندرێتەوە.</string>
-    <!-- Dialog attributes to indicate parse errors -->
     <string name="Parse_error_dlg_text">هەڵەیەک هەبوو لا کاتی شی کردنەوەی ئەم پاکێجە.</string>
-    <!-- Tab label for new permissions being added to an existing app [CHAR LIMIT=20] -->
     <string name="newPerms">نوێ</string>
-    <!-- Tab label for all permissions of an app being installed [CHAR LIMIT=20] -->
     <string name="allPerms">هەموو</string>
-    <!-- Tab label for permissions related to user privacy [CHAR LIMIT=20] -->
     <string name="privacyPerms">نهێنێتی</string>
-    <!-- Tab label for permissions related to device behavior [CHAR LIMIT=20] -->
     <string name="devicePerms">چوونەناو ئامێر</string>
-    <!-- Body text for new tab when there are no new permissions [CHAR LIMIT=NONE] -->
     <string name="no_new_perms">ئەم نوێکارییە پێویستی بە هیچ ڕێگەپێدانێکی نوێ نییە.</string>
     <string name="grant_confirm_question">دەتەوێ ڕێگەپێدانەکانی بەردەم بە دەست بهێنی؟
         ئەمە دەستپێگەیشتن ئەکات بۆ:</string>
-    <!-- Title for the dialog button to deny a permission grant. -->
-    <!-- Title for the dialog button to get more info about a permission. -->
-    <!-- Title for the dialog button to deny a permission grant despite a warning of implications. -->
-    <!-- Template for the current permission from the total number of permissions. -->
-    <!-- Template for the warning message when an app requests a permission. -->
-    <!-- Template for the message how many permissions are disabled. -->
-    <!-- Message that all permissions are disabled. -->
-    <!-- Message that no permissions are disabled. -->
-    <!-- Permissions -->
-    <!-- Title for the dialog button to allow a permission grant. -->
-    <!-- Title of an application permission, listed so the user can choose whether they want
-         to allow the application to do this. -->
-    <!-- Description of an application permission, listed so the user can choose whether
-         they want to allow the application to do this. -->
-    <!-- Breadcrumb for page of managing application permissions [CHAR LIMIT=50] -->
-    <!-- Title for page of managing application permissions -->
-    <!-- Checkbox that allows user to not be questioned about this permission
-         request again -->
-    <!-- Label when app requests no permissions -->
-    <!-- Label for button that leads to more permissions [CHAR LIMIT=40] -->
-    <!-- Description of how many more permissions to view on next page [CHAR LIMIT=30] -->
-    <!-- Warning for turning off permissions on older apps -->
-    <!-- The default description of a permission, i.e. what it does.  [CHAR LIMIT=40] -->
-    <!-- Summary of number of apps currently granted a single permission [CHAR LIMIT=45] -->
-    <!-- [CHAR LIMIT=NONE] Menu for manage permissions to control whether system apps are shown -->
-    <!-- [CHAR LIMIT=NONE] Menu for manage permissions to control whether system apps are hidden -->
-    <!-- [CHAR LIMIT=30] Title for page managing what apps have a permission granted -->
-    <!-- [CHAR LIMIT=NONE] Label when no apps requesting this permission -->
-    <!-- [CHAR LIMIT=30] Title of button that leads to location settings -->
-    <!-- [CHAR LIMIT=NONE] Warning about how this app cannot have location permission disabled -->
-    <!-- [CHAR LIMIT=NONE] Warning message when turning off permission for system apps -->
-    <!-- [CHAR LIMIT=NONE] Summary of a permission switch when it's enforced by policy -->
-    <!-- Text displayed until loading is done -->
-    <!-- [CHAR LIMIT=45] Title of all permissions settings -->
-    <!-- [CHAR LIMIT=45] Group of permissions granted to app automatically when installed. -->
-    <!-- Title of the permission dialog for accessibility purposes- spoken to the user. [CHAR LIMIT=none] -->
-    <!-- Title for the dialog that warns the user they need to turn off screen overlays
-         before permissions can be changed. [CHAR LIMIT=NONE] -->
-    <!-- Message for the dialog that warns the user they need to turn off screen overlays
-        before permissions can be changed. The "Settings > Apps" conveys to the user to
-        go to Settings and click on apps, this may need updates in RTL languages. [CHAR LIMIT=NONE] -->
-    <!-- Button for the dialog that warns the user they need to turn off screen overlays
-         before permissions can be changed. [CHAR LIMIT=NONE] -->
-    <!-- Title of dialog telling users that Install/Uninstall action is not supported on Android Wear. -->
-    <!-- Title of dialog telling users that Install/Uninstall action is not supported on Android Wear. -->
-    <!-- Review of runtime permissions for legacy apps -->
-    <!-- Template for the warning title when an updated app's requested permissions are reviewed. -->
-    <!-- Template for the screen title when app permissions are reviewed on install. -->
-    <!-- Template for the screen title when app permissions are reviewed on update. -->
-    <!-- Title for the dialog button to cancel the detailed permission review. -->
     <string name="review_button_cancel">هەڵوەشاندنەوە</string>
-    <!-- Title for the dialog button to continue accepting the detailed permission review. -->
-    <!-- Title for the category listing the new permissions used by an app. -->
-    <!-- Title for the category listing the current permissions used by an app. -->
-    <!-- Message that the app to be installed is being staged -->
-    <!-- Placeholder for an app name when it is unknown -->
     <string name="app_name_unknown">نەزانراو</string>
-    <!-- Help URL, application permissions [DO NOT TRANSLATE] -->
-    <!-- Text to show in warning dialog on the tablet when the app source is not trusted [CHAR LIMIT=NONE] -->
-    <!-- Text to show in warning dialog on the tv when the app source is not trusted [CHAR LIMIT=NONE] -->
-    <!-- Text to show in warning dialog on the phone when the app source is not trusted [CHAR LIMIT=NONE] -->
-    <!-- Text to show in warning dialog on the phone when the app source cannot be identified [CHAR LIMIT=NONE] -->
-    <!-- Text to show in warning dialog on the tablet when the app source cannot be identified [CHAR LIMIT=NONE] -->
-    <!-- Text to show in warning dialog on the tv when the app source cannot be identified [CHAR LIMIT=NONE] -->
-    <!-- Label for button to continue install of an app whose source cannot be identified [CHAR LIMIT=40] -->
-    <!-- Label for button to open manage external sources settings [CHAR LIMIT=45] -->
     <string name="external_sources_settings">ڕێکخستنه‌کان</string>
-    <!-- Label for the notification channel containing notifications for embedded app operations [CHAR LIMIT=40] -->
 </resources>
