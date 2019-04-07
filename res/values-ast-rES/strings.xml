@@ -42,6 +42,8 @@
             datos actuales. Nun rique dengún permisu especial.</string>
     <string name="install_failed">Nun s\'instaló l\'aplicación.</string>
     <string name="install_failed_blocked">Bloquióse la instalación del paquete.</string>
+    <string name="install_failed_incompatible" product="tv">L\'aplicación nun s\'instaló porque
+        nun ye compatible col teléfonu.</string>
     <string name="install_failed_msg" product="tablet"><xliff:g id="app_name">%1$s</xliff:g> nun pudo instalase na to tableta.</string>
     <string name="install_failed_msg" product="tv"><xliff:g id="app_name">%1$s</xliff:g> nun pudo instalase na to TV.</string>
     <string name="install_failed_msg" product="default"><xliff:g id="app_name">%1$s</xliff:g> nun pudo instalase na to tableta.</string>
@@ -91,6 +93,8 @@
     <string name="permission_warning_template">¿Permitir a
         &lt;b&gt;<xliff:g id="app_name" example="Gmail">%1$s</xliff:g>&lt;/b&gt;
         <xliff:g id="action" example="do something">%2$s</xliff:g>?</string>
+    <string name="permission_revoked_all">too inhabilitao</string>
+    <string name="permission_revoked_none">nada deshabilitao</string>
     <string name="grant_dialog_button_allow">Permitir</string>
     <string name="app_permissions_breadcrumb">Aplicaciones</string>
     <string name="app_permissions">Permisos d\'aplicaciones</string>
@@ -124,11 +128,33 @@
     <string name="permission_review_warning_title_template_update">        <xliff:g id="app_name" example="Gmail">%1$s</xliff:g> anovóse.
         Permitir a <xliff:g id="app_name" example="Gmail">%1$s</xliff:g>
         acceder a lo de darréu?</string>
+    <string name="permission_review_title_template_update">        &lt;b&gt;<xliff:g id="app_name" example="Gmail">%1$s</xliff:g>&lt;/b&gt; anovóse.
+        Escueyi a lo que tien accesu esta aplicación.</string>
     <string name="review_button_cancel">Encaboxar</string>
     <string name="review_button_continue">Siguir</string>
     <string name="new_permissions_category">Permisos nuevos</string>
     <string name="current_permissions_category">Permisos actuales</string>
+    <string name="message_staging">Tresnando l\'aplicación…</string>
     <string name="app_name_unknown">Desconozse</string>
+    <string name="untrusted_external_source_warning" product="tablet">Por seguridá, la to tablet nun tien permitío instalar aplicaciones desconocíes d\'esta fonte.</string>
+    <string name="untrusted_external_source_warning" product="tv">Por seguridá, la to TV nun tien permitío instalar aplicaciones desconocíes d\'esta fonte.</string>
+    <string name="untrusted_external_source_warning" product="default">Por seguridá, el to teléfonu nun tien permitío instalar aplicaciones desconocíes d\'esta fonte.</string>
+    <string name="anonymous_source_warning" product="default">El to teléfonu y los datos personales son más vulnerables
+        a los ataques d\'aplicaciones desconocíes. Si instales esta 
+        aplicación, tas acordies con ser responsable de tolos daños
+        o perda de datos que quiciabes se produza con esti usu.
+    </string>
+    <string name="anonymous_source_warning" product="tablet">La to tablet y los datos personales son más vulnerables
+        a los ataques d\'aplicaciones desconocíes. Si instales esta 
+        aplicación, tas acordies con ser responsable de tolos daños
+        o perda de datos que quiciabes se produza con esti usu.
+    </string>
+    <string name="anonymous_source_warning" product="tv">La to TV y los datos personales son más vulnerables
+        a los ataques d\'aplicaciones desconocíes. Si instales esta 
+        aplicación, tas acordies con ser responsable de tolos daños
+        o perda de datos que quiciabes se produza con esti usu.
+    </string>
     <string name="anonymous_source_continue">Siguir</string>
     <string name="external_sources_settings">Axustes</string>
+    <string name="wear_app_channel">Instalando/desinstalando aplicaciones de desgaste</string>
 </resources>
