@@ -149,5 +149,6 @@
     <string name="review_button_continue">Siguir</string>
     <string name="new_permissions_category">Permisos nuevos</string>
     <string name="current_permissions_category">Permisos actuales</string>
+    <string name="message_staging">Aplicación depuesta n\'escena…</string>
     <string name="app_name_unknown">Desconozse</string>
 </resources>
