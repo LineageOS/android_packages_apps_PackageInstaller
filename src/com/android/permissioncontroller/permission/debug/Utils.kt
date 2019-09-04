@@ -38,7 +38,7 @@ const val PROPERTY_CAMERA_MIC_ICONS_ENABLED = "camera_mic_icons_enabled"
  */
 fun isPermissionsHub2FlagEnabled(): Boolean {
     return DeviceConfig.getBoolean(DeviceConfig.NAMESPACE_PRIVACY,
-        PROPERTY_PERMISSIONS_HUB_2_ENABLED, false)
+        PROPERTY_PERMISSIONS_HUB_2_ENABLED, true)
 }
 /**
  * Whether to show the Permissions Dashboard
