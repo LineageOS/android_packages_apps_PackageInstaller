@@ -14,6 +14,16 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="app_name">بوغچا ئورناتقۇچ</string>
-    <string name="next">كېيىنكى</string>
+    <string name="next">Air adhart</string>
+    <string name="install">Stàlaich</string>
+    <string name="settings">Roghainnean</string>
+    <string name="newPerms">Ùr</string>
+    <string name="privacyPerms">Prìobhaideachd</string>
+    <string name="grant_dialog_button_allow">Ceadaich</string>
+    <string name="app_permissions_breadcrumb">Aplacaidean</string>
+    <string name="app_permissions">Ceadan na h-aplacaid</string>
+    <string name="never_ask_again">Na faighnich dhìom a-rithist</string>
+    <string name="app_permissions_info_button_label">Fosgail fiosrachadh na h-aplacaid</string>
+    <string name="location_settings">Roghainnean ionaid</string>
+    <string name="external_sources_settings">Roghainnean</string>
 </resources>
