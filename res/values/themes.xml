@@ -33,4 +33,16 @@
         <item name="android:windowBackground">@android:color/transparent</item>
     </style>
 
+<!-- Do not allow OEMs to overlay these themes.
+ Must Guarantee that filterTouches is set for these activities -->
+    <style name="FilterTouches">
+        <item name="android:filterTouchesWhenObscured">true</item>
+    </style>
+    <style name="Settings.FilterTouches">
+        <item name="android:filterTouchesWhenObscured">true</item>
+    </style>
+    <style name="GrantPermissions.FilterTouches">
+        <item name="android:filterTouchesWhenObscured">true</item>
+    </style>
+
 </resources>
