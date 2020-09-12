@@ -139,7 +139,7 @@ Nid oes arno angen mynediad arbennig at unrhyw beth.</string>
     <string name="loading">Yn llwytho\u2026</string>
     <string name="all_permissions">Pob caniatâd</string>
     <string name="other_permissions">Galluoedd eraill yr ap</string>
-    <string name="permission_request_title">Cais caniatâd</string>
+    <string name="permission_request_title">Cais am ganiatâd</string>
     <string name="screen_overlay_title">Canfuwyd troslun sgrin</string>
     <string name="screen_overlay_message">I newid y gosodiad caniatâd hwn, rhaid yn gyntaf diffodd y troslun sgrin yn Gosodiadau \u003e Apiau</string>
     <string name="screen_overlay_button">Agor gosodiadau</string>
