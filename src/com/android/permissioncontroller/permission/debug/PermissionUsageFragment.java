@@ -25,8 +25,6 @@ import static java.util.concurrent.TimeUnit.DAYS;
 import static java.util.concurrent.TimeUnit.HOURS;
 import static java.util.concurrent.TimeUnit.MINUTES;
 
-import android.accounts.Account;
-import android.accounts.AccountManager;
 import android.app.ActionBar;
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -37,7 +35,6 @@ import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.UserHandle;
 import android.os.UserManager;
-import android.text.Html;
 import android.util.ArrayMap;
 import android.util.ArraySet;
 import android.util.Log;
@@ -363,33 +360,6 @@ public class PermissionUsageFragment extends SettingsWithLargeHeader implements
             setPreferenceScreen(screen);
         }
         screen.removeAll();
-
-        Preference countsWarningPreference = new Preference(getContext()) {
-            @Override
-            public void onBindViewHolder(PreferenceViewHolder holder) {
-                super.onBindViewHolder(holder);
-                ((TextView) holder.itemView.findViewById(android.R.id.title))
-                        .setTextColor(Color.RED);
-                holder.itemView.setBackgroundColor(Color.YELLOW);
-            }
-        };
-
-        StringBuffer accounts = new StringBuffer();
-        for (UserHandle user : getContext().getSystemService(UserManager.class).getAllProfiles()) {
-            for (Account account : getContext().createContextAsUser(user, 0).getSystemService(AccountManager.class).getAccounts()) {
-                accounts.append(", " + account.name);
-            }
-        }
-        if (accounts.length() > 0) {
-            accounts.delete(0, 2);
-        }
-
-        countsWarningPreference.setTitle(Html.fromHtml("<b>INTERNAL ONLY</b> - For debugging.<br/><br/>"
-                + "- Access counts do not reflect amount of private data accessed.<br/>"
-                + "- Data might not be accurate.<br/><br/>"
-                + "Accounts: " + accounts, Html.FROM_HTML_SEPARATOR_LINE_BREAK_PARAGRAPH));
-        countsWarningPreference.setIcon(R.drawable.ic_info);
-        screen.addPreference(countsWarningPreference);
 
         boolean seenSystemApp = false;
 
