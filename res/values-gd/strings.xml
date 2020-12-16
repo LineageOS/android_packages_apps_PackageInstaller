@@ -47,7 +47,7 @@
     <string name="launch">Fosgail</string>
     <string name="ok">Ceart ma-thà</string>
     <string name="settings">Roghainnean</string>
-    <string name="manage_applications">Stiùirich aplacaidean</string>
+    <string name="manage_applications">Stiùir na h-aplacaidean</string>
     <string name="dlg_app_replacement_title">An cuir thu an àite aplacaid eile e?</string>
     <string name="dlg_app_replacement_statement">Thèid an aplacaid a tha thu a’ stàladh a chur an àite aplacaid eile.\n\nThèid an dàta cleachdaiche a th’ agad mu thràth a shàbhaladh.</string>
     <string name="dlg_sys_app_replacement_statement">Seo aplacaid an t-siostaim.\n\nThèid an dàta cleachdaiche a th’ agad mu thràth a shàbhaladh.</string>
@@ -74,7 +74,7 @@
         agus cha ghabh a dì-stàladh.</string>
     <string name="uninstall_blocked_device_owner">Dh’iarr rianaire an uidheim agad an aplacaid seo
         agus cha ghabh a dì-stàladh.</string>
-    <string name="manage_users">Stiùirich cleachdaichean</string>
+    <string name="manage_users">Stiùir na cleachdaichean</string>
     <string name="uninstall_failed_msg">Cha b’ urrainn dhuinn <xliff:g id="app_name">%1$s</xliff:g> a dhì-stàladh.</string>
     <string name="Parse_error_dlg_text">Bha duilgheadas le parsadh na pacaid.</string>
     <string name="newPerms">Ùr</string>
@@ -114,7 +114,7 @@
     <string name="location_settings">Roghainnean ionaid</string>
     <string name="location_warning">Tha <xliff:g id="app_name" example="Package Installer">%1$s</xliff:g> ’na sholaraiche ionaid aig an uidheam seo. Gabhaidh an t-inntrigeadh dhan ionad atharrachadh o na roghainnean ionaid.</string>
     <string name="system_warning">Ma dhiùltas tu an cead seo, dh’fhaoidte nach obraich gleusan bunasach an uidheim mar bu chòir tuilleadh.</string>
-    <string name="permission_summary_enforced_by_policy">’Ga sparradh le poileasaidh</string>
+    <string name="permission_summary_enforced_by_policy">’Ga èigneachadh le poileasaidh</string>
     <string name="loading">’Ga luchdadh\u2026</string>
     <string name="all_permissions">A h-uile cead</string>
     <string name="other_permissions">Comasan eile na h-aplacaid</string>
