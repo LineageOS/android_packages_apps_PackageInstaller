@@ -729,7 +729,7 @@
     <string name="unused_app_permissions_removed_summary_some">To protect your data, permissions have been removed from some apps that you haven\u2019t used in a few months</string>
 
     <!-- Summary listing that one app is unused [CHAR LIMIT=none] -->
-    <string name="one_unused_app_summary">1 app hasen\u2019t been used for a few months</string>
+    <string name="one_unused_app_summary">1 app hasn\u2019t been used for a few months</string>
 
     <!-- Summary listing how many apps are unused [CHAR LIMIT=none] -->
     <string name="num_unused_apps_summary"><xliff:g id="number_of_apps" example="4">%s</xliff:g> apps haven\u2019t been used for a few months</string>
