@@ -43,10 +43,10 @@
     <string name="permission_revoked_all">tha gach aon à comas</string>
     <string name="permission_revoked_none">chan eil gin à comas</string>
     <string name="grant_dialog_button_allow">Ceadaich</string>
-    <string name="grant_dialog_button_allow_always">Ceadaich fad na tìde</string>
+    <string name="grant_dialog_button_allow_always">Ceadaich an-còmhnaidh</string>
     <string name="grant_dialog_button_allow_foreground">Fhad ’s a bhios tu ris an aplacaid</string>
     <string name="grant_dialog_button_allow_one_time">An turas seo a-mhàin</string>
-    <string name="grant_dialog_button_allow_background">Ceadaich fad na tìde</string>
+    <string name="grant_dialog_button_allow_background">Ceadaich an-còmhnaidh</string>
     <string name="grant_dialog_button_allow_all_files">Ceadaich stiùireadh nam faidhlichean uile</string>
     <string name="grant_dialog_button_allow_media_only">Ceadaich inntrigeadh gu faidhlichean meadhain</string>
     <string name="app_permissions_breadcrumb">Aplacaidean</string>
@@ -89,7 +89,7 @@
         <item>@string/permission_access_only_foreground</item>
         <item>@string/permission_access_never</item>
     </string-array>
-    <string name="permission_access_always">Ceadaich fad na tìde</string>
+    <string name="permission_access_always">Ceadaich an-còmhnaidh</string>
     <string name="permission_access_only_foreground">Na ceadaich ach nuair a bhios an aplacaid ’ga cleachdadh</string>
     <string name="permission_access_never">Diùlt</string>
     <string name="loading">’Ga luchdadh\u2026</string>
@@ -188,7 +188,7 @@
     <string name="app_permission_button_allow">Ceadaich</string>
     <string name="app_permission_button_allow_all_files">Ceadaich stiùireadh nam faidhlichean uile</string>
     <string name="app_permission_button_allow_media_only">Ceadaich inntrigeadh gu faidhlichean meadhain a-mhàin</string>
-    <string name="app_permission_button_allow_always">Ceadaich fad na tìde</string>
+    <string name="app_permission_button_allow_always">Ceadaich an-còmhnaidh</string>
     <string name="app_permission_button_allow_foreground">Na ceadaich ach nuair a bhios an aplacaid ’ga cleachdadh</string>
     <string name="app_permission_button_ask">Faighnich dhìom gach turas</string>
     <string name="app_permission_button_deny">Diùlt</string>
@@ -234,7 +234,7 @@
     <string name="app_permission_never_accessed_summary">Cha deach inntrigeadh a-riamh</string>
     <string name="app_permission_never_accessed_denied_summary">Air a dhiùltadh / Cha deach inntrigeadh a-riamh</string>
     <string name="allowed_header">Ceadaichte</string>
-    <string name="allowed_always_header">Ceadaichte fad na tìde</string>
+    <string name="allowed_always_header">Ceadaichte an-còmhnaidh</string>
     <string name="allowed_foreground_header">Ceadaichte fhad ’s a bhios e ’ga chleachdadh a-mhàin</string>
     <string name="allowed_storage_scoped">Cead inntrigidh gu faidhlichean meadhain a-mhàin</string>
     <string name="allowed_storage_full">Cead stiùireadh nam faidhlichean uile</string>
@@ -379,10 +379,10 @@
     <string name="ongoing_usage_dialog_title">Cleachdadh o chionn goirid air <xliff:g id="types_list" example="camera( and location)">%s</xliff:g></string>
     <string name="ongoing_usage_dialog_separator">,\u0020</string>
     <string name="ongoing_usage_dialog_last_separator">\u0020⁊\u0020</string>
-    <string name="default_app_search_keyword">na h-aplacaidean tùsail</string>
+    <string name="default_app_search_keyword">aplacaidean bunaiteach</string>
     <string name="permgroup_list_microphone_and_camera">Micreofon ⁊ camara</string>
     <string name="settings_button">Roghainnean</string>
-    <string name="default_apps">Na h-aplacaidean tùsail</string>
+    <string name="default_apps">Na h-aplacaidean bunaiteach</string>
     <string name="no_default_apps">No default apps</string>
     <string name="default_apps_more">Bun-roghainnean eile</string>
     <string name="default_apps_manage_domain_urls">Fosgladh cheanglaichean</string>
