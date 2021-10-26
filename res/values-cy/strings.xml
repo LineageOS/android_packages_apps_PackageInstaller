@@ -299,5 +299,5 @@ Dewisa pa bethau i roi mynediad iddynt gan yr ap hwn.</string>
     <string name="adjust_user_sensitive_per_app_header">Dwyn sylw at ddefnydd y canlynol</string>
     <string name="assistant_record_audio_user_sensitive_title">Dangos synhwyrydd sbardun y Cynorthwyydd</string>
     <string name="assistant_record_audio_user_sensitive_summary">Dangos eicon yn y bar statws pan fo\'r meicroffon yn cael ei ddefnyddio i ddechrau\'r cynorthwyydd llais</string>
-    <string name="permgrouprequest_storage_isolated">Caniatáu i &lt;b&gt;<xliff:g id="app_name" example="Gmail">%1$s</xliff:g>&lt;/b&gt; gael mynediad i luniau a chyfryngau ar dy ddyfais?</string>
+    <string name="permgrouprequest_storage_isolated">Caniatáu i &lt;b&gt;<xliff:g id="app_name" example="Gmail">%1$s</xliff:g>&lt;/b&gt; gael mynediad at luniau a chyfryngau ar dy ddyfais?</string>
 </resources>
