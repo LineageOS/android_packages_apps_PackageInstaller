@@ -24,6 +24,8 @@ import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.view.WindowManager;
+
 import com.android.packageinstaller.DeviceUtils;
 import com.android.packageinstaller.R;
 import com.android.packageinstaller.permission.ui.handheld.ReviewPermissionsFragment;
@@ -36,6 +38,9 @@ public final class ReviewPermissionsActivity extends Activity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        getWindow().addPrivateFlags(
+                WindowManager.LayoutParams.PRIVATE_FLAG_HIDE_NON_SYSTEM_OVERLAY_WINDOWS);
 
         PackageInfo packageInfo = getTargetPackageInfo();
         if (packageInfo == null) {
