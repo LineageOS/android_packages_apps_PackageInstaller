@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Uidheam-smachd nan ceadan</string>
+    <string name="ok">Ceart ma-thà</string>
+    <string name="permission_search_keyword">ceadan</string>
+    <string name="cancel">Sguir dheth</string>
+    <string name="app_not_found_dlg_title">Cha deach an aplacaid a lorg</string>
+    <string name="grant_dialog_button_deny">Diùlt</string>
+    <string name="grant_dialog_button_deny_and_dont_ask_again">Diùilt ⁊ na faighnich dhìom a-rithist</string>
+    <string name="grant_dialog_button_deny_background">Cùm an t-inntrigeadh fhad ’s a bhios e ’ga chleachdadh</string>
+    <string name="grant_dialog_button_deny_background_and_dont_ask_again">Cùm ⁊ na faighnich dhìom a-rithist</string>
+    <string name="grant_dialog_button_more_info">Barrachd fiosrachaidh</string>
+    <string name="grant_dialog_button_deny_anyway">Diùlt e co-dhiù</string>
+    <string name="current_permission_template">        <xliff:g id="current_permission_index" example="1">%1$s</xliff:g> à
+        <xliff:g id="permission_count" example="2">%2$s</xliff:g></string>
+    <string name="permission_warning_template">An doir thu cead
+        <xliff:g id="action" example="do something">%2$s</xliff:g>
+        &lt;b&gt;gu<xliff:g id="app_name" example="Gmail">%1$s</xliff:g>&lt;/b&gt;?</string>
+    <string name="permission_add_background_warning_template">An doir thu cead
+        <xliff:g id="action" example="do something">%2$s</xliff:g>
+        &lt;b&gt;gu<xliff:g id="app_name" example="Gmail">%1$s</xliff:g>&lt;/b&gt; an-còmhnaidh?</string>
+    <string name="allow_permission_foreground_only">Nuair a bhios an aplacaid ’ga cleachdadh a-mhàin</string>
+    <string name="allow_permission_always">An-còmhnaidh</string>
+    <string name="deny_permission_deny_and_dont_ask_again">Diùlt ⁊ na faighnich dhìom a-rithist</string>
+    <string name="permission_revoked_count">Tha <xliff:g id="count" example="2">%1$d</xliff:g> à comas</string>
+    <string name="permission_revoked_all">tha gach aon à comas</string>
+    <string name="permission_revoked_none">chan eil gin à comas</string>
+    <string name="grant_dialog_button_allow">Ceadaich</string>
+    <string name="grant_dialog_button_allow_always">Ceadaich an-còmhnaidh</string>
+    <string name="grant_dialog_button_allow_foreground">Na ceadaich ach nuair a bhios an aplacaid ’ga cleachdadh</string>
+    <string name="grant_dialog_button_allow_background">Ceadaich an-còmhnaidh</string>
+    <string name="app_permissions_breadcrumb">Aplacaidean</string>
+    <string name="app_permissions">Ceadan aplacaid</string>
+    <string name="app_permission_manager">Manaidsear nan ceadan</string>
+    <string name="never_ask_again">Na faighnich dhìom a-rithist</string>
+    <string name="no_permissions">Gun cheadan</string>
+    <string name="additional_permissions">Ceadan a bharrachd</string>
+    <string name="app_permissions_info_button_label">Fosgail fiosrachadh na h-aplacaid</string>
+    <plurals name="additional_permissions_more">
+        <item quantity="one"><xliff:g id="count" example="1">%1$d</xliff:g> a bharrachd</item>
+        <item quantity="two"><xliff:g id="count" example="2">%1$d</xliff:g> a bharrachd</item>
+        <item quantity="few"><xliff:g id="count" example="2">%1$d</xliff:g> a bharrachd</item>
+        <item quantity="other"><xliff:g id="count" example="2">%1$d</xliff:g> a bharrachd</item>
+    </plurals>
+    <string name="old_sdk_deny_warning">Chaidh an aplacaid seo a dhealbhadh airson seann-tionndadh dhe Android. Ma dhiùltas tu an cead, dh’fhaoidte nach obraich i mar bu chòir tuilleadh.</string>
+    <string name="default_permission_description">gnìomh nach aithne dhuinn a ghabhail</string>
+    <string name="app_permissions_group_summary">Tha cead aig <xliff:g id="count" example="10">%1$d</xliff:g> à <xliff:g id="count" example="10">%2$d</xliff:g> aplacaid(ean)</string>
+    <string name="menu_show_system">Seall feadhainn an t-siostaim</string>
+    <string name="menu_hide_system">Falaich feadhainn an t-siostaim</string>
+    <string name="no_apps">Chan eil aplacaid ’ga iarraidh</string>
+    <string name="location_settings">Roghainnean ionaid</string>
+    <string name="location_warning">Tha <xliff:g id="app_name" example="Package Installer">%1$s</xliff:g> ’na sholaraiche ionaid aig an uidheam seo. Gabhaidh an t-inntrigeadh dhan ionad atharrachadh o na roghainnean ionaid.</string>
+    <string name="system_warning">Ma dhiùltas tu an cead seo, dh’fhaoidte nach obraich gleusan bunasach an uidheim mar bu chòir tuilleadh.</string>
+    <string name="permission_summary_enforced_by_policy">’Ga sparradh le poileasaidh</string>
+    <string name="permission_summary_disabled_by_policy_background_only">Tha an t-inntrigeadh sa chùlaibh à comas a-rèir poileasaidh</string>
+    <string name="permission_summary_enabled_by_policy_background_only">Tha an t-inntrigeadh sa chùlaibh an comas a-rèir poileasaidh</string>
+    <string name="permission_summary_enabled_by_policy_foreground_only">Tha an t-inntrigeadh air a’ bheulaibh an comas a-rèir poileasaidh</string>
+    <string name="permission_summary_enforced_by_admin">Fo smachd rianaire</string>
+    <string name="permission_summary_disabled_by_admin_background_only">Chaidh an t-inntrigeadh sa chùlaibh a chur à comas le rianaire</string>
+    <string name="permission_summary_enabled_by_admin_background_only">Chaidh an t-inntrigeadh sa chùlaibh a chur an comas le rianaire</string>
+    <string name="permission_summary_enabled_by_admin_foreground_only">Chaidh an t-inntrigeadh air a’ bheulaibh a chur an comas le rianaire</string>
+    <string name="permission_summary_enabled_system_fixed">Tha an t-uidheam feumach air a’ chead seo ach an obraich e</string>
+    <string-array name="background_access_chooser_dialog_choices">
+        <item>@string/permission_access_always</item>
+        <item>@string/permission_access_only_foreground</item>
+        <item>@string/permission_access_never</item>
+    </string-array>
+    <string name="permission_access_always">Ceadaich an-còmhnaidh</string>
+    <string name="permission_access_only_foreground">Na ceadaich ach nuair a bhios an aplacaid ’ga cleachdadh</string>
+    <string name="permission_access_never">Diùlt</string>
+    <string name="loading">’Ga luchdadh\u2026</string>
+    <string name="all_permissions">A h-uile cead</string>
+    <string name="other_permissions">Comasan eile na h-aplacaid</string>
+    <string name="permission_request_title">Iarrtas cead</string>
+    <string name="screen_overlay_title">Mhothaich sinn do thar-chòmhdachadh sgrìn</string>
+    <string name="screen_overlay_message">Airson roghainn a’ chead seo atharrachadh, feumaidh tu tar-chòmhdachadh na sgrìn a chur dheth an toiseach o “Roghainnean ⁊ aplacaidean”</string>
+    <string name="screen_overlay_button">Fosgail na roghainnean</string>
+    <string name="wear_not_allowed_dlg_title">Android Wear</string>
+    <string name="wear_not_allowed_dlg_text">Cha chuir Wear taic ri gnìomhan stàlaidh/dì-stàlaidh.</string>
+    <string name="permission_review_title_template_install">Tagh na dh’fhaodas
+        &lt;b&gt;<xliff:g id="app_name" example="Gmail">%1$s</xliff:g>&lt;/b&gt; inntrigeadh</string>
+    <string name="permission_review_title_template_update">        Chaidh &lt;b&gt;<xliff:g id="app_name" example="Gmail">%1$s</xliff:g>&lt;/b&gt; ùrachadh.
+        Tagh na dh’fhaodas an aplacaid seo inntrigeadh.</string>
+    <string name="review_button_cancel">Sguir dheth</string>
+    <string name="review_button_continue">Lean air adhart</string>
+    <string name="new_permissions_category">Ceadan ùra</string>
+    <string name="current_permissions_category">Na ceadan làithreach</string>
+    <string name="message_staging">Ag ullachadh na h-aplacaid…</string>
+    <string name="app_name_unknown">Chan eil fhios</string>
+    <string name="permission_usage_title">Dashboard</string>
+    <string name="permission_usage_summary_foreground">An t-inntrigeadh mu dheireadh: <xliff:g id="time" example="12:10 PM">%1$s</xliff:g>\nChaidh inntrigeadh an turas mu dheireadh fhad ’s a bha an aplacaid ’ga cleachdadh</string>
+    <string name="permission_usage_summary_background">An t-inntrigeadh mu dheireadh: <xliff:g id="time" example="12:10 PM">%1$s</xliff:g>\nChaidh inntrigeadh an turas mu dheireadh sa chùlaibh</string>
+    <string name="permission_usage_any_permission">Cead sam bith</string>
+    <string name="permission_usage_any_time">Àm sam bith</string>
+    <string name="permission_usage_last_7_days">Na 7 làithean seo chaidh</string>
+    <string name="permission_usage_last_day">An 24 uair a thìde seo chaidh</string>
+    <string name="permission_usage_last_hour">An uair a thìde seo chaidh</string>
+    <string name="permission_usage_last_15_minutes">An cairteal na h-uarach seo chaidh</string>
+    <string name="permission_usage_last_minute">A’ mhionaid seo chaidh</string>
+    <string name="no_permission_usages">Cha deach cead a chleachdadh</string>
+    <string name="permission_usage_list_title_any_time">Inntrigeadh o chionn goirid aig àm sam bith</string>
+    <string name="permission_usage_list_title_last_7_days">Inntrigeadh o chionn goirid sna 7 làithean seo chaidh</string>
+    <string name="permission_usage_list_title_last_day">Inntrigeadh o chionn goirid san 24 uair a thìde seo chaidh</string>
+    <string name="permission_usage_list_title_last_hour">Inntrigeadh o chionn goirid san uair a thìde seo chaidh</string>
+    <string name="permission_usage_list_title_last_15_minutes">Inntrigeadh o chionn goirid sa chairteal na h-uarach seo chaidh</string>
+    <string name="permission_usage_list_title_last_minute">Inntrigeadh o chionn goirid sa mhionaid seo chaidh</string>
+    <string name="permission_usage_bar_chart_title_any_time">Cleachdadh cheadan aig àm sam bith</string>
+    <string name="permission_usage_bar_chart_title_last_7_days">Cleachdadh cheadan sna 7 làithean seo chaidh</string>
+    <string name="permission_usage_bar_chart_title_last_day">Cleachdadh cheadan san 24 uair a thìde seo chaidh</string>
+    <string name="permission_usage_bar_chart_title_last_hour">Cleachdadh cheadan an uair a thìde seo chaidh</string>
+    <string name="permission_usage_bar_chart_title_last_15_minutes">Cleachdadh cheadan ann an cairteal na h-uarach seo chaidh</string>
+    <string name="permission_usage_bar_chart_title_last_minute">Cleachdadh cheadan sa mhionaid seo chaidh</string>
+    <plurals name="permission_usage_bar_label">
+        <item quantity="one"><xliff:g id="number" example="7">%s</xliff:g> aplacaid</item>
+        <item quantity="two"><xliff:g id="number" example="7">%s</xliff:g> aplacaid</item>
+        <item quantity="few"><xliff:g id="number" example="7">%s</xliff:g> aplacaidean</item>
+        <item quantity="other"><xliff:g id="number" example="7">%s</xliff:g> aplacaid</item>
+    </plurals>
+    <string name="permission_usage_view_details">Seall na h-uile air an deas-bhòrd</string>
+    <string name="app_permission_usage_filter_label">Criathrag a-rèir: <xliff:g id="perm" example="Location">%1$s</xliff:g> </string>
+    <string name="app_permission_usage_remove_filter">Seall na h-uile air an deas-bhòrd</string>
+    <string name="filter_by_title">Criathraich a-rèir</string>
+    <string name="filter_by_permissions">Criathraich a-rèir a’ chead</string>
+    <string name="filter_by_time">Criathraich a-rèir an ama</string>
+    <string name="sort_spinner_most_permissions">Na ceadan as motha</string>
+    <string name="sort_spinner_most_accesses">An t-inntrigeadh as trice</string>
+    <string name="sort_spinner_recent">O chionn goirid</string>
+    <string name="sort_by_app">Seòrsaich a-rèir cleachdadh nan aplacaidean</string>
+    <string name="sort_by_time">Seòrsaich a-rèir an ama</string>
+    <string name="item_separator">,\u0020</string>
+    <string name="permission_usage_refresh">Ath-nuadhaich</string>
+    <plurals name="permission_usage_permission_filter_subtitle">
+        <item quantity="one"><xliff:g id="number" example="7">%s</xliff:g> aplacaid</item>
+        <item quantity="two"><xliff:g id="number" example="7">%s</xliff:g> aplacaid</item>
+        <item quantity="few"><xliff:g id="number" example="7">%s</xliff:g> aplacaidean</item>
+        <item quantity="other"><xliff:g id="number" example="7">%s</xliff:g> aplacaid</item>
+    </plurals>
+    <string name="app_permission_usage_title">App permissions usage</string>
+    <string name="app_permission_usage_summary">Uiread nan inntrigidhean: <xliff:g id="num" example="2">%1$s</xliff:g>. Faid iomlan: <xliff:g id="duration" example="2 hours">%2$s</xliff:g>. An cleachdadh mu dheireadh <xliff:g id="time" example="2 hours">%3$s</xliff:g> air ais.</string>
+    <string name="app_permission_usage_summary_no_duration">Uiread nan inntrigidhean: <xliff:g id="num" example="2">%1$s</xliff:g>. An cleachdadh mu dheireadh <xliff:g id="time" example="2 hours">%2$s</xliff:g> air ais.</string>
+    <string name="app_permission_button_allow">Ceadaich</string>
+    <string name="app_permission_button_allow_always">Ceadaich an-còmhnaidh</string>
+    <string name="app_permission_button_allow_foreground">Na ceadaich ach nuair a bhios an aplacaid ’ga cleachdadh</string>
+    <string name="app_permission_button_deny">Diùlt</string>
+    <string name="app_permission_title">Cead air <xliff:g id="perm" example="location">%1$s</xliff:g></string>
+    <string name="app_permission_header">Inntrigeadh air <xliff:g id="perm" example="location">%1$s</xliff:g> dhan aplacaid seo</string>
+    <string name="app_permission_footer_usage_summary_generic">Dh’inntrig <xliff:g id="app" example="Maps">%1$s</xliff:g> <xliff:g id="perm" example="location">%2$s</xliff:g> <xliff:g id="time" example="2 hours">%3$s</xliff:g> air ais</string>
+    <string name="app_permission_footer_usage_summary_activity_recognition">Dh’inntrig <xliff:g id="app" example="Maps">%1$s</xliff:g> gnìomhachd do bhodhaige <xliff:g id="time" example="2 hours">%2$s</xliff:g> air ais</string>
+    <string name="app_permission_footer_usage_summary_calendar">Dh’inntrig <xliff:g id="app" example="Maps">%1$s</xliff:g> am mìosachan agad <xliff:g id="time" example="2 hours">%2$s</xliff:g> air ais</string>
+    <string name="app_permission_footer_usage_summary_call_log">Dh’inntrig <xliff:g id="app" example="Maps">%1$s</xliff:g> logaichean nan gairmean agad <xliff:g id="time" example="2 hours">%2$s</xliff:g> air ais</string>
+    <string name="app_permission_footer_usage_summary_camera">Dh’inntrig <xliff:g id="app" example="Maps">%1$s</xliff:g> an camara agad <xliff:g id="time" example="2 hours">%2$s</xliff:g> air ais</string>
+    <string name="app_permission_footer_usage_summary_contacts">Dh’inntrig <xliff:g id="app" example="Maps">%1$s</xliff:g> an luchd-aithne agad <xliff:g id="time" example="2 hours">%2$s</xliff:g> air ais</string>
+    <string name="app_permission_footer_usage_summary_location">Dh’inntrig <xliff:g id="app" example="Maps">%1$s</xliff:g> d’ ionad <xliff:g id="time" example="2 hours">%2$s</xliff:g> air ais</string>
+    <string name="app_permission_footer_usage_summary_microphone">Dh’inntrig <xliff:g id="app" example="Maps">%1$s</xliff:g> am micreofon agad <xliff:g id="time" example="2 hours">%2$s</xliff:g> air ais</string>
+    <string name="app_permission_footer_usage_summary_phone">Dh’inntrig <xliff:g id="app" example="Maps">%1$s</xliff:g> am fòn agad <xliff:g id="time" example="2 hours">%2$s</xliff:g> air ais</string>
+    <string name="app_permission_footer_usage_summary_sensors">Dh’inntrig <xliff:g id="app" example="Maps">%1$s</xliff:g> na mothaichearan agad <xliff:g id="time" example="2 hours">%2$s</xliff:g> air ais</string>
+    <string name="app_permission_footer_usage_summary_sms">Dh’inntrig <xliff:g id="app" example="Maps">%1$s</xliff:g> na SMS agad <xliff:g id="time" example="2 hours">%2$s</xliff:g> air ais</string>
+    <string name="app_permission_footer_usage_summary_storage">Dh’inntrig <xliff:g id="app" example="Maps">%1$s</xliff:g> an stòras agad <xliff:g id="time" example="2 hours">%2$s</xliff:g> air ais</string>
+    <string name="app_permission_footer_no_usages_generic">Cha do dh’inntrig <xliff:g id="app" example="Maps">%1$s</xliff:g> <xliff:g id="perm" example="location">%2$s</xliff:g></string>
+    <string name="app_permission_footer_no_usages_activity_recognition">Cha do dh’inntrig <xliff:g id="app" example="Maps">%1$s</xliff:g> gnìomhachd do bhodhaige</string>
+    <string name="app_permission_footer_no_usages_calendar">Cha do dh’inntrig <xliff:g id="app" example="Maps">%1$s</xliff:g> am mìosachan agad</string>
+    <string name="app_permission_footer_no_usages_call_log">Cha do dh’inntrig <xliff:g id="app" example="Maps">%1$s</xliff:g> logaichean nan gairmean agad</string>
+    <string name="app_permission_footer_no_usages_camera">Cha do dh’inntrig <xliff:g id="app" example="Maps">%1$s</xliff:g> an camara agad</string>
+    <string name="app_permission_footer_no_usages_contacts">Cha do dh’inntrig <xliff:g id="app" example="Maps">%1$s</xliff:g> an luchd-aithne agad</string>
+    <string name="app_permission_footer_no_usages_location">Cha do dh’inntrig <xliff:g id="app" example="Maps">%1$s</xliff:g> d’ ionad</string>
+    <string name="app_permission_footer_no_usages_microphone">Cha do dh’inntrig <xliff:g id="app" example="Maps">%1$s</xliff:g> am micreofon agad</string>
+    <string name="app_permission_footer_no_usages_phone">Cha do dh’inntrig <xliff:g id="app" example="Maps">%1$s</xliff:g> am fòn agad</string>
+    <string name="app_permission_footer_no_usages_sensors">Cha do dh’inntrig <xliff:g id="app" example="Maps">%1$s</xliff:g> na mothaichearan agad</string>
+    <string name="app_permission_footer_no_usages_sms">Cha do dh’inntrig <xliff:g id="app" example="Maps">%1$s</xliff:g> na SMS agad</string>
+    <string name="app_permission_footer_no_usages_storage">Cha do dh’inntrig <xliff:g id="app" example="Maps">%1$s</xliff:g> an stòras agad</string>
+    <string name="app_permission_footer_not_available">Chan eil dàta air an turas mu dheireadh a chaidh inntrigeadh ri fhaighinn airson a’ chead seo</string>
+    <string name="app_permission_footer_app_permissions_link">Seall a h-uile cead aig <xliff:g id="app" example="Maps">%1$s</xliff:g></string>
+    <string name="app_permission_footer_permission_apps_link">Seall a h-uile aplacaid aig a bheil an cead seo</string>
+    <string name="permission_description_summary_generic">’S urrainn do dh’aplacaidean air a bheil an cead seo:<xliff:g id="description" example="record audio">%1$s</xliff:g></string>
+    <string name="permission_description_summary_activity_recognition">’S urrainn do dh’aplacaidean air a bheil an cead seo gnìomhachd do bhodhaige inntrigeadh, can coiseachd, falbh air baidhseagal, draibheadh, cunntadh cheuman is a bharrachd</string>
+    <string name="permission_description_summary_calendar">’S urrainn do dh’aplacaidean air a bheil an cead seo am mìosachan agad inntrigeadh</string>
+    <string name="permission_description_summary_call_log">’S urrainn do dh’aplacaidean air a bheil an cead seo loga nan gairmean fòn inntrigeadh agus sgrìobhadh thuige</string>
+    <string name="permission_description_summary_camera">’S urrainn do dh’aplacaidean air a bheil an cead seo dealbhan a thogail agus videothan a chlàradh</string>
+    <string name="permission_description_summary_contacts">’S urrainn do dh’aplacaidean air a bheil an cead seo an luchd-aithne agad inntrigeadh</string>
+    <string name="permission_description_summary_location">’S urrainn do dh’aplacaidean air a bheil an cead seo ionad an uidheim seo inntrigeadh</string>
+    <string name="permission_description_summary_microphone">’S urrainn do dh’aplacaidean air a bheil an cead seo fuaim a chlàradh</string>
+    <string name="permission_description_summary_phone">’S urrainn do dh’aplacaidean air a bheil an cead seo gairmean fòn a chur ’s a stiùireadh</string>
+    <string name="permission_description_summary_sensors">’S urrainn do dh’aplacaidean air a bheil an cead seo dàta mu do bheò inntrigeadh</string>
+    <string name="permission_description_summary_sms">’S urrainn do dh’aplacaidean air a bheil an cead seo teachdaireachdan SMS a chur is a shealltainn</string>
+    <string name="permission_description_summary_storage">’S urrainn do dh’aplacaidean air a bheil an cead seo na dealbhan, meadhanan is faidhlichean air an uidheam agad inntrigeadh</string>
+    <string name="app_permission_most_recent_summary">An t-inntrigeadh mu dheireadh: <xliff:g id="time_date" example="12:42 PM">%1$s</xliff:g></string>
+    <string name="app_permission_most_recent_denied_summary">’Ga dhiùltadh an-dràsta / An t-inntrigeadh mu dheireadh: <xliff:g id="time_date" example="12:42 PM">%1$s</xliff:g></string>
+    <string name="app_permission_never_accessed_summary">Cha deach inntrigeadh a-riamh</string>
+    <string name="app_permission_never_accessed_denied_summary">Air a dhiùltadh / Cha deach inntrigeadh a-riamh</string>
+    <string name="allowed_header">Ceadaichte</string>
+    <string name="allowed_always_header">Ceadaichte an-còmhnaidh</string>
+    <string name="allowed_foreground_header">Ceadaichte fhad ’s a bhios e ’ga chleachdadh a-mhàin</string>
+    <string name="denied_header">Air a dhiùltadh</string>
+    <string name="detailed_usage_link">Seall mion-fhiosrachadh a’ chleachdaidh</string>
+    <plurals name="days">
+        <item quantity="one"><xliff:g id="number" example="7">%s</xliff:g> latha</item>
+        <item quantity="two"><xliff:g id="number" example="7">%s</xliff:g> latha</item>
+        <item quantity="few"><xliff:g id="number" example="7">%s</xliff:g> làithean</item>
+        <item quantity="other"><xliff:g id="number" example="7">%s</xliff:g> latha</item>
+    </plurals>
+    <plurals name="hours">
+        <item quantity="one"><xliff:g id="number" example="7">%s</xliff:g> uair a thìde</item>
+        <item quantity="two"><xliff:g id="number" example="7">%s</xliff:g> uair a thìde</item>
+        <item quantity="few"><xliff:g id="number" example="7">%s</xliff:g> uairean a thìde</item>
+        <item quantity="other"><xliff:g id="number" example="7">%s</xliff:g> uair a thìde</item>
+    </plurals>
+    <plurals name="minutes">
+        <item quantity="one"><xliff:g id="number" example="7">%s</xliff:g> mhionaid</item>
+        <item quantity="two"><xliff:g id="number" example="7">%s</xliff:g> mhionaid</item>
+        <item quantity="few"><xliff:g id="number" example="7">%s</xliff:g> mionaidean</item>
+        <item quantity="other"><xliff:g id="number" example="7">%s</xliff:g> mionaid</item>
+    </plurals>
+    <plurals name="seconds">
+        <item quantity="one"><xliff:g id="number" example="7">%s</xliff:g> diog</item>
+        <item quantity="two"><xliff:g id="number" example="7">%s</xliff:g> dhiog</item>
+        <item quantity="few"><xliff:g id="number" example="7">%s</xliff:g> diogan</item>
+        <item quantity="other"><xliff:g id="number" example="7">%s</xliff:g> diog</item>
+    </plurals>
+    <string name="permission_reminders">Cuimhneachain cheadan</string>
+    <string name="background_location_access_reminder_notification_title">Fhuair <xliff:g id="app_name" example="Gmail">%s</xliff:g> d’ ionad sa chùlaibh</string>
+    <string name="background_location_access_reminder_notification_content">’S urrainn dhan aplacaid seo d’ ionad inntrigeadh an-còmhnaidh. Thoir gnogag gus atharrachadh.</string>
+    <string name="permission_subtitle_only_in_foreground">fhad ’s a bhios an aplacaid ’ga cleachdadh a-mhàin</string>
+    <string name="no_permissions_allowed">Cha deach cead a thoirt dha</string>
+    <string name="no_permissions_denied">Cha deach cead a dhiùltadh dha</string>
+    <string name="no_apps_allowed">Cha deach aplacaid a cheadachadh dha</string>
+    <string name="no_apps_denied">Cha deach aplacaid a dhiùltadh dha</string>
+    <string name="car_permission_selected">Air a thaghadh</string>
+    <string name="settings">Roghainnean</string>
+    <string name="accessibility_service_dialog_title_single">Tha làn-inntrigeadh dhan uidheam agad aig <xliff:g id="service_name" example="Gmail">%s</xliff:g></string>
+    <string name="accessibility_service_dialog_title_multiple">Tha làn-inntrigeadh dhan uidheam agad aig aplacaidean na so-ruigsinneachd (<xliff:g id="num_services" example="2">%s</xliff:g>)</string>
+    <string name="accessibility_service_dialog_bottom_text_single">Chì <xliff:g id="service_name" example="Gmail">%s</xliff:g> an sgrìn, na gnìomhan ’s na h-ion-chuir agad agus ’s urrainn dha gnìomhan a ghabhail agus an sgrìn a stiùireadh.</string>
+    <string name="accessibility_service_dialog_bottom_text_multiple">Chì na h-aplacaidean seo an sgrìn, na gnìomhan ’s na h-ion-chuir agad agus ’s urrainn dhaibh gnìomhan a ghabhail agus an sgrìn a stiùireadh.</string>
+    <string name="role_assistant_label">Aplacaid cuidiche bhunaiteach</string>
+    <string name="role_assistant_short_label">Aplacaid cuidiche</string>
+    <string name="role_assistant_description">’S urrainn do dh’aplacaidean cuidiche do chuideachadh, stèidhichte air an fhiosrachadh a chì thu air an sgrìn. Cuiridh cuid a dh’aplacaidean taic ri seirbheisean an lòinseir agus an ion-chuir gutha ach am faigh thu cuideachadh fillte a-staigh.</string>
+    <string name="role_assistant_request_title">An suidhich thu <xliff:g id="app_name" example="Super Assistant">%1$s</xliff:g> ’nad aplacaid cuidiche bhunaiteach?</string>
+    <string name="role_assistant_request_description">Gheibh e inntrigeadh air na h-SMS agus air loga nan gairmean agad</string>
+    <string name="role_browser_label">Aplacaid brabhsair bhunaiteach</string>
+    <string name="role_browser_short_label">Aplacaid brabhsair</string>
+    <string name="role_browser_description">Seo aplacaidean a bheir inntrigeadh dhan eadar-lìon dhut ’s a sheallas ceanglaichean air a bheir thu gnogag</string>
+    <string name="role_browser_request_title">An suidhich thu <xliff:g id="app_name" example="Super Browser">%1$s</xliff:g> ’nad aplacaid brabhsair bhunaiteach?</string>
+    <string name="role_browser_request_description">Chan eil feum air cead</string>
+    <string name="role_dialer_label">Aplacaid bhunaiteach an fhòn</string>
+    <string name="role_dialer_short_label">Aplacaid an fhòn</string>
+    <string name="role_dialer_description">Seo aplacaidean a leigeas leat gairmean fòn a chur is fhaighinn air an uidheam agad</string>
+    <string name="role_dialer_request_title">An suidhich thu <xliff:g id="app_name" example="Super Phone">%1$s</xliff:g> ’nad aplacaid bhunaiteach an fhòn?</string>
+    <string name="role_dialer_request_description">Gheibh e inntrigeadh air loga nan gairmean agad agus ’s urrainn dha SMS a chur</string>
+    <string name="role_sms_label">Aplacaid SMS bhunaiteach</string>
+    <string name="role_sms_short_label">Aplacaid SMS</string>
+    <string name="role_sms_description">Seo aplacaidean a leigeas leat an àireamh fòn agad a chleachdadh ach an cuir is faigh thu teachdaireachdan teacsa goirid, dealbhan, videothan is a bharrachd</string>
+    <string name="role_sms_request_title">An suidhich thu <xliff:g id="app_name" example="Super SMS">%1$s</xliff:g> ’nad aplacaid SMS bhunaiteach?</string>
+    <string name="role_sms_request_description">Gheibh e inntrigeadh dhan luchd-aithne, dha na h-SMS is dhan fhòn agad</string>
+    <string name="role_emergency_label">Aplacaid èiginn bhunaiteach</string>
+    <string name="role_emergency_short_label">Aplacaid èiginn</string>
+    <string name="role_emergency_description">Seo aplacaidean a leigeas leat am fiosrachadh meadaigeach agad a chlàradh agus inntrigeadh a thoirt dhan luchd-èiginn; rabhaidhean fhaighinn mu shìde chunnartach agus dunaich; fios a chur do chàch nuair a bhios tu feumach air cobhair</string>
+    <string name="role_emergency_request_title">An suidhich thu <xliff:g id="app_name" example="Super Emergency">%1$s</xliff:g> ’nad aplacaid èiginn bhunaiteach?</string>
+    <string name="role_emergency_request_description">Chan eil feum air cead</string>
+    <string name="role_home_label">Aplacaid bhunaiteach na dachaigh</string>
+    <string name="role_home_short_label">Aplacaid na dachaigh</string>
+    <string name="role_home_description">Seo aplacaidean, air a bheil “lòinsear” gu tric, a thèid a chur an àite sgrìnichean dachaigh an uidheim Android agad agus a bheir cothrom dhut air susbaint is gleusan an uidheim agad</string>
+    <string name="role_home_request_title">An suidhich thu <xliff:g id="app_name" example="Super Home">%1$s</xliff:g> ’nad aplacaid bhunaiteach na dachaigh?</string>
+    <string name="role_home_request_description">Chan eil feum air cead</string>
+    <string name="role_call_redirection_label">Aplacaid sìnidh air adhart ghairmean bhunaiteach</string>
+    <string name="role_call_redirection_short_label">Aplacaid sìnidh air adhart ghairmean</string>
+    <string name="role_call_redirection_description">Seo aplacaidean a leigeas leat gairmean a-mach a shìneadh air adhart gu àireamh fòn eile</string>
+    <string name="role_call_redirection_request_title">An suidhich thu <xliff:g id="app_name" example="Super Call Redirection">%1$s</xliff:g> ’nad aplacaid sìnidh air adhart ghairmean bhunaiteach?</string>
+    <string name="role_call_redirection_request_description">Chan eil feum air cead</string>
+    <string name="role_call_screening_label">Aplacaid spama ⁊ ID a’ ghairmeir bhunaiteach</string>
+    <string name="role_call_screening_short_label">Aplacaid spama ⁊ ID a’ ghairmeir</string>
+    <string name="role_call_screening_description">Seo aplacaidean a leigeas leat gairmean aithneachadh, spama is gairmean robotairean a bhacadh agus àireamhan nach eil thu ag iarraidh a chur air liosta dhubh</string>
+    <string name="role_call_screening_request_title">An suidhich thu <xliff:g id="app_name" example="Super Call Screening">%1$s</xliff:g> ’nad aplacaid spama ⁊ ID a’ ghairmeir bhunaiteach?</string>
+    <string name="role_call_screening_request_description">Chan eil feum air cead</string>
+    <string name="request_role_current_default">A’ bhun-roghainn làithreach</string>
+    <string name="request_role_dont_ask_again">Na faighnich dhìom a-rithist</string>
+    <string name="request_role_set_as_default">Suidhich mar a’ bhun-roghainn</string>
+    <string name="default_app_search_keyword">aplacaidean bunaiteach</string>
+    <string name="ongoing_usage_dialog_ok">Tha mi agaibh</string>
+    <string name="ongoing_usage_dialog_open_settings">Roghainnean na prìobhaideachd</string>
+    <string name="ongoing_usage_dialog_title">Na h-aplacaidean a chleachdas <xliff:g id="types_list" example="camera( and location)">%s</xliff:g></string>
+    <string name="ongoing_usage_dialog_separator">,\u0020</string>
+    <string name="ongoing_usage_dialog_last_separator">\u0020⁊\u0020</string>
+    <string name="settings_button">Roghainnean</string>
+    <string name="default_apps">Na h-aplacaidean bunaiteach</string>
+    <string name="no_default_apps">No default apps</string>
+    <string name="default_apps_more">Bun-roghainnean eile</string>
+    <string name="default_apps_manage_domain_urls">Fosgladh cheanglaichean</string>
+    <string name="default_apps_for_work">Bun-roghainn na h-obrach</string>
+    <string name="default_app_none">Chan eil gin</string>
+    <string name="default_app_system_default">(Bun-roghainn an t-siostaim)</string>
+    <string name="default_app_no_apps">Chan eil aplacaid ann</string>
+    <string name="car_default_app_selected">Air a thaghadh</string>
+    <string name="car_default_app_selected_with_info">Air a thaghadh – <xliff:g id="additional_info" example="(System default)">%1$s</xliff:g></string>
+    <string name="special_app_access_search_keyword">special app access, inntrigeadh sònraichte nan aplacaid</string>
+    <string name="special_app_access">Inntrigeadh sònraichte nan aplacaid</string>
+    <string name="no_special_app_access">Chan eil inntrigeadh sònraichte aplacaid ann</string>
+    <string name="special_app_access_no_apps">Chan eil aplacaid ann</string>
+    <string name="home_missing_work_profile_support">Cha chuir seo taic ri pròifil na h-obrach</string>
+    <string name="encryption_unaware_confirmation_message">An aire: Ma bhios sgrìn-ghlasaidh air a shuidheachadh agad agus tu air an t-uidheam agad ath-thòiseachadh, chan urrainn dhan aplacaid seo tòiseachadh mus doir thu a’ ghlas far an uidheim agad.</string>
+    <string name="assistant_confirmation_message">Leughaidh an cuidiche fiosrachadh mu na h-aplacaidean a tha ’gan cleachdadh air an t-siostam agad, a’ gabhail a-staigh am fiosrachadh a chì thu air an sgrìn no a ghabhas inntrigeadh am broinn nan aplacaidean fhèin.</string>
+    <string name="incident_report_channel_name">Co-roinn fiosrachadh dì-bhugachaidh</string>
+    <string name="incident_report_notification_title">An co-roinn thu fiosrachadh dì-bhugachaidh mionaideach?</string>
+    <string name="incident_report_notification_text">Tha <xliff:g id="app_name" example="Gmail">%1$s</xliff:g> airson fiosrachadh dì-bhugachaidh a luchdadh suas.</string>
+    <string name="incident_report_dialog_title">Co-roinn fiosrachadh dì-bhugachaidh</string>
+    <string name="incident_report_dialog_intro">Mhothaich an siostam do dhuilgheadas.</string>
+    <string name="incident_report_dialog_text">"Tha <xliff:g id="app_name" example="Gmail">%1$s</xliff:g> airson aithris air buga a luchdadh suas a chaidh a chruthachadh air an uidheam seo <xliff:g id="date" example="December 26, 2018">%2$s</xliff:g> aig <xliff:g id="time" example="1:20 PM">%3$s</xliff:g>. Gabhaidh aithrisean air bugaichean a-staigh fiosrachadh pearsanta mun uidheam agad no a chaidh a chur ris an loga le aplacaidean, can ainmean cleachdaiche, dàta mu d’ ionad, aithnichearan uidheim agus fiosrachadh an lìonraidh. Na co-roinn aithris air buga ach le daoine agus aplacaidean anns a bheil earbsa agad a thaobh an fhiosrachaidh seo.
+
+An ceadaich thu gun luchdaich <xliff:g id="app_name" example="Gmail">%4$s</xliff:g> suas aithris air buga?"</string>
+    <string name="incident_report_error_dialog_text">"Thachair mearachd le pròiseasadh aithris air buga dha <xliff:g id="app_name" example="Gmail">%1$s</xliff:g>. Chaidh co-roinneadh an fiosrachaidh dhì-bhugachaidh mhionaidich a dhiùltadh air an adhbhar sin. Tha sinn duilich gun do bhris sinn a-steach ort."</string>
+    <string name="incident_report_dialog_allow_label">Ceadaich</string>
+    <string name="incident_report_dialog_deny_label">Diùlt</string>
+    <string name="adjust_user_sensitive_title">Roghainnean adhartach</string>
+    <string name="menu_adjust_user_sensitive">Roghainnean adhartach</string>
+    <string name="adjust_user_sensitive_globally_title">Seall cleachdadh aplacaidean an t-siostaim</string>
+    <string name="adjust_user_sensitive_globally_summary">Seall na ceadan a chleachdas aplacaidean an t-siostaim air bàr na staid, air an deas-bhòrd ⁊ air àitichean eile</string>
+    <string name="adjust_user_sensitive_per_app_header">Soillsich an cleachdadh dha na leanas</string>
+    <string name="assistant_record_audio_user_sensitive_title">Seall mothachadh trigear a’ chuidiche</string>
+    <string name="assistant_record_audio_user_sensitive_summary">Seall an ìomhaigheag air bàr na staid nuair a bhios am micreofon ’ga chleachdadh airson cuidiche gutha a ghnìomhachadh</string>
+    <string name="permgrouprequest_storage_isolated">Am faod
+        &lt;b&gt;<xliff:g id="app_name" example="Gmail">%1$s</xliff:g>&lt;/b&gt; na dealbhan is meadhanan air an uidheam agad inntrigeadh?</string>
+</resources>
