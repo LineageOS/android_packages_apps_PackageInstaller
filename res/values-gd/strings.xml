@@ -14,444 +14,818 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- [CHAR LIMIT=60] -->
     <string name="app_name">Uidheam-smachd nan ceadan</string>
+    <!-- [CHAR LIMIT=15] -->
     <string name="ok">Ceart ma-thà</string>
+    <!-- Keyword in the Settings app's search functionality that can be used to find links to the permissions management screens [CHAR LIMIT=none] -->
     <string name="permission_search_keyword">ceadan</string>
+    <!-- Button label for generic cancel action [CHAR LIMIT=20] -->
     <string name="cancel">Sguir dheth</string>
+    <!-- Button label for back action [CHAR LIMIT=20] -->
     <string name="back">Air ais</string>
+    <!-- Button label for uninstall or disable actions [CHAR LIMIT=none] -->
     <string name="uninstall_or_disable">Dì-stàlaich no cuir à comas</string>
+    <!--  [CHAR LIMIT=30] -->
     <string name="app_not_found_dlg_title">Cha deach an aplacaid a lorg</string>
+    <!-- Title for the dialog button to deny a permission grant. [CHAR LIMIT=15] -->
     <string name="grant_dialog_button_deny">Diùlt</string>
+    <!-- Title for the dialog button to always deny a permission grant from now on. [CHAR LIMIT=60] -->
     <string name="grant_dialog_button_deny_and_dont_ask_again">Diùilt ⁊ na faighnich dhìom a-rithist</string>
+    <!-- Title for the dialog button to deny a change from foreground to background permission grant. [CHAR LIMIT=60] -->
     <string name="grant_dialog_button_no_upgrade">Cùm “Fhad ’s a bhios tu ris an aplacaid”</string>
+    <!-- Title for the dialog button to deny a change from one-time to background permission grant. [CHAR LIMIT=60] -->
     <string name="grant_dialog_button_no_upgrade_one_time">Cùm “An turas seo a-mhàin”</string>
+    <!-- Title for the dialog button to get more info about a permission. [CHAR LIMIT=15] -->
     <string name="grant_dialog_button_more_info">Barrachd fiosrachaidh</string>
+    <!-- Title for the dialog button to deny a permission grant despite a warning of implications. [CHAR LIMIT=15] -->
     <string name="grant_dialog_button_deny_anyway">Diùlt e co-dhiù</string>
+    <!-- Alternative dialog button to deny a permission, but phrased as dismissing the dialog. Currently only used in automotive. [CHAR LIMIT=20] -->
     <string name="grant_dialog_button_dismiss">Leig seachad</string>
+    <!-- Template for the current permission from the total number of permissions. [CHAR LIMIT=100] -->
     <string name="current_permission_template">        <xliff:g id="current_permission_index" example="1">%1$s</xliff:g> à
         <xliff:g id="permission_count" example="2">%2$s</xliff:g></string>
+    <!-- Template for the warning message when an app requests a permission. [CHAR LIMIT=100] -->
     <string name="permission_warning_template">An doir thu cead
         <xliff:g id="action" example="do something">%2$s</xliff:g>
         &lt;b&gt;gu<xliff:g id="app_name" example="Gmail">%1$s</xliff:g>&lt;/b&gt;?</string>
+    <!-- Template for the warning message when an app requests the permission to access a
+    resource even while in the background (i.e. always). [CHAR LIMIT=100] -->
     <string name="permission_add_background_warning_template">An doir thu cead
         <xliff:g id="action" example="do something">%2$s</xliff:g>
         &lt;b&gt;gu<xliff:g id="app_name" example="Gmail">%1$s</xliff:g>&lt;/b&gt; an-còmhnaidh?</string>
+    <!-- Radio button shown for permissions that can be granted either only while the app is in
+    foreground or always. If this button is selected the app only gets the permission while in
+    foreground [CHAR LIMIT=50] -->
     <string name="allow_permission_foreground_only">Nuair a bhios an aplacaid ’ga cleachdadh a-mhàin</string>
+    <!-- Radio button shown for permissions that can be granted either only while the app is in
+    foreground or always. If this button is selected the app always gets the permission (while in
+    foreground _and_ while in background) [CHAR LIMIT=50] -->
     <string name="allow_permission_always">An-còmhnaidh</string>
+    <!-- Radio button shown for permissions that can be granted either only while the app is in
+    foreground or always. If this button is selected the app does not get the permission and the
+    permissions will always be denied from now on [CHAR LIMIT=50] -->
     <string name="deny_permission_deny_and_dont_ask_again">Diùlt ⁊ na faighnich dhìom a-rithist</string>
+    <!-- Template for the message how many permissions are disabled. [CHAR LIMIT=30] -->
     <string name="permission_revoked_count">Tha <xliff:g id="count" example="2">%1$d</xliff:g> à comas</string>
+    <!-- Message that all permissions are disabled. [CHAR LIMIT=30]  -->
     <string name="permission_revoked_all">tha gach aon à comas</string>
+    <!-- Message that no permissions are disabled. [CHAR LIMIT=30]  -->
     <string name="permission_revoked_none">chan eil gin à comas</string>
+    <!-- Title for the dialog button to allow a permission grant. [CHAR LIMIT=15]  -->
     <string name="grant_dialog_button_allow">Ceadaich</string>
+    <!-- Title for the dialog button to allow a permission grant when you can also only allow in the foreground. [CHAR LIMIT=60] -->
     <string name="grant_dialog_button_allow_always">Ceadaich an-còmhnaidh</string>
+    <!-- Title for the dialog button to allow a permission grant only when the app is in the foreground. [CHAR LIMIT=60] -->
     <string name="grant_dialog_button_allow_foreground">Fhad ’s a bhios tu ris an aplacaid</string>
+    <!-- Title for the dialog button to allow a permission grant temporarily in teh foreground. [CHAR LIMIT=60] -->
     <string name="grant_dialog_button_allow_one_time">An turas seo a-mhàin</string>
+    <!-- Title for the dialog button to allow a change from foreground to background permission grant. [CHAR LIMIT=60]  -->
     <string name="grant_dialog_button_allow_background">Ceadaich an-còmhnaidh</string>
+    <!-- Title for the dialog button to allow a permission grant for all files. [CHAR LIMIT=60]  -->
     <string name="grant_dialog_button_allow_all_files">Ceadaich stiùireadh nam faidhlichean uile</string>
+    <!-- Title for the dialog button to allow a permission grant for media files only. [CHAR LIMIT=60]  -->
     <string name="grant_dialog_button_allow_media_only">Ceadaich inntrigeadh gu faidhlichean meadhain</string>
+    <!-- Breadcrumb for page of managing application permissions [CHAR LIMIT=50] -->
     <string name="app_permissions_breadcrumb">Aplacaidean</string>
+    <!-- Title for page of managing application permissions [CHAR LIMIT=30] -->
     <string name="app_permissions">Ceadan aplacaid</string>
+    <!-- Title for the page of manage unused apps [CHAR LIMIT=30] -->
     <string name="unused_apps">Aplacaidean gun chleachdadh</string>
+    <!-- [CHAR LIMIT=30] Manage applications, label for option to disable app -->
     <string name="app_disable_dlg_positive">Cuir an aplacaid à comas</string>
+    <!-- [CHAR LIMIT=NONE] Manage applications, text for dialog when disabling apps -->
     <string name="app_disable_dlg_text">Ma chuireas tu an aplacaid seo à comas, dh’fhaoidte nach obraich Android agus aplacaidean eile mar bu chòir tuilleadh. Thoir fa-near nar urrainn dhut an aplacaid seo a dhì-stàladh on a chaidh a stàladh ro làimh air an uidheam agad. Ma chuireas tu à comas i, cuiridh tu an aplacaid seo dheth agus falaichidh tu air an uidheam agad e.</string>
+    <!-- Title for page of managing application permissions [CHAR LIMIT=30] -->
     <string name="app_permission_manager">Manaidsear nan ceadan</string>
+    <!-- Checkbox that allows user to not be questioned about this permission
+         request again [CHAR LIMIT=30] -->
     <string name="never_ask_again">Na faighnich dhìom a-rithist</string>
+    <!-- Label when app requests no permissions [CHAR LIMIT=30] -->
     <string name="no_permissions">Gun cheadan</string>
+    <!-- Label for button that leads to more permissions [CHAR LIMIT=40] -->
     <string name="additional_permissions">Ceadan a bharrachd</string>
+    <!-- Accessibility label for button opening the app-info when clicked [CHAR LIMIT=none] -->
     <string name="app_permissions_info_button_label">Fosgail fiosrachadh na h-aplacaid</string>
+    <!-- Description of how many more permissions to view on next page [CHAR LIMIT=30] -->
     <plurals name="additional_permissions_more">
         <item quantity="one"><xliff:g id="count" example="1">%1$d</xliff:g> a bharrachd</item>
         <item quantity="two"><xliff:g id="count" example="2">%1$d</xliff:g> a bharrachd</item>
         <item quantity="few"><xliff:g id="count" example="2">%1$d</xliff:g> a bharrachd</item>
         <item quantity="other"><xliff:g id="count" example="2">%1$d</xliff:g> a bharrachd</item>
     </plurals>
+    <!-- Warning for turning off permissions on older apps [CHAR LIMIT=none] -->
     <string name="old_sdk_deny_warning">Chaidh an aplacaid seo a dhealbhadh airson seann-tionndadh dhe Android. Ma dhiùltas tu an cead, dh’fhaoidte nach obraich i mar bu chòir tuilleadh.</string>
+    <!-- The default description of a permission, i.e. what it does.  [CHAR LIMIT=40] -->
     <string name="default_permission_description">gnìomh nach aithne dhuinn a ghabhail</string>
+    <!-- Summary of number of apps currently granted a single permission [CHAR LIMIT=45] -->
     <string name="app_permissions_group_summary">Tha cead aig <xliff:g id="count" example="10">%1$d</xliff:g> à <xliff:g id="count" example="10">%2$d</xliff:g> aplacaid(ean)</string>
+    <!-- Summary of number of apps currently granted a single permission [CHAR LIMIT=45] -->
     <string name="app_permissions_group_summary2">Fhuair <xliff:g id="count" example="10">%1$d</xliff:g>/<xliff:g id="count" example="10">%2$d</xliff:g> aplacaid(ean) cead</string>
+    <!-- [CHAR LIMIT=NONE] Menu for manage permissions to control whether system apps are shown -->
     <string name="menu_show_system">Seall feadhainn an t-siostaim</string>
+    <!-- [CHAR LIMIT=NONE] Menu for manage permissions to control whether system apps are hidden -->
     <string name="menu_hide_system">Falaich feadhainn an t-siostaim</string>
+    <!-- [CHAR LIMIT=NONE] Label when no apps requesting this permission -->
     <string name="no_apps">Chan eil aplacaid ’ga iarraidh</string>
+    <!-- [CHAR LIMIT=30] Title of button that leads to location settings -->
     <string name="location_settings">Roghainnean ionaid</string>
+    <!-- [CHAR LIMIT=NONE] Warning about how this app cannot have location permission disabled -->
     <string name="location_warning">Tha <xliff:g id="app_name" example="Package Installer">%1$s</xliff:g> ’na sholaraiche ionaid aig an uidheam seo. Gabhaidh an t-inntrigeadh dhan ionad atharrachadh o na roghainnean ionaid.</string>
+    <!-- [CHAR LIMIT=NONE] Warning message when turning off permission for system apps -->
     <string name="system_warning">Ma dhiùltas tu an cead seo, dh’fhaoidte nach obraich gleusan bunasach an uidheim mar bu chòir tuilleadh.</string>
+    <!-- [CHAR LIMIT=NONE] Summary of a permission switch when it's enforced by policy -->
     <string name="permission_summary_enforced_by_policy">’Ga sparradh le poileasaidh</string>
+    <!-- [CHAR LIMIT=60] Summary of a permission switch when the background access is denied by policy -->
     <string name="permission_summary_disabled_by_policy_background_only">Tha an t-inntrigeadh sa chùlaibh à comas a-rèir poileasaidh</string>
+    <!-- [CHAR LIMIT=60] Summary of a permission switch when the background access is enabled by policy -->
     <string name="permission_summary_enabled_by_policy_background_only">Tha an t-inntrigeadh sa chùlaibh an comas a-rèir poileasaidh</string>
+    <!-- [CHAR LIMIT=60] Summary of a permission switch when the background access is enabled by policy -->
     <string name="permission_summary_enabled_by_policy_foreground_only">Tha an t-inntrigeadh air a’ bheulaibh an comas a-rèir poileasaidh</string>
+    <!-- [CHAR LIMIT=60] Summary of a permission switch when it's enforced by an administrator -->
     <string name="permission_summary_enforced_by_admin">Fo smachd rianaire</string>
+    <!-- [CHAR LIMIT=60] Summary of a permission switch when the background access is denied by an admin -->
     <string name="permission_summary_disabled_by_admin_background_only">Chaidh an t-inntrigeadh sa chùlaibh a chur à comas le rianaire</string>
+    <!-- [CHAR LIMIT=60] Summary of a permission switch when the background access is enabled an admin -->
     <string name="permission_summary_enabled_by_admin_background_only">Chaidh an t-inntrigeadh sa chùlaibh a chur an comas le rianaire</string>
+    <!-- [CHAR LIMIT=60] Summary of a permission switch when the background access is enabled an admin -->
     <string name="permission_summary_enabled_by_admin_foreground_only">Chaidh an t-inntrigeadh air a’ bheulaibh a chur an comas le rianaire</string>
+    <!-- [CHAR LIMIT=60] Summary of a permission switch when the access is enabled by the system -->
     <string name="permission_summary_enabled_system_fixed">Tha an t-uidheam feumach air a’ chead seo ach an obraich e</string>
     <string-array name="background_access_chooser_dialog_choices">
         <item>@string/permission_access_always</item>
         <item>@string/permission_access_only_foreground</item>
         <item>@string/permission_access_never</item>
     </string-array>
+    <!-- [CHAR LIMIT=60] App can always (when app is in foreground or background) access the resource protected by the permission -->
     <string name="permission_access_always">Ceadaich an-còmhnaidh</string>
+    <!-- [CHAR LIMIT=60] App can only access the resource protected by the permission while app is in foreground -->
     <string name="permission_access_only_foreground">Na ceadaich ach nuair a bhios an aplacaid ’ga cleachdadh</string>
+    <!-- [CHAR LIMIT=60] App can never access the resource protected by the permission (Not while app is in foregound and not while app is in background) -->
     <string name="permission_access_never">Diùlt</string>
+    <!-- Text displayed until loading is done [CHAR LIMIT=50] -->
     <string name="loading">’Ga luchdadh\u2026</string>
+    <!-- [CHAR LIMIT=45] Title of all permissions settings -->
     <string name="all_permissions">A h-uile cead</string>
+    <!-- [CHAR LIMIT=45] Group of permissions granted to app automatically when installed. -->
     <string name="other_permissions">Comasan eile na h-aplacaid</string>
+    <!-- Title of the permission dialog for accessibility purposes- spoken to the user. [CHAR LIMIT=none] -->
     <string name="permission_request_title">Iarrtas cead</string>
+    <!-- Title for the dialog that warns the user they need to turn off screen overlays
+         before permissions can be changed. [CHAR LIMIT=NONE] -->
     <string name="screen_overlay_title">Mhothaich sinn do thar-chòmhdachadh sgrìn</string>
+    <!-- Message for the dialog that warns the user they need to turn off screen overlays
+        before permissions can be changed. The "Settings > Apps" conveys to the user to
+        go to Settings and click on apps, this may need updates in RTL languages. [CHAR LIMIT=NONE] -->
     <string name="screen_overlay_message">Airson roghainn a’ chead seo atharrachadh, feumaidh tu tar-chòmhdachadh na sgrìn a chur dheth an toiseach o “Roghainnean ⁊ aplacaidean”</string>
+    <!-- Button for the dialog that warns the user they need to turn off screen overlays
+         before permissions can be changed. [CHAR LIMIT=NONE] -->
     <string name="screen_overlay_button">Fosgail na roghainnean</string>
+    <!-- Title of dialog telling users that Install/Uninstall action is not supported on Android Wear. [CHAR LIMIT=30] -->
     <string name="wear_not_allowed_dlg_title">Android Wear</string>
+    <!-- Title of dialog telling users that Install/Uninstall action is not supported on Android Wear. [CHAR LIMIT=none] -->
     <string name="wear_not_allowed_dlg_text">Cha chuir Wear taic ri gnìomhan stàlaidh/dì-stàlaidh.</string>
+    <!-- Review of runtime permissions for legacy apps -->
+    <!-- Template for the screen title when app permissions are reviewed on install. [CHAR LIMIT=none] -->
     <string name="permission_review_title_template_install">Tagh na dh’fhaodas
         &lt;b&gt;<xliff:g id="app_name" example="Gmail">%1$s</xliff:g>&lt;/b&gt; inntrigeadh</string>
+    <!-- Template for the screen title when app permissions are reviewed on update. [CHAR LIMIT=none] -->
     <string name="permission_review_title_template_update">        Chaidh &lt;b&gt;<xliff:g id="app_name" example="Gmail">%1$s</xliff:g>&lt;/b&gt; ùrachadh.
         Tagh na dh’fhaodas an aplacaid seo inntrigeadh.</string>
+    <!-- Title for the dialog button to cancel the detailed permission review. [CHAR LIMIT=15] -->
     <string name="review_button_cancel">Sguir dheth</string>
+    <!-- Title for the dialog button to continue accepting the detailed permission review. [CHAR LIMIT=15] -->
     <string name="review_button_continue">Lean air adhart</string>
+    <!-- Title for the category listing the new permissions used by an app. [CHAR LIMIT=30] -->
     <string name="new_permissions_category">Ceadan ùra</string>
+    <!-- Title for the category listing the current permissions used by an app. [CHAR LIMIT=30] -->
     <string name="current_permissions_category">Na ceadan làithreach</string>
-    <string name="message_staging">Ag ullachadh na h-aplacaid…</string>
+    <!-- Message that the app to be installed is being staged [CHAR LIMIT=50] -->
+    <string name="message_staging">Ag ullachadh na h-aplacaid&#8230;</string>
+    <!-- Placeholder for an app name when it is unknown [CHAR LIMIT=50] -->
     <string name="app_name_unknown">Chan eil fhios</string>
+    <!-- Help URL, application permissions [DO NOT TRANSLATE] -->
+    <!-- Title for permission usage [CHAR LIMIT=30] -->
     <string name="permission_usage_title">Dashboard</string>
+    <!-- Summary for showing a single permission access and the number of accesses [CHAR LIMIT=80] -->
     <plurals name="permission_usage_summary">
         <item quantity="one">An t-inntrigeadh mu dheireadh: <xliff:g id="time" example="12:10 PM">%1$s</xliff:g>\n<xliff:g id="num" example="42">%2$s</xliff:g> inntrigeadh</item>
         <item quantity="two">An t-inntrigeadh mu dheireadh: <xliff:g id="time" example="12:10 PM">%1$s</xliff:g>\n<xliff:g id="num" example="42">%2$s</xliff:g> inntrigeadh</item>
         <item quantity="few">An t-inntrigeadh mu dheireadh: <xliff:g id="time" example="12:10 PM">%1$s</xliff:g>\n<xliff:g id="num" example="42">%2$s</xliff:g> inntrigidhean</item>
         <item quantity="other">An t-inntrigeadh mu dheireadh: <xliff:g id="time" example="12:10 PM">%1$s</xliff:g>\n<xliff:g id="num" example="42">%2$s</xliff:g> inntrigeadh</item>
     </plurals>
+    <!-- Summary for showing a single permission access and the number of accesses, including those in the background [CHAR LIMIT=80] -->
     <plurals name="permission_usage_summary_background">
         <item quantity="one">An t-inntrigeadh mu dheireadh: <xliff:g id="time" example="12:10 PM">%1$s</xliff:g>\n<xliff:g id="num" example="42">%2$s</xliff:g> inntrigeadh (<xliff:g id="num" example="7">%3$s</xliff:g> sa chùlaibh)</item>
         <item quantity="two">An t-inntrigeadh mu dheireadh: <xliff:g id="time" example="12:10 PM">%1$s</xliff:g>\n<xliff:g id="num" example="42">%2$s</xliff:g> inntrigeadh (<xliff:g id="num" example="7">%3$s</xliff:g> sa chùlaibh)</item>
         <item quantity="few">An t-inntrigeadh mu dheireadh: <xliff:g id="time" example="12:10 PM">%1$s</xliff:g>\n<xliff:g id="num" example="42">%2$s</xliff:g> inntrigidhean (<xliff:g id="num" example="7">%3$s</xliff:g> sa chùlaibh)</item>
         <item quantity="other">An t-inntrigeadh mu dheireadh: <xliff:g id="time" example="12:10 PM">%1$s</xliff:g>\n<xliff:g id="num" example="42">%2$s</xliff:g> inntrigeadh (<xliff:g id="num" example="7">%3$s</xliff:g> sa chùlaibh)</item>
     </plurals>
+    <!-- Summary for showing a single permission access and the number of accesses [CHAR LIMIT=120] -->
     <plurals name="permission_usage_summary_duration">
         <item quantity="one">An t-inntrigeadh mu dheireadh: <xliff:g id="time" example="12:10 PM">%1$s</xliff:g>\n<xliff:g id="num" example="42">%2$s</xliff:g> inntrigeadh\nFaide: <xliff:g id="time" example="2 hours">%3$s</xliff:g></item>
         <item quantity="two">An t-inntrigeadh mu dheireadh: <xliff:g id="time" example="12:10 PM">%1$s</xliff:g>\n<xliff:g id="num" example="42">%2$s</xliff:g> inntrigeadh\nFaide: <xliff:g id="time" example="2 hours">%3$s</xliff:g></item>
         <item quantity="few">An t-inntrigeadh mu dheireadh: <xliff:g id="time" example="12:10 PM">%1$s</xliff:g>\n<xliff:g id="num" example="42">%2$s</xliff:g> inntrigidhean\nFaide: <xliff:g id="time" example="2 hours">%3$s</xliff:g></item>
         <item quantity="other">An t-inntrigeadh mu dheireadh: <xliff:g id="time" example="12:10 PM">%1$s</xliff:g>\n<xliff:g id="num" example="42">%2$s</xliff:g> inntrigeadh\nFaide: <xliff:g id="time" example="2 hours">%3$s</xliff:g></item>
     </plurals>
+    <!-- Summary for showing a single permission access and the number of accesses, including those in the background [CHAR LIMIT=120] -->
     <plurals name="permission_usage_summary_background_duration">
         <item quantity="one">An t-inntrigeadh mu dheireadh: <xliff:g id="time" example="12:10 PM">%1$s</xliff:g>\n<xliff:g id="num" example="42">%2$s</xliff:g> inntrigeadh (<xliff:g id="num" example="7">%3$s</xliff:g> sa chùlaibh)\nFaide: <xliff:g id="time" example="2 hours">%3$s</xliff:g></item>
         <item quantity="two">An t-inntrigeadh mu dheireadh: <xliff:g id="time" example="12:10 PM">%1$s</xliff:g>\n<xliff:g id="num" example="42">%2$s</xliff:g> inntrigeadh (<xliff:g id="num" example="7">%3$s</xliff:g> sa chùlaibh)\nFaide: <xliff:g id="time" example="2 hours">%3$s</xliff:g></item>
         <item quantity="few">An t-inntrigeadh mu dheireadh: <xliff:g id="time" example="12:10 PM">%1$s</xliff:g>\n<xliff:g id="num" example="42">%2$s</xliff:g> inntrigidhean (<xliff:g id="num" example="7">%3$s</xliff:g> sa chùlaibh)\nFaide: <xliff:g id="time" example="2 hours">%3$s</xliff:g></item>
         <item quantity="other">An t-inntrigeadh mu dheireadh: <xliff:g id="time" example="12:10 PM">%1$s</xliff:g>\n<xliff:g id="num" example="42">%2$s</xliff:g> inntrigeadh (<xliff:g id="num" example="7">%3$s</xliff:g> sa chùlaibh)\nFaide: <xliff:g id="time" example="2 hours">%3$s</xliff:g></item>
     </plurals>
+    <!-- Summary for showing a single permission access and the time of the last access when it was in the background [CHAR LIMIT=80] -->
     <string name="permission_usage_summary_background">An t-inntrigeadh mu dheireadh: <xliff:g id="time" example="12:10 PM">%1$s</xliff:g>\nChaidh inntrigeadh an turas mu dheireadh sa chùlaibh</string>
+    <!-- Description for showing permission accesses with any permission [CHAR LIMIT=30] -->
     <string name="permission_usage_any_permission">Cead sam bith</string>
+    <!-- Description for showing permission accesses accessed any time [CHAR LIMIT=30] -->
     <string name="permission_usage_any_time">Àm sam bith</string>
+    <!-- Description for showing permissions accessed in the last 7 days [CHAR LIMIT=30] -->
     <string name="permission_usage_last_7_days">Na 7 làithean seo chaidh</string>
+    <!-- Description for showing permissions accessed in the last day [CHAR LIMIT=30] -->
     <string name="permission_usage_last_day">An 24 uair a thìde seo chaidh</string>
+    <!-- Description for showing permissions accessed in the last hour [CHAR LIMIT=30] -->
     <string name="permission_usage_last_hour">An uair a thìde seo chaidh</string>
+    <!-- Description for showing permissions accessed in the last 15 minutes [CHAR LIMIT=30] -->
     <string name="permission_usage_last_15_minutes">An cairteal na h-uarach seo chaidh</string>
+    <!-- Description for showing permissions accessed in the last minute [CHAR LIMIT=30] -->
     <string name="permission_usage_last_minute">A’ mhionaid seo chaidh</string>
+    <!-- Label when no apps have used the requested permissions [CHAR LIMIT=30] -->
     <string name="no_permission_usages">Cha deach cead a chleachdadh</string>
+    <!-- Label for the title of the list of permission usages that shows which apps used which permissions[CHAR LIMIT=50] -->
     <string name="permission_usage_list_title_any_time">Inntrigeadh o chionn goirid aig àm sam bith</string>
+    <!-- Label for the title of the list of permission usages that shows which apps used which permissions[CHAR LIMIT=50] -->
     <string name="permission_usage_list_title_last_7_days">Inntrigeadh o chionn goirid sna 7 làithean seo chaidh</string>
+    <!-- Label for the title of the list of permission usages that shows which apps used which permissions[CHAR LIMIT=50] -->
     <string name="permission_usage_list_title_last_day">Inntrigeadh o chionn goirid san 24 uair a thìde seo chaidh</string>
+    <!-- Label for the title of the list of permission usages that shows which apps used which permissions[CHAR LIMIT=50] -->
     <string name="permission_usage_list_title_last_hour">Inntrigeadh o chionn goirid san uair a thìde seo chaidh</string>
+    <!-- Label for the title of the list of permission usages that shows which apps used which permissions[CHAR LIMIT=50] -->
     <string name="permission_usage_list_title_last_15_minutes">Inntrigeadh o chionn goirid sa chairteal na h-uarach seo chaidh</string>
+    <!-- Label for the title of the list of permission usages that shows which apps used which permissions[CHAR LIMIT=50] -->
     <string name="permission_usage_list_title_last_minute">Inntrigeadh o chionn goirid sa mhionaid seo chaidh</string>
+    <!-- Label for the title of the permission bar chart showing how often the most common permissions are used [CHAR LIMIT=50] -->
     <string name="permission_usage_bar_chart_title_any_time">Cleachdadh cheadan aig àm sam bith</string>
+    <!-- Label for the title of the permission bar chart showing how often the most common permissions are used [CHAR LIMIT=50] -->
     <string name="permission_usage_bar_chart_title_last_7_days">Cleachdadh cheadan sna 7 làithean seo chaidh</string>
+    <!-- Label for the title of the permission bar chart showing how often the most common permissions are used [CHAR LIMIT=50] -->
     <string name="permission_usage_bar_chart_title_last_day">Cleachdadh cheadan san 24 uair a thìde seo chaidh</string>
+    <!-- Label for the title of the permission bar chart showing how often the most common permissions are used [CHAR LIMIT=50] -->
     <string name="permission_usage_bar_chart_title_last_hour">Cleachdadh cheadan an uair a thìde seo chaidh</string>
+    <!-- Label for the title of the permission bar chart showing how often the most common permissions are used [CHAR LIMIT=50] -->
     <string name="permission_usage_bar_chart_title_last_15_minutes">Cleachdadh cheadan ann an cairteal na h-uarach seo chaidh</string>
+    <!-- Label for the title of the permission bar chart showing how often the most common permissions are used [CHAR LIMIT=50] -->
     <string name="permission_usage_bar_chart_title_last_minute">Cleachdadh cheadan sa mhionaid seo chaidh</string>
+    <!-- Label for the bars on the chart that shows how many apps have used various permissions [CHAR LIMIT=10] -->
     <plurals name="permission_usage_bar_label">
         <item quantity="one"><xliff:g id="number" example="7">%s</xliff:g> aplacaid</item>
         <item quantity="two"><xliff:g id="number" example="7">%s</xliff:g> aplacaid</item>
         <item quantity="few"><xliff:g id="number" example="7">%s</xliff:g> aplacaidean</item>
         <item quantity="other"><xliff:g id="number" example="7">%s</xliff:g> aplacaid</item>
     </plurals>
+    <!-- Label for the button to bring the user to view the details of recent permission accesses [CHAR LIMIT=42] -->
     <string name="permission_usage_view_details">Seall na h-uile air an deas-bhòrd</string>
+    <!-- DO NOT TRANSLATE Summary placeholder -->
+    <!-- Label for filtered view that shows permission usages of a single permission [CHAR LIMIT=40] -->
     <string name="app_permission_usage_filter_label">Criathrag a-rèir: <xliff:g id="perm" example="Location">%1$s</xliff:g> </string>
+    <!-- Label for the text that removes the filter by permission to view all usages [CHAR LIMIT=none] -->
     <string name="app_permission_usage_remove_filter">Thoir air falbh a’ chriathrag</string>
+    <!-- Label for the title of the dialog allowing filtering by permissions [CHAR LIMIT=none] -->
     <string name="filter_by_title">Criathraich a-rèir</string>
+    <!-- Label for the menu item allowing filtering by permissions [CHAR LIMIT=none] -->
     <string name="filter_by_permissions">Criathraich a-rèir a’ chead</string>
+    <!-- Label for the menu item allowing filtering by time [CHAR LIMIT=none] -->
     <string name="filter_by_time">Criathraich a-rèir an ama</string>
+    <!-- Label for sorting usages by the number of permissions used [CHAR LIMIT=30] -->
     <string name="sort_spinner_most_permissions">Na ceadan as motha</string>
+    <!-- Label for sorting usages by the number of accesses [CHAR LIMIT=30] -->
     <string name="sort_spinner_most_accesses">An t-inntrigeadh as trice</string>
+    <!-- Label for sorting usages by the most recent accesses [CHAR LIMIT=30] -->
     <string name="sort_spinner_recent">O chionn goirid</string>
+    <!-- Label for sorting usages by which app used a permission most recently [CHAR LIMIT=30] -->
     <string name="sort_by_app">Seòrsaich a-rèir cleachdadh nan aplacaidean</string>
+    <!-- Label for sorting usages by access time [CHAR LIMIT=30] -->
     <string name="sort_by_time">Seòrsaich a-rèir an ama</string>
+    <!-- Separator for a list of items. Include spaces before and after if needed [CHAR LIMIT=10] -->
     <string name="item_separator">,\u0020</string>
+    <!-- Label for refreshing the list of permission usages. [CHAR LIMIT=30] -->
     <string name="permission_usage_refresh">Ath-nuadhaich</string>
+    <!-- Subtitle for showing how many apps have accessed a given permission [CHAR LIMIT=20] -->
     <plurals name="permission_usage_permission_filter_subtitle">
         <item quantity="one"><xliff:g id="number" example="7">%s</xliff:g> aplacaid</item>
         <item quantity="two"><xliff:g id="number" example="7">%s</xliff:g> aplacaid</item>
         <item quantity="few"><xliff:g id="number" example="7">%s</xliff:g> aplacaidean</item>
         <item quantity="other"><xliff:g id="number" example="7">%s</xliff:g> aplacaid</item>
     </plurals>
+    <!-- Help URL, permission usage [DO NOT TRANSLATE] -->
+    <!-- Title for permission usage [CHAR LIMIT=30] -->
     <string name="app_permission_usage_title">App permissions usage</string>
+    <!-- Summary for an app's use of a permission [CHAR LIMIT=none] -->
     <string name="app_permission_usage_summary">Uiread nan inntrigidhean: <xliff:g id="num" example="2">%1$s</xliff:g>. Faid iomlan: <xliff:g id="duration" example="2 hours">%2$s</xliff:g>. An cleachdadh mu dheireadh <xliff:g id="time" example="2 hours">%3$s</xliff:g> air ais.</string>
+    <!-- Summary for an app's use of a permission without duration [CHAR LIMIT=none] -->
     <string name="app_permission_usage_summary_no_duration">Uiread nan inntrigidhean: <xliff:g id="num" example="2">%1$s</xliff:g>. An cleachdadh mu dheireadh <xliff:g id="time" example="2 hours">%2$s</xliff:g> air ais.</string>
+    <!-- Title for the dialog button to allow a permission grant when you cannot only allow in the foreground. [CHAR LIMIT=60] -->
     <string name="app_permission_button_allow">Ceadaich</string>
+    <!-- Title for the dialog button to allow a storage permission grant for all files [CHAR LIMIT=60] -->
     <string name="app_permission_button_allow_all_files">Ceadaich stiùireadh nam faidhlichean uile</string>
+    <!-- Title for the dialog button to allow a storage permission grant for media files only [CHAR LIMIT=60] -->
     <string name="app_permission_button_allow_media_only">Ceadaich inntrigeadh gu faidhlichean meadhain a-mhàin</string>
+    <!-- Title for the dialog button to allow a permission grant when you can also only allow in the foreground. [CHAR LIMIT=60] -->
     <string name="app_permission_button_allow_always">Ceadaich an-còmhnaidh</string>
+    <!-- Title for the dialog button to allow a permission grant only when the app is in the foreground. [CHAR LIMIT=60] -->
     <string name="app_permission_button_allow_foreground">Na ceadaich ach nuair a bhios an aplacaid ’ga cleachdadh</string>
+    <!-- Title for the dialog button to require an app to ask for a permission next time they need it. [CHAR LIMIT=60] -->
     <string name="app_permission_button_ask">Faighnich dhìom gach turas</string>
+    <!-- Title for the dialog button to deny with prejudice a permission grant. [CHAR LIMIT=60] -->
     <string name="app_permission_button_deny">Diùlt</string>
+    <!-- Title for app permission [CHAR LIMIT=30] -->
     <string name="app_permission_title">Cead air <xliff:g id="perm" example="location">%1$s</xliff:g></string>
+    <!-- Description for showing an app's permission [CHAR LIMIT=60] -->
     <string name="app_permission_header">Inntrigeadh air <xliff:g id="perm" example="location">%1$s</xliff:g> dhan aplacaid seo</string>
+    <!-- Text for linking to the page that shows an app's permissions [CHAR LIMIT=none] -->
     <string name="app_permission_footer_app_permissions_link">Seall a h-uile cead aig <xliff:g id="app" example="Maps">%1$s</xliff:g></string>
+    <!-- Text for linking to the page that shows the apps with a given permission [CHAR LIMIT=none] -->
     <string name="app_permission_footer_permission_apps_link">Seall a h-uile aplacaid aig a bheil an cead seo</string>
+    <!-- Label for the assistant mic display switch [CHAR LIMIT=60] -->
     <string name="assistant_mic_label">Seall cleachdadh a’ mhicreofoin leis a’ chuidiche</string>
+    <!-- Label for the auto revoke switch [CHAR LIMIT=60] -->
     <string name="auto_revoke_label">Thoir air falbh na ceadan mur eil an aplacaid ’ga cleachdadh</string>
+    <!-- Summary for stating that permissions will be removed [CHAR LIMIT=none] -->
     <string name="auto_revoke_summary">Airson do dhàta a dhìon, thèid ceadan na h-aplacaid seo a thoirt air falbh mura deach a cleachdadh fad corra mìosa.</string>
+    <!-- Summary for stating that permissions will be removed, which includes a list of permissions which will be removed [CHAR LIMIT=none] -->
     <string name="auto_revoke_summary_with_permissions">Airson do dhàta a dhìon, mura deach an aplacaid a cleachdadh fad corra mìosa, thèid ceadan seo a thoirt air falbh: <xliff:g id="perms" example="location, contacts, and phone">%1$s</xliff:g></string>
+    <!-- Summary for the screen that shows all apps that have had permissions removed [CHAR LIMIT=none] -->
     <string name="auto_revoked_apps_page_summary">Airson do dhàta a dhìon, chaidh ceadan a thoirt air falbh o aplacaidean nach deach a cleachdadh fad corra mìosa.</string>
+    <!-- Message which tells users to open an app to grant permissions [CHAR LIMIT=none]-->
     <string name="auto_revoke_open_app_message">Ma tha thu airson na ceadan a thoirt seachad a-rithist, fosgail an aplacaid.</string>
+    <!-- Summary for stating that auto revoke is disabled for the current app [CHAR LIMIT=none] -->
     <string name="auto_revoke_disabled">Chaidh an toirt air falbh fèin-obrachail a chur à comas dhan aplacaid seo.</string>
+    <!-- Summary for stating that no permission groups that are granted and auto revocable[CHAR LIMIT=none] -->
     <string name="auto_revocable_permissions_none">Cha deach cead a thoirt seachad a ghabhadh a chùl-ghairm gu fèin-obrachail</string>
+    <!-- Summary for stating that one permission will be auto revoked[CHAR LIMIT=none] -->
     <string name="auto_revocable_permissions_one">Thèid cead air <xliff:g id="perm" example="location">%1$s</xliff:g> a thoirt air falbh.</string>
+    <!-- Summary for stating that two permissions will be auto revoked[CHAR LIMIT=none] -->
     <string name="auto_revocable_permissions_two">Thèid ceadan air <xliff:g id="perm" example="location">%1$s</xliff:g> ’s <xliff:g id="perm" example="contacts">%2$s</xliff:g> a thoirt air falbh.</string>
+    <!-- Summary for stating that more than two permissions will be auto revoked[CHAR LIMIT=none] -->
     <string name="auto_revocable_permissions_many">Seo na ceadan a thèid a thoirt air falbh: <xliff:g id="perms" example="location, contacts, and phone">%1$s</xliff:g>.</string>
+    <!-- Title for a page where users can manage whether or not they want Android to automatically remove permissions [CHAR LIMIT=40] -->
     <string name="auto_manage_title">Stiùirich na ceadan gu fèin-obrachail</string>
+    <!-- Label for an "off" button [CHAR LIMIT=30] -->
     <string name="off">Dheth</string>
+    <!-- Summary describing the permissions that have been removed from an app, when one permission is removed [CHAR LIMIT=none] -->
     <string name="auto_revoked_app_summary_one">Chaidh cead air <xliff:g id="permission_name" example="Location">%s</xliff:g> a thoirt air falbh</string>
+    <!-- Summary describing the permissions that have been removed from an app, when two permissions are removed [CHAR LIMIT=none] -->
     <string name="auto_revoked_app_summary_two">Chaidh ceadan air <xliff:g id="permission_name" example="Camera">%1$s</xliff:g> ’s <xliff:g id="permission_name" example="Contacts">%2$s</xliff:g> a thoirt air falbh</string>
+    <!-- Summary describing the permissions that have been removed from an app, when more than two permissions are removed [CHAR LIMIT=none] -->
     <string name="auto_revoked_app_summary_many">Chaidh ceadan air <xliff:g id="permission_name" example="Microphone">%1$s</xliff:g> ’s <xliff:g id="number" example="2">%2$s</xliff:g> eile a thoirt air falbh</string>
+    <!-- Title for a category of apps that were last used several months ago [CHAR LIMIT=none] -->
     <string name="last_opened_category_title">Chaidh fhosgladh còrr is <xliff:g id="number" example="3">%s</xliff:g> mìos(an) air ais an turas mu dheireadh</string>
+    <!-- Summary for showing when an app was last used [CHAR LIMIT=none] -->
     <string name="last_opened_summary">Chaidh an aplacaid fhosgladh <xliff:g id="date" example="March 12, 2020">%s</xliff:g> an turas mu dheireadh</string>
+    <!-- Summary for showing when an app was last used, shorter version [CHAR LIMIT=none] -->
     <string name="last_opened_summary_short">Chaidh fhosgladh <xliff:g id="date" example="March 12, 2020">%s</xliff:g> an turas mu dheireadh</string>
+    <!-- Text that explains that an app has access to all files[CHAR LIMIT=none] -->
     <string name="app_permission_footer_special_file_access">Ma cheadaicheas tu stiùireadh na faidhlichean uile, ’s urrainn dhan aplacaid seo faidhle sam bith a tha ann an stòras coitcheann an uidheim seo no ann an innealan stòrais ceangailte inntrigeadh, atharrachadh is sguabadh às. Faodaidh an aplacaid faidhlichean inntrigeadh gun fhaighneachd dhìot.</string>
+    <!-- Text that explains that an app requests full file access, and links to the settings page[CHAR LIMIT=none] -->
     <string name="special_file_access_dialog">An doir thu cead dhan aplacaid seo faidhle sam bith a tha san uidheam seo no ann an innealan stòrais ceangailte inntrigeadh, atharrachadh is sguabadh às? Faodaidh an aplacaid seo faidhlichean inntrigeadh gun fhaighneachd dhìot.</string>
+    <!-- Label for showing a permission group's description in the header of the list of apps that have that permission [CHAR LIMIT=none] -->
     <string name="permission_description_summary_generic">’S urrainn do dh’aplacaidean air a bheil an cead seo:<xliff:g id="description" example="record audio">%1$s</xliff:g></string>
+    <!-- Label for showing a permission group's description in the header of the list of apps that have the activity recognition permission [CHAR LIMIT=none] -->
     <string name="permission_description_summary_activity_recognition">’S urrainn do dh’aplacaidean air a bheil an cead seo gnìomhachd do bhodhaige inntrigeadh, can coiseachd, falbh air baidhseagal, draibheadh, cunntadh cheuman is a bharrachd</string>
+    <!-- Label for showing a permission group's description in the header of the list of apps that have the calendar permission [CHAR LIMIT=none] -->
     <string name="permission_description_summary_calendar">’S urrainn do dh’aplacaidean air a bheil an cead seo am mìosachan agad inntrigeadh</string>
+    <!-- Label for showing a permission group's description in the header of the list of apps that have the call log permission [CHAR LIMIT=none] -->
     <string name="permission_description_summary_call_log">’S urrainn do dh’aplacaidean air a bheil an cead seo loga nan gairmean fòn inntrigeadh agus sgrìobhadh thuige</string>
+    <!-- Label for showing a permission group's description in the header of the list of apps that have the camera permission [CHAR LIMIT=none] -->
     <string name="permission_description_summary_camera">’S urrainn do dh’aplacaidean air a bheil an cead seo dealbhan a thogail agus videothan a chlàradh</string>
+    <!-- Label for showing a permission group's description in the header of the list of apps that have the contacts permission [CHAR LIMIT=none] -->
     <string name="permission_description_summary_contacts">’S urrainn do dh’aplacaidean air a bheil an cead seo an luchd-aithne agad inntrigeadh</string>
+    <!-- Label for showing a permission group's description in the header of the list of apps that have the location permission [CHAR LIMIT=none] -->
     <string name="permission_description_summary_location">’S urrainn do dh’aplacaidean air a bheil an cead seo ionad an uidheim seo inntrigeadh</string>
+    <!-- Label for showing a permission group's description in the header of the list of apps that have the microphone permission [CHAR LIMIT=none] -->
     <string name="permission_description_summary_microphone">’S urrainn do dh’aplacaidean air a bheil an cead seo fuaim a chlàradh</string>
+    <!-- Label for showing a permission group's description in the header of the list of apps that have the phone permission [CHAR LIMIT=none] -->
     <string name="permission_description_summary_phone">’S urrainn do dh’aplacaidean air a bheil an cead seo gairmean fòn a chur ’s a stiùireadh</string>
+    <!-- Label for showing a permission group's description in the header of the list of apps that have the sensors permission [CHAR LIMIT=none] -->
     <string name="permission_description_summary_sensors">’S urrainn do dh’aplacaidean air a bheil an cead seo dàta mu do bheò inntrigeadh</string>
+    <!-- Label for showing a permission group's description in the header of the list of apps that have the SMS permission [CHAR LIMIT=none] -->
     <string name="permission_description_summary_sms">’S urrainn do dh’aplacaidean air a bheil an cead seo teachdaireachdan SMS a chur is a shealltainn</string>
+    <!-- Label for showing a permission group's description in the header of the list of apps that have the Storage permission [CHAR LIMIT=none] -->
     <string name="permission_description_summary_storage">’S urrainn do dh’aplacaidean air a bheil an cead seo na dealbhan, meadhanan is faidhlichean air an uidheam agad inntrigeadh</string>
+    <!-- Summary for showing the time and/or date of the most recent access of a permission by an app [CHAR LIMIT=60] -->
     <string name="app_permission_most_recent_summary">An t-inntrigeadh mu dheireadh: <xliff:g id="time_date" example="12:42 PM">%1$s</xliff:g></string>
+    <!-- Summary for showing the time and/or date of the most recent access of a denied permission by an app [CHAR LIMIT=60] -->
     <string name="app_permission_most_recent_denied_summary">’Ga dhiùltadh an-dràsta / An t-inntrigeadh mu dheireadh: <xliff:g id="time_date" example="12:42 PM">%1$s</xliff:g></string>
+    <!-- Summary for showing that a denied app has not accessed a permission. [CHAR LIMIT=60] -->
     <string name="app_permission_never_accessed_summary">Cha deach inntrigeadh a-riamh</string>
+    <!-- Summary for showing that an app has not accessed a permission. [CHAR LIMIT=60] -->
     <string name="app_permission_never_accessed_denied_summary">Air a dhiùltadh / Cha deach inntrigeadh a-riamh</string>
+    <!-- Header for granted permissions/apps [CHAR LIMIT=40] -->
     <string name="allowed_header">Ceadaichte</string>
+    <!-- Header for granted apps that can access the permission in the foreground and the background [CHAR LIMIT=40] -->
     <string name="allowed_always_header">Ceadaichte an-còmhnaidh</string>
+    <!-- Header for permissions/apps that are granted only when in the foreground [CHAR LIMIT=40] -->
     <string name="allowed_foreground_header">Ceadaichte fhad ’s a bhios e ’ga chleachdadh a-mhàin</string>
+    <!-- Subtitle for scoped storage permissions, showing apps that have access to media files only [CHAR LIMIT=45] -->
     <string name="allowed_storage_scoped">Cead inntrigidh gu faidhlichean meadhain a-mhàin</string>
+    <!-- Subtitle for full storage permissions, showing apps that have access to all files [CHAR LIMIT=45] -->
     <string name="allowed_storage_full">Cead stiùireadh nam faidhlichean uile</string>
+    <!-- Header for permissions/apps which need to ask next time they want to use the permission. Note: Permission may or may not be currently granted [CHAR LIMIT=60] -->
     <string name="ask_header">Faighnich dhìom gach turas</string>
+    <!-- Header for denied permissions/apps [CHAR LIMIT=40] -->
     <string name="denied_header">Air a dhiùltadh</string>
+    <!-- Time in days -->
     <plurals name="days">
         <item quantity="one"><xliff:g id="number" example="7">%s</xliff:g> latha</item>
         <item quantity="two"><xliff:g id="number" example="7">%s</xliff:g> latha</item>
         <item quantity="few"><xliff:g id="number" example="7">%s</xliff:g> làithean</item>
         <item quantity="other"><xliff:g id="number" example="7">%s</xliff:g> latha</item>
     </plurals>
+    <!-- Time in hours -->
     <plurals name="hours">
         <item quantity="one"><xliff:g id="number" example="7">%s</xliff:g> uair a thìde</item>
         <item quantity="two"><xliff:g id="number" example="7">%s</xliff:g> uair a thìde</item>
         <item quantity="few"><xliff:g id="number" example="7">%s</xliff:g> uairean a thìde</item>
         <item quantity="other"><xliff:g id="number" example="7">%s</xliff:g> uair a thìde</item>
     </plurals>
+    <!-- Time in minutes -->
     <plurals name="minutes">
         <item quantity="one"><xliff:g id="number" example="7">%s</xliff:g> mhionaid</item>
         <item quantity="two"><xliff:g id="number" example="7">%s</xliff:g> mhionaid</item>
         <item quantity="few"><xliff:g id="number" example="7">%s</xliff:g> mionaidean</item>
         <item quantity="other"><xliff:g id="number" example="7">%s</xliff:g> mionaid</item>
     </plurals>
+    <!-- Time in seconds -->
     <plurals name="seconds">
         <item quantity="one"><xliff:g id="number" example="7">%s</xliff:g> diog</item>
         <item quantity="two"><xliff:g id="number" example="7">%s</xliff:g> dhiog</item>
         <item quantity="few"><xliff:g id="number" example="7">%s</xliff:g> diogan</item>
         <item quantity="other"><xliff:g id="number" example="7">%s</xliff:g> diog</item>
     </plurals>
+    <!-- The name of the notification channel containing reminders about permission [CHAR LIMIT=60]-->
     <string name="permission_reminders">Cuimhneachain cheadan</string>
+    <!-- The notification title for the notification that a permission auto revoke has happened for one app (outdated) [CHAR LIMIT=60] -->
     <string name="auto_revoke_permission_reminder_notification_title_one">1 aplacaid gun chleachdadh</string>
+    <!-- The notification title for the notification that a permission auto revoke has happened for more than one app (outdated) [CHAR LIMIT=60] -->
     <string name="auto_revoke_permission_reminder_notification_title_many"><xliff:g id="number_of_apps" example="4">%s</xliff:g> aplacaid(ean) gun chleachdadh</string>
+    <!-- The notification content for the auto revoke reminder notification (outdated) [CHAR LIMIT=none] -->
     <string name="auto_revoke_permission_reminder_notification_content">Chaidh ceadan a thoirt air falbh gus do phrìobhaideachd a dhìon. Thoir gnogag airson sùil a thoirt orra</string>
+    <!-- The notification title for the notification that a permission auto revoked has happened [CHAR LIMIT=60] -->
     <string name="auto_revoke_permission_notification_title">Chaidh ceadan a thoirt air falbh do dh’aplacaidean gun chleachdadh</string>
+    <!-- The notification content for the auto revoke reminder notification [CHAR LIMIT=none] -->
     <string name="auto_revoke_permission_notification_content">Tha aplacaidean ann nach cleachd thu fad mìosan. Thoir gnogag airson sùil a thoirt orra.</string>
+    <!-- The subtitle for the auto revoke reminder notification, including the number of apps [CHAR LIMIT=none] -->
     <plurals name="auto_revoke_permission_notification_content_count">
         <item quantity="one">Tha <xliff:g id="count" example="1">%1$d</xliff:g> aplacaid ann nach cleachd thu fad mìosan. Thoir gnogag airson sùil a thoirt oirre</item>
         <item quantity="two">Tha <xliff:g id="count" example="2">%1$d</xliff:g> aplacaid ann nach cleachd thu fad mìosan. Thoir gnogag airson sùil a thoirt orra</item>
         <item quantity="few">Tha <xliff:g id="count" example="2">%1$d</xliff:g> aplacaidean ann nach cleachd thu fad mìosan. Thoir gnogag airson sùil a thoirt orra</item>
         <item quantity="other">Tha <xliff:g id="count" example="2">%1$d</xliff:g> aplacaid ann nach cleachd thu fad mìosan. Thoir gnogag airson sùil a thoirt orra</item>
     </plurals>
+    <!-- The subtitle for the auto revoke settings card [CHAR LIMIT=none] -->
     <string name="auto_revoke_setting_subtitle">Tha aplacaidean ann nach cleachd thu fad mìosan</string>
+    <!-- The subtitle for the auto revoke settings card, including the number of apps [CHAR LIMIT=none] -->
     <plurals name="auto_revoke_setting_subtitle_count">
         <item quantity="one">Tha <xliff:g id="count" example="1">%1$d</xliff:g> aplacaid ann nach cleachd thu fad mìosan</item>
         <item quantity="two">Tha <xliff:g id="count" example="2">%1$d</xliff:g> aplacaid ann nach cleachd thu fad mìosan</item>
         <item quantity="few">Tha <xliff:g id="count" example="2">%1$d</xliff:g> aplacaidean ann nach cleachd thu fad mìosan</item>
         <item quantity="other">Tha <xliff:g id="count" example="2">%1$d</xliff:g> aplacaid ann nach cleachd thu fad mìosan</item>
     </plurals>
+    <!-- The title of the category showing apps with removed permissions [CHAR LIMIT=60] -->
     <string name="permissions_removed_category_title">Na ceadan a chaidh a thoirt air falbh</string>
+    <!-- The title of a page showing apps with removed permissions [CHAR LIMIT=60]-->
     <string name="permission_removed_page_title">Chaidh ceadan a thoirt air falbh</string>
+    <!-- The title of the category showing all unused apps [CHAR LIMIT=60]-->
     <string name="all_unused_apps_category_title">A h-uile aplacaid gun chleachdadh</string>
+    <!-- String stating how many months ago an app was used [CHAR LIMIT=none] -->
     <string name="months_ago"><xliff:g id="count" example="2">%1$d</xliff:g> mìos(an) air ais</string>
+    <!-- The summary for the auto revoke preference [CHAR LIMIT=none] -->
     <string name="auto_revoke_preference_summary">Chaidh ceadan a thoirt air falbh gus do phrìobhaideachd a dhìon</string>
+    <!-- The notification title for background location access reminder notification [CHAR LIMIT=60] -->
     <string name="background_location_access_reminder_notification_title">Fhuair <xliff:g id="app_name" example="Gmail">%s</xliff:g> d’ ionad sa chùlaibh</string>
+    <!-- The notification content for background location access reminder notification [CHAR LIMIT=none] -->
     <string name="background_location_access_reminder_notification_content">’S urrainn dhan aplacaid seo d’ ionad inntrigeadh an-còmhnaidh. Thoir gnogag gus atharrachadh.</string>
+    <!-- The notification title for the notification that a permission auto revoke has happened [CHAR LIMIT=60] -->
     <string name="auto_revoke_after_notification_title">Chaidh ceadan aplacaid a thoirt air falbh gus do phrìobhaideachd a dhìon</string>
+    <!-- The notification content for the notification that a permission auto revoke has happened for one app [CHAR LIMIT=none] -->
     <string name="auto_revoke_after_notification_content_one">Cha chleachd thu <xliff:g id="app_name" example="Gmail">%s</xliff:g> fad mìosan. Thoir gnogag airson sùil a thoirt air.</string>
+    <!-- The notification content for the notification that a permission auto revoke has happened for two apps [CHAR LIMIT=none] -->
     <string name="auto_revoke_after_notification_content_two">Cha chleachd thu <xliff:g id="app_name" example="Gmail">%s</xliff:g> is 1 aplacaid eile fad mìosan. Thoir gnogag airson sùil a thoirt orra.</string>
+    <!-- The notification content for the notification that a permission auto revoke has happened for more than two apps [CHAR LIMIT=none] -->
     <string name="auto_revoke_after_notification_content_many">Cha chleachd thu <xliff:g id="app_name" example="Gmail">%1$s</xliff:g> is <xliff:g id="number_of_apps" example="4">%2$s</xliff:g> aplacaid(ean) eile fad mìosan. Thoir gnogag airson sùil a thoirt orra.</string>
+    <!-- The notification title for the notification that 1 app is unused [CHAR LIMIT=60] -->
     <string name="auto_revoke_before_notification_title_one">Tha aplacaid gun chleachdadh ann</string>
+    <!-- The notification title for the notification that a permission auto revoke has happened [CHAR LIMIT=60] -->
     <string name="auto_revoke_before_notification_title_many">Tha <xliff:g id="number_of_apps" example="4">%s</xliff:g> aplacaid(ean) gun chleachdadh ann</string>
+    <!-- The notification content for the notification that a permission auto revoke has happened for one app [CHAR LIMIT=none] -->
     <string name="auto_revoke_before_notification_content_one">Thèid ceadan a thoirt air falbh gus do phrìobhaideachd a dhìon. Thoir gnogag airson sùil a thoirt air.</string>
+    <!-- Title for the unused app screen [CHAR LIMIT=30] -->
     <string name="unused_apps_title">Aplacaidean gun chleachdadh</string>
+    <!-- Subtitle for the unused app screen, after permissions have been removed [CHAR LIMIT=none] -->
     <string name="unused_apps_subtitle_after">Chaidh ceadan a thoirt air falbh o</string>
+    <!-- Subtitle for the unused app screen, before permissions have been removed [CHAR LIMIT=none] -->
     <string name="unused_apps_subtitle_before">Thèid ceadan a thoirt air falbh o</string>
+    <!-- Subtitle for an app with unused permissions, listing two permissions [CHAR LIMIT=none] -->
     <string name="unused_permissions_subtitle_two"><xliff:g id="perm_name" example="Location">%1$s</xliff:g> ’s <xliff:g id="perm_name" example="Contacts">%2$s</xliff:g></string>
+    <!-- Subtitle for an app with unused permissions, listing more than two permissions [CHAR LIMIT=none] -->
     <string name="unused_permissions_subtitle_many"><xliff:g id="perm_name" example="Location">%1$s</xliff:g>, <xliff:g id="perm_name" example="Contacts">%2$s</xliff:g> ’s <xliff:g id="number_of_permissions" example="4">%3$s</xliff:g> a bharrachd</string>
+    <!-- Summary explaining that permissions for unused apps have be removed [CHAR LIMIT=none] -->
     <string name="unused_app_permissions_removed_summary">Airson do dhàta a dhìon, chaidh ceadan a thoirt air falbh o aplacaidean nach deach a cleachdadh fad corra mìosa</string>
+    <!-- Summary explaining that permissions for unused apps have be removed. Has "some apps", instead of "apps" [CHAR LIMIT=none] -->
     <string name="unused_app_permissions_removed_summary_some">Airson do dhàta a dhìon, chaidh ceadan a thoirt air falbh o aplacaidean nach deach a cleachdadh fad corra mìosa</string>
-    <string name="one_unused_app_summary">Tha 1 aplacaid ann nach cleachd thu fad corra mìosa</string>
+    <!-- Summary listing that one app is unused [CHAR LIMIT=none] -->
+    <!-- Summary listing how many apps are unused [CHAR LIMIT=none] -->
     <string name="num_unused_apps_summary">Tha <xliff:g id="number_of_apps" example="4">%s</xliff:g> aplacaid(ean) ann nach cleachd thu fad corra mìosa</string>
+    <!-- Subtitle for the preference that is currently granted only when the app is in the foreground. [CHAR LIMIT=60] -->
     <string name="permission_subtitle_only_in_foreground">fhad ’s a bhios an aplacaid ’ga cleachdadh a-mhàin</string>
+    <!-- Subtitle for a storage preference that is currently granted for Media files only. [CHAR LIMIT=60] -->
     <string name="permission_subtitle_media_only">Meadhanan</string>
+    <!-- Subtitle for a storage preference that is currently granted for all files. [CHAR LIMIT=60] -->
     <string name="permission_subtitle_all_files">A h-uile faidhle</string>
+    <!-- Label when app has been granted no permissions [CHAR LIMIT=none] -->
     <string name="no_permissions_allowed">Cha deach cead a thoirt dha</string>
+    <!-- Label when app has been denied no permissions [CHAR LIMIT=none] -->
     <string name="no_permissions_denied">Cha deach cead a dhiùltadh dha</string>
+    <!-- Label when no apps have been granted a given permission [CHAR LIMIT=none] -->
     <string name="no_apps_allowed">Cha deach aplacaid a cheadachadh dha</string>
+    <!-- Label when no apps have ben granted storage access to all files on a devie [CHAR LIMIT=none] -->
     <string name="no_apps_allowed_full">Cha deach aplacaid a cheadachadh dha na faidhlichean uile</string>
+    <!-- Label when no apps have been granted storage access to media files on a device [CHAR LIMIT=none] -->
     <string name="no_apps_allowed_scoped">Cha deach aplacaid a cheadachadh dha na faidhlichean meadhain a-mhàin</string>
+    <!-- Label when no apps have been denied a given permission [CHAR LIMIT=none] -->
     <string name="no_apps_denied">Cha deach aplacaid a dhiùltadh dha</string>
+    <!-- Label for the selected permission state for a given permission and application [CHAR LIMIT=30] -->
     <string name="car_permission_selected">Air a thaghadh</string>
+    <!-- Label for button that opens up the Settings [CHAR LIMIT=20] -->
     <string name="settings">Roghainnean</string>
+    <!-- Title for the dialog listing the enabled accessibility services when there is only one [CHAR LIMIT=none] -->
     <string name="accessibility_service_dialog_title_single">Tha làn-inntrigeadh dhan uidheam agad aig <xliff:g id="service_name" example="Gmail">%s</xliff:g></string>
+    <!-- Title for the dialog listing the enabled accessibility services when there are more than one [CHAR LIMIT=none] -->
     <string name="accessibility_service_dialog_title_multiple">Tha làn-inntrigeadh dhan uidheam agad aig aplacaidean na so-ruigsinneachd (<xliff:g id="num_services" example="2">%s</xliff:g>)</string>
+    <!-- Text for the dialog listing the enabled accessibility services when there is only one [CHAR LIMIT=none] -->
     <string name="accessibility_service_dialog_bottom_text_single">Chì <xliff:g id="service_name" example="Gmail">%s</xliff:g> an sgrìn, na gnìomhan ’s na h-ion-chuir agad agus ’s urrainn dha gnìomhan a ghabhail agus an sgrìn a stiùireadh.</string>
+    <!-- Text for the dialog listing the enabled accessibility services when there are more than one [CHAR LIMIT=none] -->
     <string name="accessibility_service_dialog_bottom_text_multiple">Chì na h-aplacaidean seo an sgrìn, na gnìomhan ’s na h-ion-chuir agad agus ’s urrainn dhaibh gnìomhan a ghabhail agus an sgrìn a stiùireadh.</string>
+    <!-- Label for the assistant role. [CHAR LIMIT=30] -->
     <string name="role_assistant_label">Aplacaid cuidiche dhigitich bhunaiteach</string>
+    <!-- Short label for the assistant role. [CHAR LIMIT=30] -->
     <string name="role_assistant_short_label">Aplacaid cuidiche dhigitich</string>
+    <!-- Description for the assistant role. [CHAR LIMIT=NONE] -->
     <string name="role_assistant_description">’S urrainn do dh’aplacaidean cuidiche do chuideachadh, stèidhichte air an fhiosrachadh a chì thu air an sgrìn. Cuiridh cuid a dh’aplacaidean taic ri seirbheisean an lòinseir agus an ion-chuir gutha ach am faigh thu cuideachadh fillte a-staigh.</string>
+    <!-- Template for the title when an app requests to become the default assistant app. [CHAR LIMIT=100] -->
     <string name="role_assistant_request_title">An suidhich thu <xliff:g id="app_name" example="Super Assistant">%1$s</xliff:g> ’nad aplacaid cuidiche bhunaiteach?</string>
+    <!-- Description when an app requests to become the default assistant. [CHAR LIMIT=60] -->
     <string name="role_assistant_request_description">Gheibh e inntrigeadh air na h-SMS agus air loga nan gairmean agad</string>
+    <!-- Label for the browser role. [CHAR LIMIT=30] -->
     <string name="role_browser_label">Aplacaid brabhsair bhunaiteach</string>
+    <!-- Short label for the browser role. [CHAR LIMIT=30] -->
     <string name="role_browser_short_label">Aplacaid brabhsair</string>
+    <!-- Description for the browser role. [CHAR LIMIT=NONE] -->
     <string name="role_browser_description">Seo aplacaidean a bheir inntrigeadh dhan eadar-lìon dhut ’s a sheallas ceanglaichean air a bheir thu gnogag</string>
+    <!-- Template for the title when an app requests to become the default browser app. [CHAR LIMIT=100] -->
     <string name="role_browser_request_title">An suidhich thu <xliff:g id="app_name" example="Super Browser">%1$s</xliff:g> ’nad aplacaid brabhsair bhunaiteach?</string>
+    <!-- Description when an app requests to become the default browser app. [CHAR LIMIT=60] -->
     <string name="role_browser_request_description">Chan eil feum air cead</string>
+    <!-- Label for the dialer role. [CHAR LIMIT=30] -->
     <string name="role_dialer_label">Aplacaid bhunaiteach an fhòn</string>
+    <!-- Short label for the dialer role. [CHAR LIMIT=30] -->
     <string name="role_dialer_short_label">Aplacaid an fhòn</string>
+    <!-- Description for the dialer role. [CHAR LIMIT=NONE] -->
     <string name="role_dialer_description">Seo aplacaidean a leigeas leat gairmean fòn a chur is fhaighinn air an uidheam agad</string>
+    <!-- Template for the title when an app requests to become the default dialer app. [CHAR LIMIT=100] -->
     <string name="role_dialer_request_title">An suidhich thu <xliff:g id="app_name" example="Super Phone">%1$s</xliff:g> ’nad aplacaid bhunaiteach an fhòn?</string>
+    <!-- Description when an app requests to become the default dialer app. [CHAR LIMIT=60] -->
     <string name="role_dialer_request_description">Gheibh e inntrigeadh air loga nan gairmean agad agus ’s urrainn dha SMS a chur</string>
+    <!-- Search keywords for the dialer role. [CHAR LIMIT=NONE] -->
     <string name="role_dialer_search_keywords">dialer, daithealadh</string>
+    <!-- Label for the SMS role. [CHAR LIMIT=30] -->
     <string name="role_sms_label">Aplacaid SMS bhunaiteach</string>
+    <!-- Short label for the SMS role. [CHAR LIMIT=30] -->
     <string name="role_sms_short_label">Aplacaid SMS</string>
+    <!-- Description for the SMS role. [CHAR LIMIT=NONE] -->
     <string name="role_sms_description">Seo aplacaidean a leigeas leat an àireamh fòn agad a chleachdadh ach an cuir is faigh thu teachdaireachdan teacsa goirid, dealbhan, videothan is a bharrachd</string>
+    <!-- Template for the title when an app requests to become the default SMS app. [CHAR LIMIT=100] -->
     <string name="role_sms_request_title">An suidhich thu <xliff:g id="app_name" example="Super SMS">%1$s</xliff:g> ’nad aplacaid SMS bhunaiteach?</string>
+    <!-- Description when an app requests to become the default SMS app. [CHAR LIMIT=60] -->
     <string name="role_sms_request_description">Gheibh e inntrigeadh dhan luchd-aithne, dha na h-SMS is dhan fhòn agad</string>
+    <!-- Search keywords for the SMS role. [CHAR LIMIT=NONE] -->
     <string name="role_sms_search_keywords">text message, texting, messages, messaging, teachdaireachd teacsa, teacsa, sms, teachdaireachd, teachdaireachdan</string>
+    <!-- Label for the emergency role. [CHAR LIMIT=30] -->
     <string name="role_emergency_label">Aplacaid èiginn bhunaiteach</string>
+    <!-- Short label for the emergency role. [CHAR LIMIT=30] -->
     <string name="role_emergency_short_label">Aplacaid èiginn</string>
+    <!-- Description for the emergency role. [CHAR LIMIT=NONE] -->
     <string name="role_emergency_description">Seo aplacaidean a leigeas leat am fiosrachadh meadaigeach agad a chlàradh agus inntrigeadh a thoirt dhan luchd-èiginn; rabhaidhean fhaighinn mu shìde chunnartach agus dunaich; fios a chur do chàch nuair a bhios tu feumach air cobhair</string>
+    <!-- Template for the title when an app requests to become the default emergency app. [CHAR LIMIT=100] -->
     <string name="role_emergency_request_title">An suidhich thu <xliff:g id="app_name" example="Super Emergency">%1$s</xliff:g> ’nad aplacaid èiginn bhunaiteach?</string>
+    <!-- Description when an app requests to become the default emergency app. [CHAR LIMIT=60] -->
     <string name="role_emergency_request_description">Chan eil feum air cead</string>
+    <!-- Search keywords for the emergency role. The word "ICE" here is short for In Case of Emergency, not frozen water. [CHAR LIMIT=NONE] -->
     <string name="role_emergency_search_keywords">ice, èiginn</string>
+    <!-- Label for the home role. [CHAR LIMIT=30] -->
     <string name="role_home_label">Aplacaid bhunaiteach na dachaigh</string>
+    <!-- Short label for the home role. [CHAR LIMIT=30] -->
     <string name="role_home_short_label">Aplacaid na dachaigh</string>
+    <!-- Description for the home role. [CHAR LIMIT=NONE] -->
     <string name="role_home_description">Seo aplacaidean, air a bheil “lòinsear” gu tric, a thèid a chur an àite sgrìnichean dachaigh an uidheim Android agad agus a bheir cothrom dhut air susbaint is gleusan an uidheim agad</string>
+    <!-- Template for the title when an app requests to become the default home app. [CHAR LIMIT=100] -->
     <string name="role_home_request_title">An suidhich thu <xliff:g id="app_name" example="Super Home">%1$s</xliff:g> ’nad aplacaid bhunaiteach na dachaigh?</string>
+    <!-- Description when an app requests to become the default home app. [CHAR LIMIT=60] -->
     <string name="role_home_request_description">Chan eil feum air cead</string>
+    <!-- Search keywords for the home role. [CHAR LIMIT=NONE] -->
     <string name="role_home_search_keywords">launcher, lòinsear</string>
+    <!-- Label for the call redirection role. [CHAR LIMIT=30] -->
     <string name="role_call_redirection_label">Aplacaid sìnidh air adhart ghairmean bhunaiteach</string>
+    <!-- Short label for the call redirection role. [CHAR LIMIT=30] -->
     <string name="role_call_redirection_short_label">Aplacaid sìnidh air adhart ghairmean</string>
+    <!-- Description for the call redirection role. [CHAR LIMIT=NONE] -->
     <string name="role_call_redirection_description">Seo aplacaidean a leigeas leat gairmean a-mach a shìneadh air adhart gu àireamh fòn eile</string>
+    <!-- Template for the title when an app requests to become the default call redirection app. [CHAR LIMIT=100] -->
     <string name="role_call_redirection_request_title">An suidhich thu <xliff:g id="app_name" example="Super Call Redirection">%1$s</xliff:g> ’nad aplacaid sìnidh air adhart ghairmean bhunaiteach?</string>
+    <!-- Description when an app requests to become the default call redirection app. [CHAR LIMIT=60] -->
     <string name="role_call_redirection_request_description">Chan eil feum air cead</string>
+    <!-- Label for the call screening role. [CHAR LIMIT=45] -->
     <string name="role_call_screening_label">Aplacaid spama ⁊ ID a’ ghairmeir bhunaiteach</string>
+    <!-- Short label for the call screening role. [CHAR LIMIT=30] -->
     <string name="role_call_screening_short_label">Aplacaid spama ⁊ ID a’ ghairmeir</string>
+    <!-- Description for the call screening role. [CHAR LIMIT=NONE] -->
     <string name="role_call_screening_description">Seo aplacaidean a leigeas leat gairmean aithneachadh, spama is gairmean robotairean a bhacadh agus àireamhan nach eil thu ag iarraidh a chur air liosta dhubh</string>
+    <!-- Template for the title when an app requests to become the default call screening app. [CHAR LIMIT=100] -->
     <string name="role_call_screening_request_title">An suidhich thu <xliff:g id="app_name" example="Super Call Screening">%1$s</xliff:g> ’nad aplacaid spama ⁊ ID a’ ghairmeir bhunaiteach?</string>
+    <!-- Description when an app requests to become the default call screening app. [CHAR LIMIT=60] -->
     <string name="role_call_screening_request_description">Chan eil feum air cead</string>
+    <!-- Subtitle for the application that is the current default application [CHAR LIMIT=30] -->
     <string name="request_role_current_default">A’ bhun-roghainn làithreach</string>
+    <!-- Label for the checkbox to always deny a role request from an application from now on [CHAR LIMIT=30] -->
     <string name="request_role_dont_ask_again">Na faighnich dhìom a-rithist</string>
+    <!-- Label for the button to set an application as the default application [CHAR LIMIT=20] -->
     <string name="request_role_set_as_default">Suidhich mar a’ bhun-roghainn</string>
+    <!-- Message telling the user that a phone call is currently using the microphone [CHAR LIMIT=none] -->
     <string name="phone_call_uses_microphone">Tha am micreofon ’ga chleachdadh ann an &lt;b&gt;gairm fòn&lt;/b&gt;</string>
+    <!-- Message telling the user that a phone call is currently using the microphone and the camera [CHAR LIMIT=none] -->
     <string name="phone_call_uses_microphone_and_camera">Tha an camara ’s am micreofon ’gan cleachdadh ann an &lt;b&gt;gairm video&lt;/b&gt;</string>
+    <!-- Message telling the user that a phone call is currently using the camera [CHAR LIMIT=none] -->
     <string name="phone_call_uses_camera">Tha an camara ’ga chleachdadh ann an &lt;b&gt;gairm video&lt;/b&gt;</string>
+    <!-- Message telling the user that a system service is currently using the microphone [CHAR LIMIT=none] -->
     <string name="system_uses_microphone">Tha am micreofon ’ga inntrigeadh le seirbheis an t-siostaim</string>
+    <!-- Message telling the user that a system service is currently using the microphone and the camera [CHAR LIMIT=none] -->
     <string name="system_uses_microphone_and_camera">Tha an camara ’s am micreofon ’gan inntrigeadh le seirbheis an t-siostaim</string>
+    <!-- Message telling the user that a system service is currently using the camera [CHAR LIMIT=none] -->
     <string name="system_uses_camera">Tha an camara ’ga inntrigeadh le seirbheis an t-siostaim</string>
+    <!-- Line above a list of other apps and system service that are currently microphone or camera [CHAR LIMIT=60] -->
     <string name="other_use">Cleachdadh eile:</string>
+    <!-- Action for accepting the Ongoing usage dialog [CHAR LIMIT=10]-->
     <string name="ongoing_usage_dialog_ok">Tha mi agaibh</string>
+    <!-- Title for Ongoing usage dialog title when multiple apps are using app ops [CHAR LIMIT=NONE] -->
     <string name="ongoing_usage_dialog_title">Cleachdadh o chionn goirid air <xliff:g id="types_list" example="camera( and location)">%s</xliff:g></string>
+    <!-- Separator for permissions. Include spaces before and after if needed [CHAR LIMIT=10] -->
     <string name="ongoing_usage_dialog_separator">,\u0020</string>
+    <!-- Separator for permissions, before last type. Include spaces before and after if needed [CHAR LIMIT=10] -->
     <string name="ongoing_usage_dialog_last_separator">\u0020⁊\u0020</string>
+    <!-- Keyword in the Settings app's search functionality that can be used to find links to the default app management screens [CHAR LIMIT=none] -->
     <string name="default_app_search_keyword">aplacaidean bunaiteach</string>
+    <!-- List of the two permission group names for microphone (android:string/permgrouplab_microphone) and camera (android:string/permgrouplab_camera) [CHAR LIMIT=60]-->
     <string name="permgroup_list_microphone_and_camera">Micreofon ⁊ camara</string>
+    <!-- Accessibility label for button that opens a settings screen [CHAR LIMIT=NONE] -->
     <string name="settings_button">Roghainnean</string>
+    <!-- Title for page of managing default apps. [CHAR LIMIT=30] -->
     <string name="default_apps">Na h-aplacaidean bunaiteach</string>
+    <!-- Help URI, default apps [DO NOT TRANSLATE] -->
+    <!-- Label when there is no default apps [CHAR LIMIT=30] -->
     <string name="no_default_apps">No default apps</string>
+    <!-- Title for preference item that will open a screen to manage more default apps [CHAR LIMIT=30] -->
     <string name="default_apps_more">Bun-roghainnean eile</string>
+    <!-- Title for preference item that will show the user's preferences for this app's priority for opening links to websites that it claims to support [CHAR LIMIT=30] -->
     <string name="default_apps_manage_domain_urls">Fosgladh cheanglaichean</string>
+    <!-- Title for category of default apps for work [CHAR LIMIT=30] -->
     <string name="default_apps_for_work">Bun-roghainn na h-obrach</string>
+    <!-- Summary of a default app when there is no app set [CHAR LIMIT=60] -->
     <string name="default_app_none">Chan eil gin</string>
+    <!-- Label for a system default app [CHAR LIMIT=60] -->
     <string name="default_app_system_default">(Bun-roghainn an t-siostaim)</string>
+    <!-- Label when there are no apps available for a default app [CHAR LIMIT=30] -->
     <string name="default_app_no_apps">Chan eil aplacaid ann</string>
+    <!-- Label for the selected default app for default app [CHAR LIMIT=30] -->
     <string name="car_default_app_selected">Air a thaghadh</string>
+    <!-- Label for the selected default app for default app when it has additional information to show [CHAR LIMIT=30] -->
     <string name="car_default_app_selected_with_info">Air a thaghadh – <xliff:g id="additional_info" example="(System default)">%1$s</xliff:g></string>
+    <!-- Keyword in the Settings app's search functionality that can be used to find links to the special app access management screens [CHAR LIMIT=none] -->
     <string name="special_app_access_search_keyword">special app access, inntrigeadh sònraichte nan aplacaid</string>
+    <!-- Title for page of managing special app access. [CHAR LIMIT=30] -->
     <string name="special_app_access">Inntrigeadh sònraichte nan aplacaid</string>
+    <!-- Help URI, special app access [DO NOT TRANSLATE] -->
+    <!-- Label when there is no special app access [CHAR LIMIT=30] -->
     <string name="no_special_app_access">Chan eil inntrigeadh sònraichte aplacaid ann</string>
+    <!-- Label when there are no apps available for a special app access [CHAR LIMIT=30] -->
     <string name="special_app_access_no_apps">Chan eil aplacaid ann</string>
+    <!-- Summary indicating that a home app is missing work profile support [CHAR LIMIT=60] -->
     <string name="home_missing_work_profile_support">Cha chuir seo taic ri pròifil na h-obrach</string>
+    <!-- Dialog message explaining that the app just selected by the user will not work after a reboot until the user enters their credentials, such as a PIN or password. [CHAR LIMIT=NONE] -->
     <string name="encryption_unaware_confirmation_message">An aire: Ma bhios sgrìn-ghlasaidh air a shuidheachadh agad agus tu air an t-uidheam agad ath-thòiseachadh, chan urrainn dhan aplacaid seo tòiseachadh mus doir thu a’ ghlas far an uidheim agad.</string>
+    <!-- Dialog message warning about security implications of setting an assistant, displayed when the user selects an assistant. [CHAR LIMIT=NONE] -->
     <string name="assistant_confirmation_message">Leughaidh an cuidiche fiosrachadh mu na h-aplacaidean a tha ’gan cleachdadh air an t-siostam agad, a’ gabhail a-staigh am fiosrachadh a chì thu air an sgrìn no a ghabhas inntrigeadh am broinn nan aplacaidean fhèin.</string>
+    <!-- Name for the notification channel for incident / bug report confirmation. Appears in
+    Settings.
+    [CHAR LIMIT=50] -->
     <string name="incident_report_channel_name">Co-roinn fiosrachadh dì-bhugachaidh</string>
+    <!-- Title for notification shown when the user should confirm an incident / bug report.
+    [CHAR LIMIT=60] -->
     <string name="incident_report_notification_title">An co-roinn thu fiosrachadh dì-bhugachaidh mionaideach?</string>
+    <!-- Content for notification shown when the user should confirm an incident / bug report.
+    [CHAR LIMIT=120] -->
     <string name="incident_report_notification_text">Tha <xliff:g id="app_name" example="Gmail">%1$s</xliff:g> airson fiosrachadh dì-bhugachaidh a luchdadh suas.</string>
+    <!-- Title for the incident / bug report confirmation dialog. [CHAR LIMIT=50] -->
     <string name="incident_report_dialog_title">An co-roinn thu dàta dì-bhugachaidh?</string>
+    <!-- Title text for introduction to incident / bug report confirmation dialog.
+    Following this text is a bulleted list of reasons that a bug is being collected (e.g. "bad
+    battery life detected"). Please try to keep this as short as possible (<40 chars if possible).
+    The dialog is getting full, but going over is ok if necessary.  [CHAR LIMIT=60] -->
     <string name="incident_report_dialog_intro">Mhothaich an siostam do dhuilgheadas.</string>
+    <!-- Content for dialog shown when the user should confirm an incident / bug report.
+    [CHAR LIMIT=none] -->
     <string name="incident_report_dialog_text">"Tha <xliff:g id="app_name" example="Gmail">%1$s</xliff:g> airson aithris air buga a luchdadh suas a chaidh a chruthachadh air an uidheam seo <xliff:g id="date" example="December 26, 2018">%2$s</xliff:g> aig <xliff:g id="time" example="1:20 PM">%3$s</xliff:g>. Gabhaidh aithrisean air bugaichean a-staigh fiosrachadh pearsanta mun uidheam agad no a chaidh a chur ris an loga le aplacaidean, can ainmean cleachdaiche, dàta mu d’ ionad, aithnichearan uidheim agus fiosrachadh an lìonraidh. Na co-roinn aithris air buga ach le daoine agus aplacaidean anns a bheil earbsa agad a thaobh an fhiosrachaidh seo.
 
 An ceadaich thu gun luchdaich <xliff:g id="app_name" example="Gmail">%4$s</xliff:g> suas aithris air buga?"</string>
+    <!-- Content for dialog shown when there was an error parsing the incident / bug report.
+    [CHAR LIMIT=none] -->
     <string name="incident_report_error_dialog_text">"Thachair mearachd le pròiseasadh aithris air buga dha <xliff:g id="app_name" example="Gmail">%1$s</xliff:g>. Chaidh co-roinneadh an fiosrachaidh dhì-bhugachaidh mhionaidich a dhiùltadh air an adhbhar sin. Tha sinn duilich gun do bhris sinn a-steach ort."</string>
+    <!-- Label for the button to allow sharing of the report. [CHAR LIMIT=20]-->
     <string name="incident_report_dialog_allow_label">Ceadaich</string>
+    <!-- Label for the button to NOT allow sharing of the report. [CHAR LIMIT=20] -->
     <string name="incident_report_dialog_deny_label">Diùlt</string>
+    <!-- Label for screen allowing the user to force certain apps to always be shown in permission controller settings ui instead of being hidden behind "system app" menu. [CHAR LIMIT=60] -->
     <string name="adjust_user_sensitive_title">Roghainnean adhartach</string>
+    <!-- Label for link to the screen allowing the user to force certain apps to always be shown in permission controller settings ui instead of being hidden behind "system app" menu. [CHAR LIMIT=30] -->
     <string name="menu_adjust_user_sensitive">Roghainnean adhartach</string>
+    <!-- Title for global switch that enables/disables the ability for the user to force certain apps to always be shown in permission controller settings ui instead of being hidden behind "system app" menu. [CHAR LIMIT=60] -->
     <string name="adjust_user_sensitive_globally_title">Seall cleachdadh aplacaidean an t-siostaim</string>
+    <!-- Subtitle for global switch that enables/disables the ability for the user to force certain apps to always be shown in permission controller settings ui instead of being hidden behind "system app" menu. [CHAR LIMIT=none] -->
     <string name="adjust_user_sensitive_globally_summary">Seall na ceadan a chleachdas aplacaidean an t-siostaim air bàr na staid, air an deas-bhòrd ⁊ air àitichean eile</string>
+    <!-- Header above the per app switches that enables/disables the ability for the user to force the app to always be shown in permission controller settings ui instead of being hidden behind "system app" menu. [CHAR LIMIT=60] -->
     <string name="adjust_user_sensitive_per_app_header">Soillsich an cleachdadh dha na leanas</string>
+    <!-- Title for switch that enables/disables the microphone status bar icon for the currently selected assistant. [CHAR LIMIT=60] -->
     <string name="assistant_record_audio_user_sensitive_title">Seall mothachadh trigear a’ chuidiche</string>
+    <!-- Subtitle for switch that enables/disables the microphone status bar icon for the currently selected assistant. [CHAR LIMIT=none] -->
     <string name="assistant_record_audio_user_sensitive_summary">Seall an ìomhaigheag air bàr na staid nuair a bhios am micreofon ’ga chleachdadh airson cuidiche gutha a ghnìomhachadh</string>
+    <!-- Message shown to the user when the apps requests permission from this group. Shows in the isolated storage case. If ever possible this should stay below 80 characters (assuming the parameters takes 20 characters). Don't abbreviate until the message reaches 120 characters though. [CHAR LIMIT=120] -->
     <string name="permgrouprequest_storage_isolated">Am faod
         &lt;b&gt;<xliff:g id="app_name" example="Gmail">%1$s</xliff:g>&lt;/b&gt; na dealbhan is meadhanan air an uidheam agad inntrigeadh?</string>
+    <!-- Message shown to the user when the apps requests permission from this group. If ever possible this should stay below 80 characters (assuming the parameters takes 20 characters). Don't abbreviate until the message reaches 120 characters though. [CHAR LIMIT=120] -->
     <string name="permgrouprequest_contacts">Am faod
         &lt;b&gt;<xliff:g id="app_name" example="Gmail">%1$s</xliff:g>&lt;/b&gt; an luchd-aithne agad inntrigeadh?</string>
+    <!-- Message shown to the user when the apps requests permission from this group. If ever possible this should stay below 80 characters (assuming the parameters takes 20 characters). Don't abbreviate until the message reaches 120 characters though. [CHAR LIMIT=120] -->
     <string name="permgrouprequest_location">Am faod
         &lt;b&gt;<xliff:g id="app_name" example="Gmail">%1$s</xliff:g>&lt;/b&gt; ionad an uidheim seo inntrigeadh?</string>
+    <!-- Subtitle of the message shown to the user when the apps requests permission to use the location only while app is in foreground [CHAR LIMIT=150]-->
     <string name="permgrouprequestdetail_location">Chan fhaigh an aplacaid cothrom air d’ ionad ach nuair a bhios tu ris an aplacaid</string>
+    <!-- Message shown to the user when the apps requests permission to use the location while app is in foreground and background. If ever possible this should stay below 80 characters (assuming the parameters takes 20 characters). Don't abbreviate until the message reaches 120 characters though. [CHAR LIMIT=120] -->
     <string name="permgroupbackgroundrequest_location">Am faod
         &lt;b&gt;<xliff:g id="app_name" example="Gmail">%1$s</xliff:g>&lt;/b&gt; ionad an uidheim seo inntrigeadh?</string>
+    <!-- Subtitle of the message shown to the user when the apps requests permission to use the location while app is in foreground and background. Try to keep the link annotation at the end of the string [CHAR LIMIT=150] -->
     <string name="permgroupbackgroundrequestdetail_location">Dh’fhaoidte gu bheil an aplacaid seo airson d’ ionad inntrigeadh fad an t-siubhail fiù ’s nuair nach bi thu ris an aplacaid. <annotation id="link">Ceadaich seo sna roghainnean.</annotation></string>
+    <!-- Message shown to the user when the apps requests permission to use the location while app is in foreground and background. If ever possible this should stay below 80 characters (assuming the parameters takes 20 characters). Don't abbreviate until the message reaches 120 characters though. [CHAR LIMIT=120] -->
     <string name="permgroupupgraderequest_location">An atharraich thu an t-inntrigeadh dhan ionad airson &lt;b&gt;<xliff:g id="app_name" example="Gmail">%1$s</xliff:g>&lt;/b&gt;?</string>
+    <!-- Subtitle of the message shown to the user when the apps requests permission to use the location while app is in foreground and background. Try to keep the link annotation at the end of the string [CHAR LIMIT=150] -->
     <string name="permgroupupgraderequestdetail_location">Tha an aplacaid seo airson d’ ionad inntrigeadh fad an t-siubhail fiù ’s nuair nach bi thu ris an aplacaid. <annotation id="link">Ceadaich seo sna roghainnean.</annotation></string>
+    <!-- Message shown to the user when the apps requests permission from this group. If ever possible this should stay below 80 characters (assuming the parameters takes 20 characters). Don't abbreviate until the message reaches 120 characters though. [CHAR LIMIT=120] -->
     <string name="permgrouprequest_calendar">Am faod
         &lt;b&gt;<xliff:g id="app_name" example="Gmail">%1$s</xliff:g>&lt;/b&gt; am mìosachan agad inntrigeadh?</string>
+    <!-- Message shown to the user when the apps requests permission from this group. If ever possible this should stay below 80 characters (assuming the parameters takes 20 characters). Don't abbreviate until the message reaches 120 characters though. [CHAR LIMIT=120] -->
     <string name="permgrouprequest_sms">Am faod
         &lt;b&gt;<xliff:g id="app_name" example="Gmail">%1$s</xliff:g>&lt;/b&gt; teachdaireachdan SMS a chur ’s a shealltainn?</string>
+    <!-- Message shown to the user when the apps requests permission from this group. If ever possible this should stay below 80 characters (assuming the parameters takes 20 characters). Don't abbreviate until the message reaches 120 characters though. [CHAR LIMIT=120] -->
     <string name="permgrouprequest_storage">Am faod
         &lt;b&gt;<xliff:g id="app_name" example="Gmail">%1$s</xliff:g>&lt;/b&gt; na dealbhan, meadhanan is faidhlichean air an uidheam agad inntrigeadh?</string>
+    <!-- Message shown to the user when the apps requests permission from this group. If ever possible this should stay below 80 characters (assuming the parameters takes 20 characters). Don't abbreviate until the message reaches 120 characters though. [CHAR LIMIT=120] -->
     <string name="permgrouprequest_microphone">Am faod
         &lt;b&gt;<xliff:g id="app_name" example="Gmail">%1$s</xliff:g>&lt;/b&gt; fuaim a chlàradh?</string>
+    <!-- Message shown to the user when the apps requests permission from this group. If ever possible this should stay below 80 characters (assuming the parameters takes 20 characters). Don't abbreviate until the message reaches 120 characters though. [CHAR LIMIT=120] -->
     <string name="permgrouprequest_activityRecognition">Am faod
         &lt;b&gt;<xliff:g id="app_name" example="Gmail">%1$s</xliff:g>&lt;/b&gt; gnìomhachd do bodhaige inntrigeadh?</string>
+    <!-- Message shown to the user when the apps requests permission from this group. If ever possible this should stay below 80 characters (assuming the parameters takes 20 characters). Don't abbreviate until the message reaches 120 characters though. [CHAR LIMIT=120] -->
     <string name="permgrouprequest_camera">Am faod
         &lt;b&gt;<xliff:g id="app_name" example="Gmail">%1$s</xliff:g>&lt;/b&gt; dealbhan a thogail ’s videothan a chlàradh?</string>
+    <!-- Message shown to the user when the apps requests permission from this group. If ever possible this should stay below 80 characters (assuming the parameters takes 20 characters). Don't abbreviate until the message reaches 120 characters though. [CHAR LIMIT=120] -->
     <string name="permgrouprequest_calllog">Am faod
         &lt;b&gt;<xliff:g id="app_name" example="Gmail">%1$s</xliff:g>&lt;/b&gt; logaichean nan gairmean fòn agad inntrigeadh?</string>
+    <!-- Message shown to the user when the apps requests permission from this group. If ever possible this should stay below 80 characters (assuming the parameters takes 20 characters). Don't abbreviate until the message reaches 120 characters though. [CHAR LIMIT=120] -->
     <string name="permgrouprequest_phone">Am faod
         &lt;b&gt;<xliff:g id="app_name" example="Gmail">%1$s</xliff:g>&lt;/b&gt; gairmean fòn a chur ’s a stiùireadh?</string>
+    <!-- Message shown to the user when the apps requests permission from this group. If ever possible this should stay below 80 characters (assuming the parameters takes 20 characters). Don't abbreviate until the message reaches 120 characters though. [CHAR LIMIT=120] -->
     <string name="permgrouprequest_sensors">Am faod
         &lt;b&gt;<xliff:g id="app_name" example="Gmail">%1$s</xliff:g>&lt;/b&gt; dàta mhothaichearan mu do bheò inntrigeadh?</string>
+    <!-- Notification shown to the user when location permissions are auto-granted by admin policy. These are for when the admin is forcing the permission and the user cannot control it. [CHAR LIMIT=120]-->
     <string name="auto_granted_permissions">Ceadan fo stiùireadh</string>
+    <!-- Content of the notification [CHAR LIMIT=120]-->
     <string name="auto_granted_location_permission_notification_title">Gabhaidh d’ ionad inntrigeadh</string>
+    <!-- Body of the notification, that does not include the app name and is specific to location permissions. [CHAR LIMIT=120]-->
     <string name="auto_granted_permission_notification_body">Thug an rianaire ICT agad cead dha <xliff:g id="app_name" example="Gmail">%s</xliff:g> airson d’ ionad inntrigeadh</string>
+    <!-- Detail message explaining why foreground options aren't available. [CHAR LIMIT=160] -->
     <string name="fg_capabilities_sound_trigger">Chan eil gach roghainn ri làimh dhut air sgàth ’s gum feum an aplacaid mothachadh dhan fhuaim</string>
+    <!-- Detail message explaining why foreground options aren't available. Try to match translation for "default digital assistant" in this string to role_assistant_label. [CHAR LIMIT=160] -->
     <string name="fg_capabilities_assistant">Chan eil gach roghainn ri làimh dhut air sgàth ’s gu bheil an aplacaid ’nad chuidiche digiteach bunaiteach</string>
+    <!-- Detail message explaining why foreground options aren't available. [CHAR LIMIT=160] -->
     <string name="fg_capabilities_voice_interaction">Chan eil gach roghainn ri làimh dhut air sgàth ’s gu bheil an aplacaid ’ga cleachdadh airson ion-chur gutha</string>
+    <!-- Detail message explaining why foreground options aren't available. [CHAR LIMIT=160] -->
     <string name="fg_capabilities_carrier">Chan eil gach roghainn ri làimh dhut air sgàth ’s gu bheil an aplacaid fo stiùireadh a’ ghiùlanair agad</string>
 </resources>
