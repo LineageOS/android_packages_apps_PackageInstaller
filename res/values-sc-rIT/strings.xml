@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Installadore de pachetes</string>
+    <string name="next">Imbeniente</string>
+    <string name="install">Installa</string>
+    <string name="done">Fatu</string>
+    <string name="security_settings_desc">Permite a custa aplicatzione de:</string>
+    <string name="cancel">Annulla</string>
+    <string name="unknown">Disconnotu</string>
+    <string name="installing">Installende\u2026</string>
+    <string name="install_done">Aplicatzione installada.</string>
+    <string name="install_confirm_question">Boles installare custa aplicatzione?
+            Custu dd\'at a dare atzessu a:</string>
+    <string name="install_confirm_question_no_perms">Boles installare custa aplicatzione?
+            Non cheret perunu atzessu ispetziale.</string>
+    <string name="install_confirm_question_update">Cheres installare un\'agiornamentu
+            in s\'aplicatzione chi b\'est giai? Is datos tuos non s\'ant a pèrdere.  
+            S\'aplicatzione agiornada at a tènnere atzessu a:</string>
+    <string name="install_confirm_question_update_system">Cheres installare un\'agiornamentu
+            in s\'aplicatzione integrada? Is datos tuos non s\'ant a pèrdere.  
+            S\'aplicatzione agiornada at a tènnere atzessu a:</string>
+    <string name="install_confirm_question_update_no_perms">Cheres installare un\'agiornamentu
+            in s\'aplicatzione chi b\'est giai? Is datos tuos non s\'ant a pèrdere.  
+            S\'aplicatzione no at a chèrrere perunu atzessu ispetziale.</string>
+    <string name="install_confirm_question_update_system_no_perms">Cheres installare un\'agiornamentu
+            in s\'aplicatzione integrada? Is datos tuos non s\'ant a pèrdere.  
+            S\'aplicatzione no at a chèrrere perunu atzessu ispetziale.</string>
+    <string name="install_failed">Aplicatziones no installada</string>
+    <string name="install_failed_msg" product="tablet"><xliff:g id="app_name">%1$s</xliff:g> no at fatu a ddu installare in sa tauledda.</string>
+    <string name="install_failed_msg" product="tv"><xliff:g id="app_name">%1$s</xliff:g> no at fatu a ddu installare in su televisore.</string>
+    <string name="install_failed_msg" product="default"><xliff:g id="app_name">%1$s</xliff:g> no at fatu a dd\'installare in su telèfonu.</string>
+    <string name="launch">Aberi</string>
+    <string name="unknown_apps_admin_dlg_text">S\'amministradore tuo non permitet s\'installatzione de aplicatziones
+        otènnidas dae fontes disconnotas</string>
+    <string name="ok">AB</string>
+    <string name="settings">Impostatziones</string>
+    <string name="manage_applications">Gesti aplicatziones</string>
+    <string name="dlg_app_replacement_title">Boles cambiare aplicatzione?</string>
+    <string name="dlg_app_replacement_statement">S\'aplicatzione chi ses installende s\'at a cambiare cun un\'àtera.\n\nTotu is datos de is utentes de in antis s\'ant a sarvare.</string>
+    <string name="dlg_sys_app_replacement_statement">Custa est un\'aplicatzione de sistema.\n\nTotu is datos de is utentes antepostos s\'ant a sarvare.</string>
+    <string name="out_of_space_dlg_title">Non b\'at logu</string>
+    <string name="dlg_ok">AB</string>
+    <string name="app_not_found_dlg_title">Aplicatzione no agatada</string>
+    <string name="app_not_found_dlg_text"> S\'aplicatzione non s\'est agatada in sa lista de aplicatziones installadas.</string>
+    <string name="uninstall_application_title">Disinstalla s\'aplicatzione</string>
+    <string name="uninstall_update_title">Disintalla agiornamentos</string>
+    <string name="uninstall_activity_text"><xliff:g id="activity_name">%1$s</xliff:g> est una parte de s\'aplicatzione in fatu:</string>
+    <string name="uninstall_application_text">Boles disinstallare custa aplicatzione?</string>
+    <string name="uninstall_application_text_all_users">Boles installare custa aplicatzione pro <b>totu</b>
+        is utentes?  S\'aplicatzione e is datos suos s\'ant a bogare dae <b>totu</b> is utentes de su dispositivu.</string>
+    <string name="uninstall_application_text_user">Boles installare custa aplicatzione pro s\'utente <xliff:g id="username">%1$s</xliff:g>?</string>
+    <string name="uninstalling">Disinstallende\u2026</string>
+    <string name="uninstall_done">Disinstallatzione agabbada.</string>
+    <string name="uninstall_failed">Disinstallatzione fallida.</string>
+    <string name="uninstall_blocked_device_owner">Custa aplicatzione est netzessària
+        pro s\'amministradore de su dispositivu tuo e non faghet a dda disinstallare.</string>
+    <string name="uninstall_failed_msg"><xliff:g id="app_name">%1$s</xliff:g> no at fatu a dd\'installare.</string>
+    <string name="Parse_error_dlg_text">S\'est verificadu unu problema in s\'anàlisi de su pachete.</string>
+    <string name="newPerms">Nou</string>
+    <string name="allPerms">Totu</string>
+    <string name="privacyPerms">Riservadesa</string>
+    <string name="devicePerms">Atzessu dispositivu</string>
+    <string name="no_new_perms">Custu agiornamentu non cheret perunu permissu nou.</string>
+    <string name="grant_confirm_question">Boles cuntzèdere is permissos in fatu?
+        Custu at a dare atzessu a:</string>
+    <string name="grant_dialog_button_deny">Nega</string>
+    <string name="current_permission_template">        <xliff:g id="current_permission_index" example="1">%1$s</xliff:g> de
+        <xliff:g id="permission_count" example="2">%2$s</xliff:g></string>
+    <string name="grant_dialog_button_allow">Permite</string>
+    <string name="app_permissions_breadcrumb">Aplicatziones</string>
+    <string name="app_permissions">Permissos de s\'aplicatzione</string>
+    <string name="no_permissions">Perunu permissu</string>
+    <string name="additional_permissions">Permissos in prus</string>
+    <plurals name="additional_permissions_more">
+        <item quantity="one"><xliff:g id="count" example="1">%1$d</xliff:g> àteru</item>
+        <item quantity="other"><xliff:g id="count" example="2">%1$d</xliff:g> àteros</item>
+    </plurals>
+    <string name="old_sdk_deny_warning">Custa aplicatzione est progetada pro una versione prus antiga de Android. A negare su permissu podet cumportare chi non funtzionet prus comente depet.</string>
+    <string name="default_permission_description">esecuta un\'atzione disconnota</string>
+    <string name="app_permissions_group_summary"><xliff:g id="count" example="10">%1$d</xliff:g> de <xliff:g id="count" example="10">%2$d</xliff:g> aplicatziones permìtidas</string>
+    <string name="menu_show_system">Mustra sistema</string>
+    <string name="menu_hide_system">Cua sistema</string>
+    <string name="permission_title"><xliff:g id="permission" example="Camera">%1$s</xliff:g> permissos</string>
+    <string name="no_apps">Peruna aplicatzione</string>
+    <string name="location_settings">Impostatziones de positzione</string>
+    <string name="location_warning"><xliff:g id="app_name" example="Package Installer">%1$s</xliff:g> est unu frunidore de servìtzios de localizatzione pro custu dispositivu. S\'atzessu a sa positzione si podet modificare dae is impostatziones de sa positzione.</string>
+    <string name="system_warning">Si negas custa autorizatzione, is funtziones bàsicas de su dispositivu diant pòdere non funtzionare comente si tocat.</string>
+    <string name="permission_summary_enforced_by_policy">Aplicadu dae sa polìtica</string>
+    <string name="loading">Carrighende\u2026</string>
+    <string name="all_permissions">Totu is permissos</string>
+    <string name="other_permissions">Àteras capatzidades de s\'aplicatzione</string>
+    <string name="permission_request_title">Rechesta de permissu</string>
+    <string name="screen_overlay_title">Rilevada subrapositzione de ischermu</string>
+    <string name="screen_overlay_message">Pro cambiare s\'impostatzione de is permissos, antis depes disativare sa subrapositizione de ischermu dae Impostatziones \u003e Aplicatziones</string>
+    <string name="screen_overlay_button">Aberi impostatziones</string>
+    <string name="wear_not_allowed_dlg_title">Android Wear</string>
+    <string name="review_button_cancel">Annulla</string>
+    <string name="app_name_unknown">Disconnotu</string>
+    <string name="external_sources_settings">Impostatziones</string>
+</resources>
