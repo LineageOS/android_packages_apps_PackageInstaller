@@ -45,7 +45,7 @@
     <string name="grant_dialog_button_allow_background">Ceadaich an-còmhnaidh</string>
     <string name="app_permissions_breadcrumb">Aplacaidean</string>
     <string name="app_permissions">Ceadan aplacaid</string>
-    <string name="app_permission_manager">Manaidsear nan ceadan</string>
+    <string name="app_permission_manager">Manaidsear nan cead</string>
     <string name="never_ask_again">Na faighnich dhìom a-rithist</string>
     <string name="no_permissions">Gun cheadan</string>
     <string name="additional_permissions">Ceadan a bharrachd</string>
