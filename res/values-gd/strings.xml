@@ -54,7 +54,7 @@
     <string name="unused_apps">Aplacaidean gun chleachdadh</string>
     <string name="app_disable_dlg_positive">Cuir an aplacaid à comas</string>
     <string name="app_disable_dlg_text">Ma chuireas tu an aplacaid seo à comas, dh’fhaoidte nach obraich Android agus aplacaidean eile mar bu chòir tuilleadh. Thoir fa-near nar urrainn dhut an aplacaid seo a dhì-stàladh on a chaidh a stàladh ro làimh air an uidheam agad. Ma chuireas tu à comas i, cuiridh tu an aplacaid seo dheth agus falaichidh tu air an uidheam agad e.</string>
-    <string name="app_permission_manager">Manaidsear nan ceadan</string>
+    <string name="app_permission_manager">Manaidsear nan cead</string>
     <string name="never_ask_again">Na faighnich dhìom a-rithist</string>
     <string name="no_permissions">Gun cheadan</string>
     <string name="additional_permissions">Ceadan a bharrachd</string>
@@ -304,8 +304,8 @@
     <string name="unused_permissions_subtitle_many"><xliff:g id="perm_name" example="Location">%1$s</xliff:g>, <xliff:g id="perm_name" example="Contacts">%2$s</xliff:g> ’s <xliff:g id="number_of_permissions" example="4">%3$s</xliff:g> a bharrachd</string>
     <string name="unused_app_permissions_removed_summary">Airson do dhàta a dhìon, chaidh ceadan a thoirt air falbh o aplacaidean nach deach a cleachdadh fad corra mìosa</string>
     <string name="unused_app_permissions_removed_summary_some">Airson do dhàta a dhìon, chaidh ceadan a thoirt air falbh o aplacaidean nach deach a cleachdadh fad corra mìosa</string>
-    <string name="one_unused_app_summary">Tha 1 aplacaid ann nach cleachd thu fad corra mìosa</string>
-    <string name="num_unused_apps_summary">Tha <xliff:g id="number_of_apps" example="4">%s</xliff:g> aplacaid(ean) ann nach cleachd thu fad corra mìosa</string>
+    <string name="one_unused_app_summary">Tha 1 aplacaid ann nach deach a chleachdadh fad corra mìosa</string>
+    <string name="num_unused_apps_summary">Tha <xliff:g id="number_of_apps" example="4">%s</xliff:g> aplacaid(ean) ann nach deach a chleachdadh fad corra mìosa</string>
     <string name="permission_subtitle_only_in_foreground">fhad ’s a bhios an aplacaid ’ga cleachdadh a-mhàin</string>
     <string name="permission_subtitle_media_only">Meadhanan</string>
     <string name="permission_subtitle_all_files">A h-uile faidhle</string>
