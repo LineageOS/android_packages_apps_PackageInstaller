@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="ok">Γas</string>
+    <string name="permission_search_keyword">tisirag</string>
+    <string name="cancel">Sefsex</string>
+    <string name="back">Ar deffir</string>
+    <string name="grant_dialog_button_deny">Aggi</string>
+    <string name="grant_dialog_button_more_info">Ugar n talɣut</string>
+    <string name="grant_dialog_button_dismiss">Suref</string>
+    <string name="allow_permission_always">Dima</string>
+    <string name="grant_dialog_button_allow">Sireg</string>
+    <string name="app_permissions_breadcrumb">Isnasen</string>
+    <string name="never_ask_again">Ur sutur ara tikelt-nniḍen</string>
+    <string name="no_apps">Ulac isnasen</string>
+    <string name="permission_access_never">Aggi</string>
+    <string name="loading">Asali\u2026</string>
+    <string name="screen_overlay_button">Ldi iγewwaṛen</string>
+    <string name="review_button_cancel">Sefsex</string>
+    <string name="review_button_continue">Kemmel</string>
+    <string name="app_name_unknown">Arussin</string>
+    <string name="permission_usage_title">Tafelwit n usenqed</string>
+    <string name="permission_usage_last_7_days">di 7 n wussan ineggura</string>
+    <string name="filter_by_title">Sizdeg s</string>
+    <string name="sort_spinner_recent">Ineggura</string>
+    <string name="permission_usage_refresh">Sismeḍ</string>
+    <string name="app_permission_button_allow">Sireg</string>
+    <string name="app_permission_button_deny">Aggi</string>
+    <string name="off">Insa</string>
+    <string name="allowed_header">Ittwasireg</string>
+    <string name="permission_subtitle_media_only">Amidya</string>
+    <string name="permission_subtitle_all_files">Akk ifuyla</string>
+    <string name="car_permission_selected">Yettwafren</string>
+    <string name="settings">Iγewwaṛen</string>
+    <string name="request_role_set_as_default">Sbadu d amezwer</string>
+    <string name="ongoing_usage_dialog_ok">Gziɣ</string>
+    <string name="settings_button">Iγewwaṛen</string>
+    <string name="default_app_none">Ulac</string>
+    <string name="default_app_system_default">(Amezwer n unagraw)</string>
+    <string name="default_app_no_apps">Ulac isnasen</string>
+    <string name="car_default_app_selected">Yettwafren</string>
+    <string name="special_app_access_no_apps">Ulac isnasen</string>
+    <string name="incident_report_dialog_allow_label">Sireg</string>
+    <string name="incident_report_dialog_deny_label">Aggi</string>
+    <string name="adjust_user_sensitive_title">Iγewwaṛen leqqayen</string>
+    <string name="menu_adjust_user_sensitive">Iγewwaṛen leqqayen</string>
+</resources>

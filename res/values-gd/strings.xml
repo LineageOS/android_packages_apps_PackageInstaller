@@ -19,7 +19,6 @@
     <string name="permission_search_keyword">ceadan</string>
     <string name="cancel">Sguir dheth</string>
     <string name="back">Air ais</string>
-    <string name="uninstall_or_disable">Dì-stàlaich no cuir à comas</string>
     <string name="app_not_found_dlg_title">Cha deach an aplacaid a lorg</string>
     <string name="grant_dialog_button_deny">Diùlt</string>
     <string name="grant_dialog_button_deny_and_dont_ask_again">Diùilt ⁊ na faighnich dhìom a-rithist</string>
