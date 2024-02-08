@@ -204,7 +204,7 @@ Dewisa pa bethau i roi mynediad iddynt gan yr ap hwn.</string>
     <string name="app_permission_never_accessed_denied_summary">Gwrthodwyd / Byth wedi defnyddio</string>
     <string name="allowed_header">Caniateir</string>
     <string name="allowed_always_header">Caniateir o hyd</string>
-    <string name="allowed_foreground_header">Caniateri dim ond wrth ddefnyddio\'r ap</string>
+    <string name="allowed_foreground_header">Caniateir dim ond wrth ddefnyddio\'r ap</string>
     <string name="denied_header">Gwrthodwyd</string>
     <string name="detailed_usage_link">Gweld defnydd manwl</string>
     <plurals name="days">
@@ -318,7 +318,7 @@ Dewisa pa bethau i roi mynediad iddynt gan yr ap hwn.</string>
     <string name="no_special_app_access">Dim mynediadau arbennig gan yr ap</string>
     <string name="special_app_access_no_apps">Dim apiau</string>
     <string name="home_missing_work_profile_support">Nid yw\u2019n cefnogi proffil gwaith</string>
-    <string name="encryption_unaware_confirmation_message">Noder: Os rwyt yn ail-ddechrau dy ddyfais ac wedi gosod sgrin cloi, ni all yr ap hwn ddechrau nes dy fod wedi datgloi dy ddyfais.</string>
+    <string name="encryption_unaware_confirmation_message">Noder: Os rwyt yn ailgychwyn dy ddyfais ac wedi gosod sgrin cloi, ni all yr ap hwn ddechrau nes dy fod wedi datgloi dy ddyfais.</string>
     <string name="assistant_confirmation_message">Bydd y cynorthwyydd yn medru darllen gwybodaeth am yr apiau mewn defnydd ar dy system, gan gynnwys gwybodaeth sy\'n weledol ar dy sgrin neu ar gael o fewn yr apiau.</string>
     <string name="incident_report_channel_name">Rhannu Data Dadfygio</string>
     <string name="incident_report_notification_title">Rhannu data manwl dadfygio?</string>
@@ -337,6 +337,6 @@ Caniatáu <xliff:g id="app_name" example="Gmail">%4$s</xliff:g> i uwchlwytho adr
     <string name="adjust_user_sensitive_globally_summary">Dangos defnydd apiau system o\'r caniatâd yn y bar statws, dangosfwrdd a mannau eraill</string>
     <string name="adjust_user_sensitive_per_app_header">Dwyn sylw at ddefnydd y canlynol</string>
     <string name="assistant_record_audio_user_sensitive_title">Dangos synhwyrydd sbardun y Cynorthwyydd</string>
-    <string name="assistant_record_audio_user_sensitive_summary">Dangos eicon yn y bar statws pan fo\'r meicroffon yn cael ei ddefnyddio i ddechrau\'r cynorthwyydd llais</string>
+    <string name="assistant_record_audio_user_sensitive_summary">Dangos eicon yn y bar statws pan fo\'r meicroffon yn cael ei ddefnyddio i gychwyn y  cynorthwyydd llais</string>
     <string name="permgrouprequest_storage_isolated">Caniatáu i &lt;b&gt;<xliff:g id="app_name" example="Gmail">%1$s</xliff:g>&lt;/b&gt; gael mynediad at luniau a chyfryngau ar dy ddyfais?</string>
 </resources>
